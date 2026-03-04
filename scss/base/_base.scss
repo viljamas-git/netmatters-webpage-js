@@ -7,6 +7,9 @@ body {
   line-height: 1.5;
   font-weight: 400;
 }
+body.mc-menu-open {
+  overflow: hidden;
+}
 // Styles *: controls box-sizing to define this element's appearance and layout.
 * {
   box-sizing: border-box;

@@ -117,8 +117,19 @@
 }
 // Styles .mc-sidebar .mc-sidebar-list .mc-mobile-sub-menu: controls margin-top, border-radius to define this element's appearance and layout.
 .mc-sidebar .mc-sidebar-list .mc-mobile-sub-menu {
+  display: none;
   margin-top: 20px;
   border-radius: 3px;
+}
+.mc-sidebar .mc-sidebar-list .mc-mobile-list-title .mc-mobile-list-header::after {
+  content: "\e913";
+  font-family: icomoon;
+  font-size: 0.875rem;
+  margin-top: 8px;
+  transition: transform 0.2s ease;
+}
+.mc-sidebar .mc-sidebar-list .mc-mobile-list-title.is-expanded .mc-mobile-list-header::after {
+  transform: rotate(180deg);
 }
 // Styles .mc-sidebar .mc-sidebar-list .mc-mobile-sub-menu .mc-mobile-menu-list: controls width, margin, padding to define this element's appearance and layout.
 .mc-sidebar .mc-sidebar-list .mc-mobile-sub-menu .mc-mobile-menu-list {

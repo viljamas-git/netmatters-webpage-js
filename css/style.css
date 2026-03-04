@@ -3952,3 +3952,25 @@ header .mc-header-inner .mc-mobile-contact {
   .xupes-title {
   padding-bottom: 0px;
 }
+
+
+/* Side menu behaviour enhancements */
+body.mc-menu-open {
+  overflow: hidden;
+}
+
+.mc-sidebar .mc-sidebar-list .mc-mobile-sub-menu {
+  display: none;
+}
+
+.mc-sidebar .mc-sidebar-list .mc-mobile-list-title .mc-mobile-list-header::after {
+  content: "\e913";
+  font-family: icomoon;
+  font-size: 0.875rem;
+  margin-top: 8px;
+  transition: transform 0.2s ease;
+}
+
+.mc-sidebar .mc-sidebar-list .mc-mobile-list-title.is-expanded .mc-mobile-list-header::after {
+  transform: rotate(180deg);
+}
