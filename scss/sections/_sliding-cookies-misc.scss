@@ -260,7 +260,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 100;
+  z-index: 4000;
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   flex-direction: row;
@@ -268,6 +268,14 @@
   justify-content: center;
   padding: 30px;
   opacity: 1;
+}
+
+body.mc-cookies-consent-open .mc-sticky-header {
+  pointer-events: none !important;
+}
+
+.mc-cookies .mc-cookies-container .mc-cookie-consent.mc-cookies-consent-hidden {
+  display: none;
 }
 // Styles .mc-cookies .mc-cookies-container .mc-cookie-consent .mc-cookies-box: controls margin, width, position to define this element's appearance and layout.
 .mc-cookies .mc-cookies-container .mc-cookie-consent .mc-cookies-box {
@@ -836,9 +844,9 @@ header .mc-header-inner .mc-mobile-contact {
   background: #926fb1;
   border-radius: 2px;
 }
-// Styles .mc-cookies: controls display to define this element's appearance and layout.
+// Styles .mc-cookies: keeps cookie controls enabled so consent UI can render.
 .mc-cookies {
-  display: none !important;
+  display: block;
 }
 // Styles .mc-banner .mc-banner-slide.is-hidden-for-now: controls display to define this element's appearance and layout.
 .mc-banner .mc-banner-slide.is-hidden-for-now {

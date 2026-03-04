@@ -76,6 +76,13 @@ body.mc-menu-open {
   left: 0;
   transition: all 0.5s ease;
 }
+
+// Styles .mc-head: keeps static header space but permanently hides original non-sticky header/nav layer.
+.mc-head {
+  visibility: hidden;
+  pointer-events: none;
+}
+
 // Styles .mc-hidden-header: controls transition, top, pointer-events to define this element's appearance and layout.
 .mc-hidden-header {
   transition: all 0.5s ease;
@@ -93,6 +100,11 @@ body.mc-menu-open {
   display: none;
 }
 // Styles .mc-is-hidden: controls visibility, pointer-events to define this element's appearance and layout.
+// Styles .mc-no-transition: disables header animation when hidden at top.
+.mc-no-transition {
+  transition: none !important;
+  top: 0;
+}
 .mc-is-hidden {
   visibility: hidden;
   pointer-events: none !important;
