@@ -1,4 +1,5 @@
 (function () {
+  // Store consent in localStorage so the panel stays hidden after acceptance.
   const storageKey = 'mcCookiesConsentAccepted';
   const cookieModule = document.getElementById('mc-cookiesConsent');
 
@@ -24,6 +25,7 @@
   }
 
   function updateConsentPanel(isOpen) {
+    // Keep visibility classes, ARIA state, and body helper class in sync.
     consentPanel.classList.toggle('mc-cookies-consent-hidden', !isOpen);
     consentPanel.setAttribute('aria-hidden', String(!isOpen));
     manageButton.setAttribute('aria-expanded', String(isOpen));
@@ -31,6 +33,7 @@
   }
 
   function hideConsentPanel() {
+    // Use jQuery animation when available to match the rest of the site behaviour.
     if (window.jQuery) {
       window.jQuery(consentPanel).stop(true, true).fadeOut(180, function () {
         updateConsentPanel(false);
@@ -42,6 +45,7 @@
   }
 
   function showConsentPanel() {
+    // Re-open with a fade so opening and closing use consistent transitions.
     if (window.jQuery) {
       window.jQuery(consentPanel)
         .stop(true, true)
@@ -61,6 +65,7 @@
       event.preventDefault();
     }
 
+    // Persist acceptance before hiding the panel.
     writeConsentState();
     hideConsentPanel();
   }
@@ -86,6 +91,7 @@
   }
 
   document.addEventListener('keydown', function (event) {
+    // Escape is a universal close shortcut for overlays/panels.
     if (event.key === 'Escape' && !consentPanel.classList.contains('mc-cookies-consent-hidden')) {
       hideConsentPanel();
     }

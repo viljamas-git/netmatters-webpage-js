@@ -631,7 +631,7 @@ header .mc-header-inner .mc-mobile-contact {
   opacity: 1;
   visibility: visible;
   transform: translateY(-12px);
-  pointer-events: auto;
+  pointer-events: all;
 }
 // Styles .mc-sliding-imgs .mc-sliding-list .mc-sliding-img-box .mc-logo-tooltip: controls opacity, visibility, pointer-events to define this element's appearance and layout.
 .mc-sliding-imgs .mc-sliding-list .mc-sliding-img-box .mc-logo-tooltip {

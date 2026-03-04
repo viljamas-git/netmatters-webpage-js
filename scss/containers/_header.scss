@@ -1,7 +1,6 @@
 // Styles header: controls background-color, color to define this element's appearance and layout.
 header {
   background-color: #fff;
-  color: #fff;
 }
 // Styles header .mc-header-inner: controls padding to define this element's appearance and layout.
 header .mc-header-inner {
@@ -332,7 +331,6 @@ header
 // Styles .mc-hamburger-inner: controls background-color, color, border-radius to define this element's appearance and layout.
   .mc-hamburger-inner {
   background-color: #fff;
-  color: #fff;
   border-radius: 0;
   font-size: 1.438rem;
   line-height: 2.8125rem;
@@ -499,7 +497,7 @@ header .mc-header-inner .mc-mobile-contact .mc-mobile-search .mc-mobile-form-sea
   cursor: text;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.1);
-  border: 2px solid rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(0, 0, 0, 0.15);
   border-radius: 2px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }

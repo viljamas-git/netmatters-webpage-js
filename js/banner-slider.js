@@ -5,6 +5,7 @@
     return;
   }
 
+  // Ensure keyboard users can focus the carousel region.
   banner.setAttribute('tabindex', '0');
 
   const slides = Array.from(banner.querySelectorAll('.mc-banner-slide'));
@@ -19,6 +20,7 @@
   );
   let autoplayTimer = null;
 
+  // Build dot navigation dynamically so it always matches slide count.
   const controls = document.createElement('div');
   controls.className = 'mc-banner-controls';
   controls.setAttribute('aria-label', 'Banner slide controls');
@@ -36,6 +38,7 @@
   banner.appendChild(controls);
 
   function renderSlides() {
+    // Only one slide is visible at a time and dots mirror that state.
     slides.forEach(function (slide, index) {
       const isCurrent = index === currentIndex;
       slide.classList.toggle('is-hidden-for-now', !isCurrent);
@@ -59,6 +62,7 @@
   }
 
   function resetAutoplay() {
+    // Restart the timer after manual navigation to avoid abrupt auto-advance.
     window.clearInterval(autoplayTimer);
     autoplayTimer = window.setInterval(nextSlide, 5000);
   }
@@ -88,6 +92,7 @@
   }
 
   banner.addEventListener('mouseenter', function () {
+    // Pause autoplay while the user hovers the banner.
     window.clearInterval(autoplayTimer);
   });
 

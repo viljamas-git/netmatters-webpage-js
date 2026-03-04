@@ -17,6 +17,7 @@
     return;
   }
 
+  // Track previous body styles so scroll locking can be safely reverted.
   const body = document.body;
   let isOpen = false;
   let previousOverflow = '';
@@ -31,12 +32,14 @@
     '[tabindex]:not([tabindex="-1"])'
   ].join(',');
 
+  // Used to trap keyboard focus inside the open menu.
   function getFocusableInSidebar() {
     return Array.from(sidebar.querySelectorAll(focusableSelector)).filter(function (el) {
       return !el.hasAttribute('hidden') && el.offsetParent !== null;
     });
   }
 
+  // Keep interactive accessibility attributes aligned with menu state.
   function syncAria(expanded) {
     menuButtons.forEach(function (button) {
       button.setAttribute('aria-expanded', String(expanded));
@@ -47,6 +50,7 @@
     sidebar.setAttribute('aria-hidden', String(!expanded));
   }
 
+  // Prevent page scrolling behind the off-canvas navigation panel.
   function lockBodyScroll() {
     const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
 
@@ -65,6 +69,7 @@
     body.style.paddingRight = previousPaddingRight;
   }
 
+  // Apply all classes/attributes needed for the expanded navigation state.
   function openMenu() {
     isOpen = true;
 
@@ -133,6 +138,7 @@
     event.stopPropagation();
   });
 
+  // Support Escape-to-close and focus looping for keyboard users.
   document.addEventListener('keydown', function (event) {
     if (event.key === 'Escape' && isOpen) {
       closeMenu();
