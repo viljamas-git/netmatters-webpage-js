@@ -1,0 +1,111 @@
+// Styles nav: controls display to define this element's appearance and layout.
+nav {
+  background-color: #333645;
+  display: none;
+  position: relative;
+}
+// Responsive block for @media (min-width: 992px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 992px) {
+// Styles nav: controls display to define this element's appearance and layout.
+  nav {
+    display: block;
+  }
+}
+// Styles nav .mc-main-nav: controls display, flex-direction, margin to define this element's appearance and layout.
+nav .mc-main-nav {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+// Styles nav .mc-main-nav .mc-main-nav-item: controls text-align, flex to define this element's appearance and layout.
+nav .mc-main-nav .mc-main-nav-item {
+  text-align: center;
+  flex: 1;
+}
+// Styles nav .mc-main-nav .mc-main-nav-item .mc-nav-item: controls color, display, font-size to define this element's appearance and layout.
+nav .mc-main-nav .mc-main-nav-item .mc-nav-item {
+  @include nav-item-base;
+}
+// Styles nav .mc-main-nav .mc-main-nav-item .mc-nav-item .mc-nav-icon: controls display, font-size, padding-bottom to define this element's appearance and layout.
+nav .mc-main-nav .mc-main-nav-item .mc-nav-item .mc-nav-icon {
+  display: block;
+  font-size: 1.4375rem;
+  padding-bottom: 10px;
+}
+// Styles nav .mc-main-nav .mc-main-nav-item .mc-nav-item small: controls display, font-size to define this element's appearance and layout.
+nav .mc-main-nav .mc-main-nav-item .mc-nav-item small {
+  display: block;
+  font-size: 0.625rem;
+}
+// Styles nav .mc-main-nav li:hover .mc-nav-item .mc-nav-icon: controls color to define this element's appearance and layout.
+nav .mc-main-nav li:hover .mc-nav-item .mc-nav-icon {
+  color: #fff;
+}
+// Icon glyph for nav .mc-main-nav li:hover .mc-nav-item::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+nav .mc-main-nav li:hover .mc-nav-item::before {
+  @include nav-hover-caret(68px);
+}
+// Responsive block for @media (min-width: 1260px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 1260px) {
+// Icon glyph for nav .mc-main-nav li:hover .mc-nav-item::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+  nav .mc-main-nav li:hover .mc-nav-item::before {
+    @include nav-hover-caret(83.5px);
+  }
+}
+// Styles .mc-sub-nav: controls display, margin, position to define this element's appearance and layout.
+.mc-sub-nav {
+  display: none;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  z-index: 10;
+  padding: 50px 0;
+}
+// Styles .mc-sub-nav .mc-sub-nav-list: controls display, flex-wrap, align-items to define this element's appearance and layout.
+.mc-sub-nav .mc-sub-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: -15px;
+  text-align: left;
+  padding: 0;
+  margin-bottom: 0;
+  color: #fff;
+}
+// Styles .mc-sub-nav .mc-sub-nav-list .mc-sub-nav-title: controls display, font-size, line-height to define this element's appearance and layout.
+.mc-sub-nav .mc-sub-nav-list .mc-sub-nav-title {
+  display: block;
+  font-size: 2rem;
+  line-height: 1.0625rem;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  font-weight: 500;
+  text-align: left;
+}
+// Styles .mc-sub-nav .mc-sub-nav-list .mc-sub-nav-link: controls width, margin-top, font-size to define this element's appearance and layout.
+.mc-sub-nav .mc-sub-nav-list .mc-sub-nav-link {
+  width: 33%;
+  margin-top: 15px;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
+}
+// Styles .mc-sub-nav .mc-sub-nav-list .mc-sub-nav-link a: controls padding, display, align-items to define this element's appearance and layout.
+.mc-sub-nav .mc-sub-nav-list .mc-sub-nav-link a {
+  padding: 10px 15px 10px 0;
+  display: flex;
+  align-items: center;
+}
+// Styles .mc-sub-nav .mc-sub-nav-list .mc-sub-nav-link a .mc-link-text: controls margin-left to define this element's appearance and layout.
+.mc-sub-nav .mc-sub-nav-list .mc-sub-nav-link a .mc-link-text {
+  margin-left: 10px;
+}
+// Styles .mc-sub-nav .mc-sub-nav-list .mc-sub-nav-link a:hover: controls text-decoration to define this element's appearance and layout.
+.mc-sub-nav .mc-sub-nav-list .mc-sub-nav-link a:hover {
+  text-decoration: underline;
+}

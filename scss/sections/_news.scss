@@ -1,0 +1,295 @@
+// Styles .mc-news: controls background-color to define this element's appearance and layout.
+.mc-news {
+  background-color: #fff;
+}
+// Styles .mc-news .mc-news-header: controls padding-top, display, flex-direction to define this element's appearance and layout.
+.mc-news .mc-news-header {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #333645;
+}
+// Styles .mc-news .mc-news-header h2: controls margin-top to define this element's appearance and layout.
+.mc-news .mc-news-header h2 {
+  margin: 0 0 28px;
+}
+// Styles .mc-news .mc-news-header h3: controls display to define this element's appearance and layout.
+.mc-news .mc-news-header h3 {
+  font-size: 1.625rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  display: none;
+}
+// Responsive block for @media (min-width: 768px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 768px) {
+// Styles .mc-news .mc-news-header h3: controls display to define this element's appearance and layout.
+  .mc-news .mc-news-header h3 {
+    display: block;
+  }
+}
+// Styles .mc-news .mc-news-row: controls display, flex-wrap, margin to define this element's appearance and layout.
+.mc-news .mc-news-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -30px -15px 0 -15px;
+  padding-top: 15px;
+  padding-bottom: 50px;
+}
+// Styles .mc-news .mc-news-row .mc-news-article: controls width to define this element's appearance and layout.
+.mc-news .mc-news-row .mc-news-article {
+  max-width: 100%;
+  width: 100%;
+  padding: 0 15px;
+}
+// Responsive block for @media (min-width: 768px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 768px) {
+// Styles .mc-news .mc-news-row .mc-news-article: controls width to define this element's appearance and layout.
+  .mc-news .mc-news-row .mc-news-article {
+    width: 50%;
+  }
+}
+// Responsive block for @media (min-width: 1260px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 1260px) {
+// Styles .mc-news .mc-news-row .mc-news-article: controls width to define this element's appearance and layout.
+  .mc-news .mc-news-row .mc-news-article {
+    width: calc(100% / 3);
+  }
+}
+// Styles .mc-news .mc-news-row .mc-news-article a: controls font-size, margin-top, color to define this element's appearance and layout.
+.mc-news .mc-news-row .mc-news-article a {
+  font-size: 0.8125rem;
+  margin-top: 30px;
+  color: #333645;
+  position: relative;
+  top: 0;
+  transition: 0.5s ease;
+  display: flex;
+  flex-direction: column;
+}
+// Responsive block for @media (min-width: 768px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 768px) {
+// Styles .mc-news .mc-news-row .mc-news-article a .mc-article-img: controls max-height to define this element's appearance and layout.
+  .mc-news .mc-news-row .mc-news-article a .mc-article-img {
+    max-height: 200px;
+  }
+}
+// Responsive block for @media (min-width: 992px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 992px) {
+// Styles .mc-news .mc-news-row .mc-news-article a .mc-article-img: controls max-height to define this element's appearance and layout.
+  .mc-news .mc-news-row .mc-news-article a .mc-article-img {
+    max-height: 263px;
+  }
+}
+// Responsive block for @media (min-width: 1260px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 1260px) {
+// Styles .mc-news .mc-news-row .mc-news-article a .mc-article-img: controls max-height to define this element's appearance and layout.
+  .mc-news .mc-news-row .mc-news-article a .mc-article-img {
+    max-height: 213px;
+  }
+}
+// Styles .mc-news .mc-news-row .mc-news-article a .mc-article-img .mc-insights: controls background-color, position, top to define this element's appearance and layout.
+.mc-news .mc-news-row .mc-news-article a .mc-article-img .mc-insights {
+  background-color: #67809f;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0 10px;
+  line-height: 1.4375rem;
+  text-transform: uppercase;
+  z-index: 1;
+}
+// Styles .mc-news .mc-news-row .mc-news-article a .mc-article-img .mc-insights-it-tech: controls background-color, position, top to define this element's appearance and layout.
+.mc-news .mc-news-row .mc-news-article a .mc-article-img .mc-insights-it-tech {
+  background-color: #4183d7;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0 10px;
+  line-height: 1.4375rem;
+  text-transform: uppercase;
+  z-index: 1;
+}
+.mc-news .mc-news-row .mc-news-article a .mc-article-img .mc-insights:hover,
+// Styles .mc-news .mc-news-row .mc-news-article a .mc-article-img .mc-insights-it-tech:hover: controls text-decoration to define this element's appearance and layout.
+.mc-news .mc-news-row .mc-news-article a .mc-article-img .mc-insights-it-tech:hover {
+  text-decoration: underline;
+}
+// Styles .mc-news .mc-news-row .mc-news-article a .mc-article-img .mc-article-img-box: controls position, border-radius, border to define this element's appearance and layout.
+.mc-news .mc-news-row .mc-news-article a .mc-article-img .mc-article-img-box {
+  position: relative;
+  border-radius: 3px 3px 0 0;
+  border: 0;
+  text-decoration: none;
+  max-width: 100%;
+}
+// Styles .mc-news .mc-news-row .mc-news-article a .mc-article-img .mc-article-img-box img: controls display, height, width to define this element's appearance and layout.
+.mc-news .mc-news-row .mc-news-article a .mc-article-img .mc-article-img-box img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+// Styles .mc-news .mc-news-row .mc-news-article a .mc-article-description: controls min-height to define this element's appearance and layout.
+.mc-news .mc-news-row .mc-news-article a .mc-article-description {
+  border-top: 0;
+  border-radius: 0 0 3px 3px;
+  display: block;
+  padding: 30px;
+  border: 1px solid #ccc;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+}
+// Responsive block for @media (min-width: 768px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 768px) {
+// Styles .mc-news .mc-news-row .mc-news-article a .mc-article-description: controls min-height to define this element's appearance and layout.
+  .mc-news .mc-news-row .mc-news-article a .mc-article-description {
+    min-height: auto;
+  }
+}
+// Responsive block for @media (min-width: 992px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 992px) {
+// Styles .mc-news .mc-news-row .mc-news-article a .mc-article-description: controls min-height to define this element's appearance and layout.
+  .mc-news .mc-news-row .mc-news-article a .mc-article-description {
+    min-height: auto;
+  }
+}
+// Responsive block for @media (min-width: 1260px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 1260px) {
+// Styles .mc-news .mc-news-row .mc-news-article a .mc-article-description: controls min-height to define this element's appearance and layout.
+  .mc-news .mc-news-row .mc-news-article a .mc-article-description {
+    min-height: auto;
+  }
+}
+// Styles .mc-news .mc-news-row .mc-news-article a .mc-article-description h3: controls min-height to define this element's appearance and layout.
+.mc-news .mc-news-row .mc-news-article a .mc-article-description h3 {
+  padding-top: 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #67809f;
+}
+// Styles .mc-news .mc-news-row .mc-news-article a .mc-article-description h3 .mc-firstline: controls color to define this element's appearance and layout.
+.mc-news .mc-news-row .mc-news-article a .mc-article-description h3 .mc-firstline {
+  color: #4183d7;
+}
+// Responsive block for @media (min-width: 768px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 768px) {
+// Styles .mc-news .mc-news-row .mc-news-article a .mc-article-description h3: controls min-height to define this element's appearance and layout.
+  .mc-news .mc-news-row .mc-news-article a .mc-article-description h3 {
+    min-height: 48px;
+  }
+}
+// Styles .mc-news .mc-news-row .mc-news-article a .mc-article-description p: controls margin-bottom to define this element's appearance and layout.
+.mc-news .mc-news-row .mc-news-article a .mc-article-description p {
+  margin-bottom: 25px;
+}
+// Styles .mc-news .mc-news-row .mc-news-article a .mc-article-description .mc-news-btn: controls display, font-size, line-height to define this element's appearance and layout.
+.mc-news .mc-news-row .mc-news-article a .mc-article-description .mc-news-btn {
+  display: inline-flex;
+  font-size: 1.0625rem;
+  line-height: 2.1875rem;
+  font-weight: font-reg;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  margin-bottom: 0;
+  align-items: center;
+  justify-content: center;
+}
+// Styles .mc-news .mc-news-row .mc-news-article a .mc-article-description .mc-news-btn-orange: controls background-color, color to define this element's appearance and layout.
+.mc-news .mc-news-row .mc-news-article a .mc-article-description .mc-news-btn-orange {
+  background-color: #f7b322;
+  color: #fff;
+}
+// Styles .mc-news .mc-news-row .mc-news-article a .mc-article-description .mc-news-btn-blue: controls background-color, color to define this element's appearance and layout.
+.mc-news .mc-news-row .mc-news-article a .mc-article-description .mc-news-btn-blue {
+  background-color: #4183d7;
+  color: #fff;
+}
+// Styles .mc-news .mc-news-row .mc-news-article a .mc-article-description .mc-article-author: controls margin-top, padding-top, border-top to define this element's appearance and layout.
+.mc-news .mc-news-row .mc-news-article a .mc-article-description .mc-article-author {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #ccc;
+  display: table;
+  width: 100%;
+  font-size: 0.875rem;
+}
+.mc-news
+  .mc-news-row
+  .mc-news-article
+  a
+  .mc-article-description
+  .mc-article-author
+// Styles .mc-article-author-img: controls display, vertical-align, width to define this element's appearance and layout.
+  .mc-article-author-img {
+  display: table-cell;
+  vertical-align: middle;
+  width: 1%;
+}
+.mc-news
+  .mc-news-row
+  .mc-news-article
+  a
+  .mc-article-description
+  .mc-article-author
+  .mc-article-author-img
+// Styles img: controls border-radius, display, max-width to define this element's appearance and layout.
+  img {
+  border-radius: 50%;
+  display: block;
+  max-width: 47px;
+  height: auto;
+}
+.mc-news
+  .mc-news-row
+  .mc-news-article
+  a
+  .mc-article-description
+  .mc-article-author
+// Styles .mc-article-author-name: controls display, vertical-align, padding-left to define this element's appearance and layout.
+  .mc-article-author-name {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 20px;
+  line-height: 1.375rem;
+}
+// Styles .mc-news .mc-news-row .mc-news-article a:hover: controls top, transition to define this element's appearance and layout.
+.mc-news .mc-news-row .mc-news-article a:hover {
+  top: -10px;
+  transition: 0.5s ease;
+}
+// Responsive block for @media (min-width: 768px) and (max-width: 1260px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 768px) and (max-width: 1260px) {
+// Styles .mc-news .mc-news-row .mc-news-article .mc-article-technician: controls display to define this element's appearance and layout.
+  .mc-news .mc-news-row .mc-news-article .mc-article-technician {
+    display: none;
+  }
+}
+// Styles .mc-news .mc-hidden-view-all: controls display to define this element's appearance and layout.
+.mc-news .mc-hidden-view-all {
+  text-align: center;
+  margin-bottom: 20px;
+}
+// Responsive block for @media (min-width: 768px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 768px) {
+// Styles .mc-news .mc-hidden-view-all: controls display to define this element's appearance and layout.
+  .mc-news .mc-hidden-view-all {
+    display: none;
+  }
+}
+// Styles .mc-news .mc-hidden-view-all h3: controls margin-top, font-size, color to define this element's appearance and layout.
+.mc-news .mc-hidden-view-all h3 {
+  margin-top: 0px;
+  font-size: 1.625rem;
+  color: #333645;
+  font-weight: 600;
+  margin-bottom: 15px;
+}

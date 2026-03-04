@@ -1,0 +1,528 @@
+// Styles header: controls background-color, color to define this element's appearance and layout.
+header {
+  background-color: #fff;
+  color: #fff;
+}
+// Styles header .mc-header-inner: controls padding to define this element's appearance and layout.
+header .mc-header-inner {
+  padding: 20px 0;
+}
+// Styles header .mc-header-inner .mc-header-row: controls margin to define this element's appearance and layout.
+header .mc-header-inner .mc-header-row {
+  display: flex;
+  margin: 0;
+  align-items: center;
+  height: 70px;
+}
+// Responsive block for @media (min-width: 768px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 768px) {
+// Styles header .mc-header-inner .mc-header-row: controls margin to define this element's appearance and layout.
+  header .mc-header-inner .mc-header-row {
+    margin: 0 -15px;
+  }
+}
+// Styles header .mc-header-inner .mc-header-row .mc-header-logo: controls width to define this element's appearance and layout.
+header .mc-header-inner .mc-header-row .mc-header-logo {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 70px;
+}
+// Responsive block for @media (min-width: 768px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 768px) {
+// Styles header .mc-header-inner .mc-header-row .mc-header-logo: controls width to define this element's appearance and layout.
+  header .mc-header-inner .mc-header-row .mc-header-logo {
+    width: 50%;
+    padding: 0 15px;
+  }
+}
+// Responsive block for @media (min-width: 992px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 992px) {
+// Styles header .mc-header-inner .mc-header-row .mc-header-logo: controls width to define this element's appearance and layout.
+  header .mc-header-inner .mc-header-row .mc-header-logo {
+    width: 41.66666667%;
+  }
+}
+// Responsive block for @media (min-width: 1260px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 1260px) {
+// Styles header .mc-header-inner .mc-header-row .mc-header-logo: controls width to define this element's appearance and layout.
+  header .mc-header-inner .mc-header-row .mc-header-logo {
+    width: 33.33333333%;
+  }
+}
+// Styles header .mc-header-inner .mc-header-row .mc-header-logo a img: controls max-width to define this element's appearance and layout.
+header .mc-header-inner .mc-header-row .mc-header-logo a img {
+  max-width: 100%;
+}
+// Styles header .mc-header-inner .mc-header-row .mc-hidden-mobile: controls display to define this element's appearance and layout.
+header .mc-header-inner .mc-header-row .mc-hidden-mobile {
+  padding: 0;
+  max-width: 100%;
+  font-size: 2rem;
+  margin-left: 15px;
+}
+// Responsive block for @media (min-width: 768px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 768px) {
+// Styles header .mc-header-inner .mc-header-row .mc-hidden-mobile: controls display to define this element's appearance and layout.
+  header .mc-header-inner .mc-header-row .mc-hidden-mobile {
+    display: none;
+  }
+}
+// Styles header .mc-header-inner .mc-header-row .mc-hidden-mobile a: controls color to define this element's appearance and layout.
+header .mc-header-inner .mc-header-row .mc-hidden-mobile a {
+  color: #333645;
+}
+header .mc-header-inner .mc-header-row .mc-hidden-mobile a:hover,
+// Styles header .mc-header-inner .mc-header-row .mc-hidden-mobile a:focus: controls color to define this element's appearance and layout.
+header .mc-header-inner .mc-header-row .mc-hidden-mobile a:focus {
+  color: #121419;
+}
+// Styles header .mc-header-inner .mc-header-row .mc-header-buttons: controls width to define this element's appearance and layout.
+header .mc-header-inner .mc-header-row .mc-header-buttons {
+  padding: 0;
+  margin: 0;
+}
+// Responsive block for @media (min-width: 768px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 768px) {
+// Styles header .mc-header-inner .mc-header-row .mc-header-buttons: controls width to define this element's appearance and layout.
+  header .mc-header-inner .mc-header-row .mc-header-buttons {
+    width: 50%;
+    padding: 0 15px;
+  }
+}
+// Responsive block for @media (min-width: 992px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 992px) {
+// Styles header .mc-header-inner .mc-header-row .mc-header-buttons: controls width to define this element's appearance and layout.
+  header .mc-header-inner .mc-header-row .mc-header-buttons {
+    padding: 0 15px;
+    width: 58.33333333%;
+  }
+}
+// Responsive block for @media (min-width: 1260px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 1260px) {
+// Styles header .mc-header-inner .mc-header-row .mc-header-buttons: controls width to define this element's appearance and layout.
+  header .mc-header-inner .mc-header-row .mc-header-buttons {
+    width: 66.66666667%;
+  }
+}
+// Styles header .mc-header-inner .mc-header-row .mc-header-buttons .mc-contact: controls justify-content to define this element's appearance and layout.
+header .mc-header-inner .mc-header-row .mc-header-buttons .mc-contact {
+  display: flex;
+  justify-content: right;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  padding: 7px 0;
+}
+// Responsive block for @media (min-width: 992px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 992px) {
+// Styles header .mc-header-inner .mc-header-row .mc-header-buttons .mc-contact: controls justify-content to define this element's appearance and layout.
+  header .mc-header-inner .mc-header-row .mc-header-buttons .mc-contact {
+    justify-content: right;
+  }
+}
+// Styles header .mc-header-inner .mc-header-row .mc-header-buttons .mc-contact .mc-header-btn: controls font-size, font-weight, line-height to define this element's appearance and layout.
+header .mc-header-inner .mc-header-row .mc-header-buttons .mc-contact .mc-header-btn {
+  @include button-base;
+  margin-left: 20px;
+}
+// Styles header .mc-header-inner .mc-header-row .mc-header-buttons .mc-contact .mc-header-btn span: controls align-self, font-size, margin-right to define this element's appearance and layout.
+header .mc-header-inner .mc-header-row .mc-header-buttons .mc-contact .mc-header-btn span {
+  align-self: center;
+  font-size: 1.438rem;
+  margin-right: 5px;
+}
+// Styles header .mc-header-inner .mc-header-row .mc-header-buttons .mc-contact .mc-button-support: controls display, margin-left to define this element's appearance and layout.
+header .mc-header-inner .mc-header-row .mc-header-buttons .mc-contact .mc-button-support {
+  @include button-theme(#4183d7, #2a6ec6);
+  display: none;
+}
+// Responsive block for @media (min-width: 992px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 992px) {
+// Styles header .mc-header-inner .mc-header-row .mc-header-buttons .mc-contact .mc-button-support: controls display, margin-left to define this element's appearance and layout.
+  header .mc-header-inner .mc-header-row .mc-header-buttons .mc-contact .mc-button-support {
+    display: flex;
+    margin-left: 0;
+  }
+}
+// Styles header .mc-header-inner .mc-header-row .mc-header-buttons .mc-contact .mc-button-contact: controls display to define this element's appearance and layout.
+header .mc-header-inner .mc-header-row .mc-header-buttons .mc-contact .mc-button-contact {
+  @include button-theme(#999aa2, #84858f);
+  display: none;
+}
+// Responsive block for @media (min-width: 992px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 992px) {
+// Styles header .mc-header-inner .mc-header-row .mc-header-buttons .mc-contact .mc-button-contact: controls display to define this element's appearance and layout.
+  header .mc-header-inner .mc-header-row .mc-header-buttons .mc-contact .mc-button-contact {
+    display: flex;
+  }
+}
+// Styles header .mc-header-inner .mc-header-row .mc-header-buttons .mc-contact .mc-search: controls display to define this element's appearance and layout.
+header .mc-header-inner .mc-header-row .mc-header-buttons .mc-contact .mc-search {
+  display: none;
+  height: 56px;
+  margin-left: 20px;
+}
+// Responsive block for @media (min-width: 768px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 768px) {
+// Styles header .mc-header-inner .mc-header-row .mc-header-buttons .mc-contact .mc-search: controls display to define this element's appearance and layout.
+  header .mc-header-inner .mc-header-row .mc-header-buttons .mc-contact .mc-search {
+    display: flex;
+  }
+}
+// Styles header .mc-header-inner .mc-header-row .mc-header-buttons .mc-contact .mc-search label: controls display to define this element's appearance and layout.
+header .mc-header-inner .mc-header-row .mc-header-buttons .mc-contact .mc-search label {
+  display: none;
+}
+// Styles header .mc-header-inner .mc-header-row .mc-header-buttons .mc-contact .mc-search .mc-form-search: controls display, color, font-size to define this element's appearance and layout.
+header .mc-header-inner .mc-header-row .mc-header-buttons .mc-contact .mc-search .mc-form-search {
+  display: inline-flex;
+  color: #555;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  padding: 5px 15px;
+  width: 174px;
+  cursor: text;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+// Responsive block for @media (min-width: 992px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 992px) {
+  header
+    .mc-header-inner
+    .mc-header-row
+    .mc-header-buttons
+    .mc-contact
+    .mc-search
+// Styles .mc-form-search: controls display to define this element's appearance and layout.
+    .mc-form-search {
+    width: 240px;
+  }
+}
+// Responsive block for @media (min-width: 992px) and (max-width: 1260px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 992px) and (max-width: 1260px) {
+  header
+    .mc-header-inner
+    .mc-header-row
+    .mc-header-buttons
+    .mc-contact
+    .mc-search
+// Styles .mc-form-search: controls display to define this element's appearance and layout.
+    .mc-form-search {
+    display: none;
+  }
+}
+header
+  .mc-header-inner
+  .mc-header-row
+  .mc-header-buttons
+  .mc-contact
+  .mc-search
+// Styles .mc-form-search:focus: controls border-color, outline, box-shadow to define this element's appearance and layout.
+  .mc-form-search:focus {
+  border-color: #5bc0de;
+  outline: 0;
+  box-shadow:
+    inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(91, 192, 222, 0.6);
+}
+header
+  .mc-header-inner
+  .mc-header-row
+  .mc-header-buttons
+  .mc-contact
+  .mc-search
+// Styles .mc-form-search::placeholder: controls color to define this element's appearance and layout.
+  .mc-form-search::placeholder {
+  color: #888;
+}
+header
+  .mc-header-inner
+  .mc-header-row
+  .mc-header-buttons
+  .mc-contact
+  .mc-search
+// Styles .mc-search-submit: controls border-radius to define this element's appearance and layout.
+  .mc-search-submit {
+  padding: 7px 20px 3px;
+  height: 56px;
+  border-radius: 0 3px 3px 0;
+  border: none;
+  background-color: #999aa2;
+  color: #fff;
+  text-align: center;
+}
+// Responsive block for @media (min-width: 992px) and (max-width: 1260px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 992px) and (max-width: 1260px) {
+  header
+    .mc-header-inner
+    .mc-header-row
+    .mc-header-buttons
+    .mc-contact
+    .mc-search
+// Styles .mc-search-submit: controls border-radius to define this element's appearance and layout.
+    .mc-search-submit {
+    border-radius: 3px;
+  }
+}
+header
+  .mc-header-inner
+  .mc-header-row
+  .mc-header-buttons
+  .mc-contact
+  .mc-search
+  .mc-search-submit
+// Styles span: controls font-size, font-weight, display to define this element's appearance and layout.
+  span {
+  font-size: 1.4375rem;
+}
+header
+  .mc-header-inner
+  .mc-header-row
+  .mc-header-buttons
+  .mc-contact
+  .mc-search
+// Styles .mc-search-submit:hover: controls background-color to define this element's appearance and layout.
+  .mc-search-submit:hover {
+  background-color: #7e808a;
+}
+// Styles header .mc-header-inner .mc-header-row .mc-header-buttons .mc-contact .mc-button-hamburger: controls font-size, line-height, font-weight to define this element's appearance and layout.
+header .mc-header-inner .mc-header-row .mc-header-buttons .mc-contact .mc-button-hamburger {
+  font-size: 1.125rem;
+  line-height: 2.875rem;
+  font-weight: 400;
+  height: 56px;
+  max-width: 63px;
+  padding: 5px 14px;
+  border-radius: 3px;
+  margin-left: 20px;
+  white-space: normal;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  border: none;
+  background-color: #333645;
+  color: #fff;
+  text-align: center;
+}
+header
+  .mc-header-inner
+  .mc-header-row
+  .mc-header-buttons
+  .mc-contact
+  .mc-button-hamburger
+// Styles .mc-hamburger-box: controls display, width, height to define this element's appearance and layout.
+  .mc-hamburger-box {
+  display: block;
+  width: 33px;
+  height: 19px;
+  position: relative;
+  text-align: center;
+  float: left;
+}
+header
+  .mc-header-inner
+  .mc-header-row
+  .mc-header-buttons
+  .mc-contact
+  .mc-button-hamburger
+  .mc-hamburger-box
+// Styles .mc-hamburger-inner: controls background-color, color, border-radius to define this element's appearance and layout.
+  .mc-hamburger-inner {
+  background-color: #fff;
+  color: #fff;
+  border-radius: 0;
+  font-size: 1.438rem;
+  line-height: 2.8125rem;
+  width: 33px;
+  height: 4px;
+  position: absolute;
+  display: block;
+  top: 50%;
+  margin-top: -1.5px;
+  margin-right: 0;
+}
+header
+  .mc-header-inner
+  .mc-header-row
+  .mc-header-buttons
+  .mc-contact
+  .mc-button-hamburger
+  .mc-hamburger-box
+// Styles .mc-hamburger-inner::after: controls bottom, transition to define this element's appearance and layout.
+  .mc-hamburger-inner::after {
+  bottom: -10px;
+  transition:
+    bottom 0.1s ease-in 0.25s,
+    transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+header
+  .mc-header-inner
+  .mc-header-row
+  .mc-header-buttons
+  .mc-contact
+  .mc-button-hamburger
+  .mc-hamburger-box
+  .mc-hamburger-inner::after,
+header
+  .mc-header-inner
+  .mc-header-row
+  .mc-header-buttons
+  .mc-contact
+  .mc-button-hamburger
+  .mc-hamburger-box
+// Icon glyph for .mc-hamburger-inner::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+  .mc-hamburger-inner::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #fff;
+  width: 33px;
+  height: 4px;
+}
+header
+  .mc-header-inner
+  .mc-header-row
+  .mc-header-buttons
+  .mc-contact
+  .mc-button-hamburger
+  .mc-hamburger-box
+// Icon glyph for .mc-hamburger-inner::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+  .mc-hamburger-inner::before {
+  top: -10px;
+  transition:
+    top 0.1s ease-in 0.25s,
+    opacity 0.1s ease-in;
+}
+header
+  .mc-header-inner
+  .mc-header-row
+  .mc-header-buttons
+  .mc-contact
+  .mc-button-hamburger
+  .mc-hamburger-box
+// Styles .mc-close-menu: controls transform, transition-delay, transition-duration to define this element's appearance and layout.
+  .mc-close-menu {
+  transform: rotate(225deg);
+  transition-delay: 0.12s;
+  transition-duration: 0.22s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+header
+  .mc-header-inner
+  .mc-header-row
+  .mc-header-buttons
+  .mc-contact
+  .mc-button-hamburger
+  .mc-hamburger-box
+// Icon glyph for .mc-close-menu::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+  .mc-close-menu::before {
+  top: 0;
+  opacity: 0;
+  transition:
+    top 0.1s ease-out,
+    opacity 0.1s ease-out 0.12s;
+}
+header
+  .mc-header-inner
+  .mc-header-row
+  .mc-header-buttons
+  .mc-contact
+  .mc-button-hamburger
+  .mc-hamburger-box
+  .mc-close-menu::after,
+header
+  .mc-header-inner
+  .mc-header-row
+  .mc-header-buttons
+  .mc-contact
+  .mc-button-hamburger
+  .mc-hamburger-box
+// Icon glyph for .mc-close-menu::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+  .mc-close-menu::before {
+  content: "";
+  display: block;
+}
+header
+  .mc-header-inner
+  .mc-header-row
+  .mc-header-buttons
+  .mc-contact
+  .mc-button-hamburger
+  .mc-hamburger-box
+// Styles .mc-close-menu::after: controls bottom, transform, transition to define this element's appearance and layout.
+  .mc-close-menu::after {
+  bottom: 0;
+  transform: rotate(-90deg);
+  transition:
+    bottom 0.1s ease-out,
+    transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+}
+header
+  .mc-header-inner
+  .mc-header-row
+  .mc-header-buttons
+  .mc-contact
+// Styles .mc-button-hamburger:hover: controls background-color, color to define this element's appearance and layout.
+  .mc-button-hamburger:hover {
+  background-color: #22242e;
+  color: #fff;
+}
+// Responsive block for @media (min-width: 768px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 768px) {
+// Styles header .mc-header-inner .mc-mobile-contact: controls display to define this element's appearance and layout.
+  header .mc-header-inner .mc-mobile-contact {
+    display: none;
+  }
+}
+// Styles header .mc-header-inner .mc-mobile-contact .mc-mobile-search: controls height, margin-top, position to define this element's appearance and layout.
+header .mc-header-inner .mc-mobile-contact .mc-mobile-search {
+  height: 47px;
+  margin-top: 11px;
+  position: relative;
+}
+// Styles header .mc-header-inner .mc-mobile-contact .mc-mobile-search .mc-hidden-label: controls display to define this element's appearance and layout.
+header .mc-header-inner .mc-mobile-contact .mc-mobile-search .mc-hidden-label {
+  display: none;
+}
+// Styles header .mc-header-inner .mc-mobile-contact .mc-mobile-search .mc-mobile-form-search: controls display, outline, font-size to define this element's appearance and layout.
+header .mc-header-inner .mc-mobile-contact .mc-mobile-search .mc-mobile-form-search {
+  display: inline-block;
+  outline: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+  color: #555;
+  height: 46px;
+  padding: 5px 40px 5px 15px;
+  cursor: text;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+header
+  .mc-header-inner
+  .mc-mobile-contact
+  .mc-mobile-search
+// Styles .mc-mobile-form-search::placeholder: controls color to define this element's appearance and layout.
+  .mc-mobile-form-search::placeholder {
+  color: #888;
+}
+// Styles header .mc-header-inner .mc-mobile-contact .mc-mobile-search .mc-mobile-submit: controls display, align-items, justify-content to define this element's appearance and layout.
+header .mc-header-inner .mc-mobile-contact .mc-mobile-search .mc-mobile-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3px;
+  height: 47px;
+  font-size: 1.25rem;
+  line-height: 2.9375rem;
+  color: #333645;
+  position: absolute;
+  right: 7px;
+  background: none;
+  border: none;
+}

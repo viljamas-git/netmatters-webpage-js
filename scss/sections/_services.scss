@@ -1,0 +1,406 @@
+// Styles .mc-services-list: controls margin-top to define this element's appearance and layout.
+.mc-services-list {
+  margin-top: 20px;
+}
+// Styles .mc-services-list .mc-services-row: controls max-width to define this element's appearance and layout.
+.mc-services-list .mc-services-row {
+  max-width: 100%;
+}
+// Styles .mc-services-list .mc-services-row .mc-services-header: controls display, flex-direction, justify-content to define this element's appearance and layout.
+.mc-services-list .mc-services-row .mc-services-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #333645;
+}
+// Styles .mc-services-list .mc-services-row .mc-services-header h2: controls font-size, margin-top, margin-bottom to define this element's appearance and layout.
+.mc-services-list .mc-services-row .mc-services-header h2 {
+  font-size: 2.6875rem;
+  margin-top: -13px;
+  margin-bottom: -10px;
+}
+// Styles .mc-services-list .mc-services-row .mc-services-header h1: controls display to define this element's appearance and layout.
+.mc-services-list .mc-services-row .mc-services-header h1 {
+  margin-top: -5px;
+  margin-left: 20px;
+  margin-bottom: 28px;
+  display: none;
+}
+// Styles .mc-services-list .mc-services-row .mc-services-header h1 em: controls font-style to define this element's appearance and layout.
+.mc-services-list .mc-services-row .mc-services-header h1 em {
+  font-style: normal;
+}
+// Responsive block for @media (min-width: 768px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 768px) {
+// Styles .mc-services-list .mc-services-row .mc-services-header h1: controls display to define this element's appearance and layout.
+  .mc-services-list .mc-services-row .mc-services-header h1 {
+    display: block;
+  }
+}
+// Styles .mc-services-list .mc-services-row .mc-services-header h1 a:hover: controls text-decoration to define this element's appearance and layout.
+.mc-services-list .mc-services-row .mc-services-header h1 a:hover {
+  text-decoration: underline;
+}
+// Styles .mc-services-list .mc-services-row .mc-services-gridbox: controls grid-template-columns, grid-template-rows, row-gap to define this element's appearance and layout.
+.mc-services-list .mc-services-row .mc-services-gridbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto auto;
+  row-gap: 30px;
+  grid-template-areas:
+    "panel1 panel1 panel1 panel1 panel1 panel1 panel1 panel1 panel1 panel1 panel1 panel1"
+    "panel2 panel2 panel2 panel2 panel2 panel2 panel2 panel2 panel2 panel2 panel2 panel2"
+    "panel3 panel3 panel3 panel3 panel3 panel3 panel3 panel3 panel3 panel3 panel3 panel3"
+    "panel4 panel4 panel4 panel4 panel4 panel4 panel4 panel4 panel4 panel4 panel4 panel4"
+    "panel5 panel5 panel5 panel5 panel5 panel5 panel5 panel5 panel5 panel5 panel5 panel5"
+    "panel6 panel6 panel6 panel6 panel6 panel6 panel6 panel6 panel6 panel6 panel6 panel6"
+    "panel7 panel7 panel7 panel7 panel7 panel7 panel7 panel7 panel7 panel7 panel7 panel7";
+  padding-bottom: 30px;
+}
+// Styles .mc-services-list .mc-services-row .mc-services-gridbox #mc-panel1: controls grid-area to define this element's appearance and layout.
+.mc-services-list .mc-services-row .mc-services-gridbox #mc-panel1 {
+  grid-area: panel1;
+}
+// Styles .mc-services-list .mc-services-row .mc-services-gridbox #mc-panel2: controls grid-area to define this element's appearance and layout.
+.mc-services-list .mc-services-row .mc-services-gridbox #mc-panel2 {
+  grid-area: panel2;
+}
+// Styles .mc-services-list .mc-services-row .mc-services-gridbox #mc-panel3: controls grid-area to define this element's appearance and layout.
+.mc-services-list .mc-services-row .mc-services-gridbox #mc-panel3 {
+  grid-area: panel3;
+}
+// Styles .mc-services-list .mc-services-row .mc-services-gridbox #mc-panel4: controls grid-area to define this element's appearance and layout.
+.mc-services-list .mc-services-row .mc-services-gridbox #mc-panel4 {
+  grid-area: panel4;
+}
+// Styles .mc-services-list .mc-services-row .mc-services-gridbox #mc-panel5: controls grid-area to define this element's appearance and layout.
+.mc-services-list .mc-services-row .mc-services-gridbox #mc-panel5 {
+  grid-area: panel5;
+}
+// Styles .mc-services-list .mc-services-row .mc-services-gridbox #mc-panel6: controls grid-area to define this element's appearance and layout.
+.mc-services-list .mc-services-row .mc-services-gridbox #mc-panel6 {
+  grid-area: panel6;
+}
+// Styles .mc-services-list .mc-services-row .mc-services-gridbox #mc-panel7: controls grid-area to define this element's appearance and layout.
+.mc-services-list .mc-services-row .mc-services-gridbox #mc-panel7 {
+  grid-area: panel7;
+}
+// Responsive block for @media (min-width: 768px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 768px) {
+// Styles .mc-services-list .mc-services-row .mc-services-gridbox: controls grid-template-columns, grid-template-rows, row-gap to define this element's appearance and layout.
+  .mc-services-list .mc-services-row .mc-services-gridbox {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    row-gap: 30px;
+    grid-template-areas:
+      "panel1 panel1 panel1 panel1 panel1 panel1 panel1 panel1 panel1 panel1 panel1 panel1"
+      "panel2 panel2 panel2 panel2 panel2 panel2 panel2 panel2 panel2 panel2 panel2 panel2"
+      "panel3 panel3 panel3 panel3 panel3 panel3 panel3 panel3 panel3 panel3 panel3 panel3"
+      "panel4 panel4 panel4 panel4 panel4 panel4 panel5 panel5 panel5 panel5 panel5 panel5"
+      "panel6 panel6 panel6 panel6 panel6 panel6 panel7 panel7 panel7 panel7 panel7 panel7";
+  }
+}
+// Responsive block for @media (min-width: 992px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 992px) {
+// Styles .mc-services-list .mc-services-row .mc-services-gridbox: controls grid-template-columns, grid-template-rows, row-gap to define this element's appearance and layout.
+  .mc-services-list .mc-services-row .mc-services-gridbox {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 380px 340px 340px;
+    row-gap: 30px;
+    grid-template-areas:
+      "panel1 panel1 panel1 panel1 panel2 panel2 panel2 panel2 panel3 panel3 panel3 panel3"
+      "panel4 panel4 panel4 panel4 panel4 panel4 panel5 panel5 panel5 panel5 panel5 panel5"
+      "panel6 panel6 panel6 panel6 panel6 panel6 panel7 panel7 panel7 panel7 panel7 panel7";
+  }
+}
+// Responsive block for @media (min-width: 1260px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 1260px) {
+// Styles .mc-services-list .mc-services-row .mc-services-gridbox: controls grid-template-columns, grid-template-rows, row-gap to define this element's appearance and layout.
+  .mc-services-list .mc-services-row .mc-services-gridbox {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 30px;
+    grid-template-areas:
+      "panel1 panel1 panel1 panel1 panel2 panel2 panel2 panel2 panel3 panel3 panel3 panel3"
+      "panel4 panel4 panel4 panel5 panel5 panel5 panel6 panel6 panel6 panel7 panel7 panel7";
+  }
+}
+// Styles .mc-services-list .mc-services-row .mc-services-gridbox .mc-services-panel: controls padding-left, padding-right to define this element's appearance and layout.
+.mc-services-list .mc-services-row .mc-services-gridbox .mc-services-panel {
+  cursor: pointer;
+}
+// Responsive block for @media (min-width: 768px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 768px) {
+// Styles .mc-services-list .mc-services-row .mc-services-gridbox .mc-services-panel: controls padding-left, padding-right to define this element's appearance and layout.
+  .mc-services-list .mc-services-row .mc-services-gridbox .mc-services-panel {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+// Styles .mc-services-list .mc-services-row .mc-services-gridbox .mc-services-panel a: controls display, flex-direction, height to define this element's appearance and layout.
+.mc-services-list .mc-services-row .mc-services-gridbox .mc-services-panel a {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-top: 30px;
+  padding: 30px;
+  text-align: center;
+  color: #333645;
+  width: 100%;
+  position: relative;
+  top: 0px;
+  transition: 0.5s ease;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+}
+// Styles .mc-services-list .mc-services-row .mc-services-gridbox .mc-services-panel a .mc-icon1: controls height, width, margin to define this element's appearance and layout.
+.mc-services-list .mc-services-row .mc-services-gridbox .mc-services-panel a .mc-icon1 {
+  height: 65px;
+  width: 65px;
+  margin: 0 auto 17px;
+  border-radius: 50%;
+  font-size: 2rem;
+  line-height: 4.375rem;
+}
+// Styles .mc-services-list .mc-services-row .mc-services-gridbox .mc-services-panel a h2: controls font-size, margin-top, margin-bottom to define this element's appearance and layout.
+.mc-services-list .mc-services-row .mc-services-gridbox .mc-services-panel a h2 {
+  font-size: 1.25rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+// Styles .mc-services-list .mc-services-row .mc-services-gridbox .mc-services-panel a p: controls margin-top, margin-bottom to define this element's appearance and layout.
+.mc-services-list .mc-services-row .mc-services-gridbox .mc-services-panel a p {
+  margin-top: 0;
+  margin-bottom: 13px;
+}
+.mc-services-list
+  .mc-services-row
+  .mc-services-gridbox
+  .mc-services-panel
+  a
+// Styles .mc-button-container: controls display, margin-top to define this element's appearance and layout.
+  .mc-button-container {
+  display: block;
+  margin-top: auto;
+}
+.mc-services-list
+  .mc-services-row
+  .mc-services-gridbox
+  .mc-services-panel
+  a
+  .mc-button-container
+// Styles span: controls font-size, font-weight, display to define this element's appearance and layout.
+  span {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 18px;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+// Styles .mc-services-list .mc-services-row .mc-services-gridbox .mc-services-panel a:hover: controls top, transition, color to define this element's appearance and layout.
+.mc-services-list .mc-services-row .mc-services-gridbox .mc-services-panel a:hover {
+  top: -10px;
+  transition: 0.5s ease;
+  color: #fff;
+}
+// Styles .mc-services-list .mc-services-row .mc-hidden-view-work: controls display to define this element's appearance and layout.
+.mc-services-list .mc-services-row .mc-hidden-view-work {
+  display: block;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 30px auto -55px;
+}
+// Responsive block for @media (min-width: 768px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 768px) {
+// Styles .mc-services-list .mc-services-row .mc-hidden-view-work: controls display to define this element's appearance and layout.
+  .mc-services-list .mc-services-row .mc-hidden-view-work {
+    display: none;
+  }
+}
+// Styles .mc-services-list .mc-services-row .mc-hidden-view-work h3: controls font-size, font-weight, color to define this element's appearance and layout.
+.mc-services-list .mc-services-row .mc-hidden-view-work h3 {
+  font-size: 1.625rem;
+  font-weight: 600;
+  color: #333645;
+}
+// Styles .mc-services-list .mc-services-row .mc-hidden-view-work h3 a:hover: controls text-decoration to define this element's appearance and layout.
+.mc-services-list .mc-services-row .mc-hidden-view-work h3 a:hover {
+  text-decoration: underline;
+}
+// Styles .mc-panel-CD .mc-icon1: controls background-color, color to define this element's appearance and layout.
+.mc-panel-CD .mc-icon1 {
+  background-color: #67809f;
+  color: #fff;
+}
+// Styles .mc-panel-CD .mc-button-CD: controls background-color, color to define this element's appearance and layout.
+.mc-panel-CD .mc-button-CD {
+  background-color: #f7b322;
+  color: #fff;
+}
+// Styles .mc-panel-CD:hover: controls background-color to define this element's appearance and layout.
+.mc-panel-CD:hover {
+  background-color: #67809f;
+}
+// Styles .mc-panel-CD:hover .mc-icon1: controls background-color, color to define this element's appearance and layout.
+.mc-panel-CD:hover .mc-icon1 {
+  background-color: #fff;
+  color: #67809f;
+}
+// Styles .mc-panel-CD:hover .mc-button-CD: controls background-color, color to define this element's appearance and layout.
+.mc-panel-CD:hover .mc-button-CD {
+  background-color: #fff;
+  color: #67809f;
+}
+// Styles .mc-panel-IT .mc-icon1: controls background-color, color to define this element's appearance and layout.
+.mc-panel-IT .mc-icon1 {
+  background-color: #4183d7;
+  color: #fff;
+}
+// Styles .mc-panel-IT .mc-button-IT: controls background-color, color to define this element's appearance and layout.
+.mc-panel-IT .mc-button-IT {
+  background-color: #4183d7;
+  color: #fff;
+}
+// Styles .mc-panel-IT:hover: controls background-color to define this element's appearance and layout.
+.mc-panel-IT:hover {
+  background-color: #4183d7;
+}
+// Styles .mc-panel-IT:hover .mc-icon1: controls background-color, color to define this element's appearance and layout.
+.mc-panel-IT:hover .mc-icon1 {
+  background-color: #fff;
+  color: #4183d7;
+}
+// Styles .mc-panel-IT:hover .mc-button-IT: controls background-color, color to define this element's appearance and layout.
+.mc-panel-IT:hover .mc-button-IT {
+  background-color: #fff;
+  color: #4183d7;
+}
+// Styles .mc-panel-DM .mc-icon1: controls background-color, color to define this element's appearance and layout.
+.mc-panel-DM .mc-icon1 {
+  background-color: #2ecc71;
+  color: #fff;
+}
+// Styles .mc-panel-DM .mc-button-DM: controls background-color, color to define this element's appearance and layout.
+.mc-panel-DM .mc-button-DM {
+  background-color: #2ecc71;
+  color: #fff;
+}
+// Styles .mc-panel-DM:hover: controls background-color to define this element's appearance and layout.
+.mc-panel-DM:hover {
+  background-color: #2ecc71;
+}
+// Styles .mc-panel-DM:hover .mc-icon1: controls background-color, color to define this element's appearance and layout.
+.mc-panel-DM:hover .mc-icon1 {
+  background-color: #fff;
+  color: #2ecc71;
+}
+// Styles .mc-panel-DM:hover .mc-button-DM: controls background-color, color to define this element's appearance and layout.
+.mc-panel-DM:hover .mc-button-DM {
+  background-color: #fff;
+  color: #2ecc71;
+}
+// Styles .mc-panel-TS .mc-icon1: controls background-color, color to define this element's appearance and layout.
+.mc-panel-TS .mc-icon1 {
+  background-color: #d64541;
+  color: #fff;
+}
+// Styles .mc-panel-TS .mc-button-TS: controls background-color, color to define this element's appearance and layout.
+.mc-panel-TS .mc-button-TS {
+  background-color: #d64541;
+  color: #fff;
+}
+// Styles .mc-panel-TS:hover: controls background-color to define this element's appearance and layout.
+.mc-panel-TS:hover {
+  background-color: #d64541;
+}
+// Styles .mc-panel-TS:hover .mc-icon1: controls background-color, color to define this element's appearance and layout.
+.mc-panel-TS:hover .mc-icon1 {
+  background-color: #fff;
+  color: #d64541;
+}
+// Styles .mc-panel-TS:hover .mc-button-TS: controls background-color, color to define this element's appearance and layout.
+.mc-panel-TS:hover .mc-button-TS {
+  background-color: #fff;
+  color: #d64541;
+}
+// Styles .mc-panel-WD .mc-icon1: controls background-color, color to define this element's appearance and layout.
+.mc-panel-WD .mc-icon1 {
+  background-color: #926fb1;
+  color: #fff;
+}
+// Styles .mc-panel-WD .mc-button-WD: controls background-color, color to define this element's appearance and layout.
+.mc-panel-WD .mc-button-WD {
+  background-color: #926fb1;
+  color: #fff;
+}
+// Styles .mc-panel-WD:hover: controls background-color to define this element's appearance and layout.
+.mc-panel-WD:hover {
+  background-color: #926fb1;
+}
+// Styles .mc-panel-WD:hover .mc-icon1: controls background-color, color to define this element's appearance and layout.
+.mc-panel-WD:hover .mc-icon1 {
+  background-color: #fff;
+  color: #926fb1;
+}
+// Styles .mc-panel-WD:hover .mc-button-WD: controls background-color, color to define this element's appearance and layout.
+.mc-panel-WD:hover .mc-button-WD {
+  background-color: #fff;
+  color: #926fb1;
+}
+// Styles .mc-panel-CS .mc-icon1: controls background-color, color to define this element's appearance and layout.
+.mc-panel-CS .mc-icon1 {
+  background-color: #f62459;
+  color: #fff;
+}
+// Styles .mc-panel-CS .mc-button-CS: controls background-color, color to define this element's appearance and layout.
+.mc-panel-CS .mc-button-CS {
+  background-color: #f62459;
+  color: #fff;
+}
+// Styles .mc-panel-CS:hover: controls background-color to define this element's appearance and layout.
+.mc-panel-CS:hover {
+  background-color: #f62459;
+}
+// Styles .mc-panel-CS:hover .mc-icon1: controls background-color, color to define this element's appearance and layout.
+.mc-panel-CS:hover .mc-icon1 {
+  background-color: #fff;
+  color: #f62459;
+}
+// Styles .mc-panel-CS:hover .mc-button-CS: controls background-color, color to define this element's appearance and layout.
+.mc-panel-CS:hover .mc-button-CS {
+  background-color: #fff;
+  color: #f62459;
+}
+// Styles .mc-panel-DT .mc-icon1: controls background-color, color to define this element's appearance and layout.
+.mc-panel-DT .mc-icon1 {
+  background-color: #ce4125;
+  color: #fff;
+}
+// Styles .mc-panel-DT .mc-button-DT: controls background-color, color to define this element's appearance and layout.
+.mc-panel-DT .mc-button-DT {
+  background-color: #ce4125;
+  color: #fff;
+}
+// Styles .mc-panel-DT:hover: controls background-color to define this element's appearance and layout.
+.mc-panel-DT:hover {
+  background-color: #ce4125;
+}
+// Styles .mc-panel-DT:hover .mc-icon1: controls background-color, color to define this element's appearance and layout.
+.mc-panel-DT:hover .mc-icon1 {
+  background-color: #fff;
+  color: #ce4125;
+}
+// Styles .mc-panel-DT:hover .mc-button-DT: controls background-color, color to define this element's appearance and layout.
+.mc-panel-DT:hover .mc-button-DT {
+  background-color: #fff;
+  color: #ce4125;
+}

@@ -1,0 +1,243 @@
+// Styles @font-face: controls font-family, src, font-weight to define this element's appearance and layout.
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local(""),
+    url("../fonts/poppins-v15-latin-regular.woff2") format("woff2");
+}
+// Styles @font-face: controls font-family, src, font-weight to define this element's appearance and layout.
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src:
+    local(""),
+    url("../fonts/poppins-v15-latin-600.woff2") format("woff2");
+}
+// Styles @font-face: controls font-family, src, font-weight to define this element's appearance and layout.
+@font-face {
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src:
+    local(""),
+    url("../fonts/poppins-v15-latin-600italic.woff2") format("woff2");
+}
+// Styles @font-face: controls font-family, src, font-weight to define this element's appearance and layout.
+@font-face {
+  font-family: "icomoon";
+  src:
+    url("../fonts/icomoon.eot") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf") format("truetype"),
+    url("../fonts/icomoon.woff") format("woff"),
+    url("../fonts/icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^="mc-icon-"],
+// Styles [class*=" mc-icon-"]: controls font-family, font-weight, font-variant to define this element's appearance and layout.
+[class*=" mc-icon-"] {
+  font-family: "icomoon" !important;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+// Icon glyph for .mc-icon-edit-pencil::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-edit-pencil::before {
+  content: "\e908";
+}
+// Icon glyph for .mc-icon-bar-graph::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-bar-graph::before {
+  content: "\e902";
+}
+// Icon glyph for .mc-icon-envelope-o::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-envelope-o::before {
+  content: "\f003";
+}
+// Icon glyph for .mc-icon-download::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-download::before {
+  content: "\f019";
+}
+// Icon glyph for .mc-icon-lock::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-lock::before {
+  content: "\f023";
+}
+// Icon glyph for .mc-icon-question-circle::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-question-circle::before {
+  content: "\f059";
+}
+// Icon glyph for .mc-icon-random::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-random::before {
+  content: "\f074";
+}
+// Icon glyph for .mc-icon-shopping-cart::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-shopping-cart::before {
+  content: "\f07a";
+}
+// Icon glyph for .mc-icon-folder-open::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-folder-open::before {
+  content: "\f07c";
+}
+// Icon glyph for .mc-icon-cogs::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-cogs::before {
+  content: "\f085";
+}
+// Icon glyph for .mc-icon-phone::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-phone::before {
+  content: "\f095";
+}
+// Icon glyph for .mc-icon-phone-square::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-phone-square::before {
+  content: "\f098";
+}
+// Icon glyph for .mc-icon-bullhorn::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-bullhorn::before {
+  content: "\f0a1";
+}
+// Icon glyph for .mc-icon-globe::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-globe::before {
+  content: "\f0ac";
+}
+// Icon glyph for .mc-icon-briefcase::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-briefcase::before {
+  content: "\f0b1";
+}
+// Icon glyph for .mc-icon-users::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-users::before {
+  content: "\f0c0";
+}
+// Icon glyph for .mc-icon-cloud::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-cloud::before {
+  content: "\f0c2";
+}
+// Icon glyph for .mc-icon-flask::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-flask::before {
+  content: "\f0c3";
+}
+// Icon glyph for .mc-icon-money::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-money::before {
+  content: "\f0d6";
+}
+// Icon glyph for .mc-icon-dashboard::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-dashboard::before {
+  content: "\f0e4";
+}
+// Icon glyph for .mc-icon-clipboard::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-clipboard::before {
+  content: "\f0ea";
+}
+// Icon glyph for .mc-icon-cloud-download::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-cloud-download::before {
+  content: "\f0ed";
+}
+// Icon glyph for .mc-icon-desktop::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-desktop::before {
+  content: "\f108";
+}
+// Icon glyph for .mc-icon-laptop1::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-laptop1::before {
+  content: "\f109";
+}
+// Icon glyph for .mc-icon-mobile::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-mobile::before {
+  content: "\f10b";
+}
+// Icon glyph for .mc-icon-ticket::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-ticket::before {
+  content: "\f145";
+}
+// Icon glyph for .mc-icon-handshake-o::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-handshake-o::before {
+  content: "\f2b5";
+}
+// Icon glyph for .mc-icon-code::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-code::before {
+  content: "\e901";
+}
+// Icon glyph for .mc-icon-clock::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-clock::before {
+  content: "\e909";
+}
+// Icon glyph for .mc-icon-headphones::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-headphones::before {
+  content: "\e910";
+}
+// Icon glyph for .mc-icon-display::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-display::before {
+  content: "\e956";
+}
+// Icon glyph for .mc-icon-laptop::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-laptop::before {
+  content: "\e957";
+}
+// Icon glyph for .mc-icon-drive::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-drive::before {
+  content: "\e963";
+}
+// Icon glyph for .mc-icon-search::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-search::before {
+  content: "\e986";
+}
+// Icon glyph for .mc-icon-menu::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-menu::before {
+  content: "\e9bd";
+}
+// Icon glyph for .mc-icon-star-full::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-star-full::before {
+  content: "\e9d9";
+}
+// Icon glyph for .mc-icon-arrow-right::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-arrow-right::before {
+  content: "\ea3c";
+}
+// Icon glyph for .mc-icon-tab::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-tab::before {
+  content: "\ea45";
+}
+// Icon glyph for .mc-icon-facebook::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-facebook::before {
+  content: "\ea90";
+}
+// Icon glyph for .mc-icon-instagram::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-instagram::before {
+  content: "\ea92";
+}
+// Icon glyph for .mc-icon-linkedin::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-linkedin::before {
+  content: "\eaca";
+}
+// Icon glyph for .mc-icon-trending_up::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-trending_up::before {
+  content: "\e90a";
+}
+// Icon glyph for .mc-icon-school::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-school::before {
+  content: "\e904";
+}
+// Icon glyph for .mc-icon-security::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-security::before {
+  content: "\e905";
+}
+// Icon glyph for .mc-icon-mouse::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-mouse::before {
+  content: "\e906";
+}
+// Icon glyph for .mc-icon-phone_in_talk::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-phone_in_talk::before {
+  content: "\e907";
+}
+// Icon glyph for .mc-icon-x::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-x::before {
+  content: "\e900";
+}
+// Icon glyph for .mc-icon-paperplane::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-icon-paperplane::before {
+  content: "\e903";
+}

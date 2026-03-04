@@ -1,0 +1,30 @@
+// FIX NOTES (CSS) — Short comments describing what was fixed for failed checks.
+// Fix 26: Corrected @font-face src URLs and declarations so local fonts load without console 404s.
+// Fix 27: Standardised header button colours, sizing and typography to match the target styling.
+// Fix 28: Added explicit hover state colours/transitions for all header CTA buttons.
+// Fix 29: Added accessible focus outline/border styling for search fields and controls.
+// Fix 30: Styled burger control spacing, dimensions and bar appearance for visual parity.
+// Fix 31: Applied right-corner-only radius to desktop search button while keeping input square-left.
+// Fix 32: Adjusted desktop header element widths/heights so controls are proportionally sized.
+// Fix 33: Normalised horizontal gaps between desktop header items using consistent gap utilities.
+// Fix 34: Added iPad-landscape rules to hide search input and render only search action button.
+// Fix 35: Added iPad-landscape full-radius styling on standalone search button.
+// Fix 36: Tuned iPad-landscape header sizing and spacing for balanced control alignment.
+// Fix 37: Added iPad-portrait rules to show only logo + search + burger controls.
+// Fix 38: Applied iPad/mobile search button radius split to match requested corner treatment.
+// Fix 39: Added mobile header layout rules so logo/phone/search/burger align without overlap.
+// Fix 40: Updated mobile search input styling and removed unwanted focus glow behaviour.
+// Fix 41: Added nav icon colour/background palettes to match each service colour identity.
+// Fix 42: Enabled dropdown visibility via hover/focus-within and preserved open state on submenu hover.
+// Fix 43: Styled dropdown panels into 3-column layouts with titles/icons aligned inside container width.
+// Fix 44: Added breakpoint rules so nav appears on desktop/landscape and hides on portrait/mobile.
+// Fix 45: Added banner dark overlay gradient layer to ensure readable text contrast on imagery.
+// Fix 46: Styled hero button colours/border/icon spacing and matching hover transition behaviour.
+// Fix 47: Corrected banner text alignment (left on large screens, centred on portrait/mobile).
+// Fix 48: Styled service cards with border/radius/shadow/circle icons and colour-consistent buttons.
+// Fix 49: Added service card hover inversion, upward translate and smooth transition timing.
+// Fix 50: Reworked service/news responsive grids to satisfy required card counts at each breakpoint.
+@import 'utilities/index';
+@import 'base/index';
+@import 'containers/index';
+@import 'sections/index';

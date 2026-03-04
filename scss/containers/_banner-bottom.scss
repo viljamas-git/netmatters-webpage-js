@@ -1,0 +1,450 @@
+// Styles .mc-banner: controls margin-bottom to define this element's appearance and layout.
+.mc-banner {
+  margin-bottom: 0;
+  position: relative;
+}
+// Styles .mc-banner .mc-banner-slide: controls display, flex-direction, justify-content to define this element's appearance and layout.
+.mc-banner .mc-banner-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 550px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+// Styles .mc-banner .mc-banner-slide .mc-content: controls padding, text-align to define this element's appearance and layout.
+.mc-banner .mc-banner-slide .mc-content {
+  color: #fff;
+  text-align: center;
+  padding: 150px 0 60px;
+}
+// Responsive block for @media (min-width: 992px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 992px) {
+// Styles .mc-banner .mc-banner-slide .mc-content: controls padding, text-align to define this element's appearance and layout.
+  .mc-banner .mc-banner-slide .mc-content {
+    padding: 60px 0;
+    text-align: left;
+  }
+}
+// Styles .mc-banner .mc-banner-slide .mc-content h1: controls font-size, line-height to define this element's appearance and layout.
+.mc-banner .mc-banner-slide .mc-content h1 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  margin: 0 0 20px;
+}
+// Responsive block for @media (min-width: 992px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 992px) {
+// Styles .mc-banner .mc-banner-slide .mc-content h1: controls font-size, line-height to define this element's appearance and layout.
+  .mc-banner .mc-banner-slide .mc-content h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+}
+// Styles .mc-banner .mc-banner-slide .mc-content p: controls font-size, line-height to define this element's appearance and layout.
+.mc-banner .mc-banner-slide .mc-content p {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.75rem;
+  margin-bottom: 6px;
+}
+// Responsive block for @media (min-width: 992px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 992px) {
+// Styles .mc-banner .mc-banner-slide .mc-content p: controls font-size, line-height to define this element's appearance and layout.
+  .mc-banner .mc-banner-slide .mc-content p {
+    font-size: 1.625rem;
+    line-height: 2.5rem;
+  }
+}
+// Styles .mc-banner .mc-banner-slide .mc-content .mc-button-banner: controls display, margin, padding to define this element's appearance and layout.
+.mc-banner .mc-banner-slide .mc-content .mc-button-banner {
+  display: inline-block;
+  margin: 31px 0 18px;
+  padding: 5px 20px;
+  font-size: 1.25rem;
+  line-height: 3.125rem;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+// Styles .mc-banner .mc-banner-slide .mc-content .mc-button-banner span: controls margin-left to define this element's appearance and layout.
+.mc-banner .mc-banner-slide .mc-content .mc-button-banner span {
+  margin-left: 12px;
+}
+// Styles .mc-banner1: controls background-image to define this element's appearance and layout.
+.mc-banner1 {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/home-YLei.png");
+}
+// Responsive block for @media (min-width: 992px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 992px) {
+// Styles .mc-banner1: controls background-image to define this element's appearance and layout.
+  .mc-banner1 {
+    background-image:
+      linear-gradient(270deg, transparent 25%, #000),
+      url("../img/home-YLei.png");
+  }
+}
+// Styles .mc-banner1 .mc-company-button: controls background-color, color to define this element's appearance and layout.
+.mc-banner1 .mc-company-button {
+  @include button-theme(#926fb1, #7e57a0);
+}
+// Styles .mc-banner2: controls background-image to define this element's appearance and layout.
+.mc-banner2 {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/home-O67Y.jpg");
+}
+// Responsive block for @media (min-width: 992px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 992px) {
+// Styles .mc-banner2: controls background-image to define this element's appearance and layout.
+  .mc-banner2 {
+    background-image:
+      linear-gradient(270deg, transparent 25%, #000),
+      url("../img/home-O67Y.jpg");
+  }
+}
+// Styles .mc-banner2 .mc-bespoke-button: controls background-color, color to define this element's appearance and layout.
+.mc-banner2 .mc-bespoke-button {
+  @include button-theme(#f7b322, #e8a008);
+}
+// Styles .mc-banner3: controls background-image to define this element's appearance and layout.
+.mc-banner3 {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/home-gay8.png");
+}
+// Responsive block for @media (min-width: 992px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 992px) {
+// Styles .mc-banner3: controls background-image to define this element's appearance and layout.
+  .mc-banner3 {
+    background-image:
+      linear-gradient(270deg, transparent 25%, #000),
+      url("../img/home-gay8.png");
+  }
+}
+// Styles .mc-banner3 .mc-itsupport-button: controls background-color, color to define this element's appearance and layout.
+.mc-banner3 .mc-itsupport-button {
+  @include button-theme(#4183d7, #2a6ec6);
+}
+// Styles .mc-banner4: controls background-image to define this element's appearance and layout.
+.mc-banner4 {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/home-6yTp.png");
+}
+// Responsive block for @media (min-width: 992px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 992px) {
+// Styles .mc-banner4: controls background-image to define this element's appearance and layout.
+  .mc-banner4 {
+    background-image:
+      linear-gradient(270deg, transparent 25%, #000),
+      url("../img/home-6yTp.png");
+  }
+}
+// Styles .mc-banner4 .mc-digitalmarketing-button: controls background-color, color to define this element's appearance and layout.
+.mc-banner4 .mc-digitalmarketing-button {
+  @include button-theme(#2ecc71, #26ab5f);
+}
+// Styles .mc-banner5: controls background-image to define this element's appearance and layout.
+.mc-banner5 {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/home-J8Xx.png");
+}
+// Responsive block for @media (min-width: 992px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 992px) {
+// Styles .mc-banner5: controls background-image to define this element's appearance and layout.
+  .mc-banner5 {
+    background-image:
+      linear-gradient(270deg, transparent 25%, #000),
+      url("../img/home-J8Xx.png");
+  }
+}
+// Styles .mc-banner5 .mc-telecomservices-button: controls background-color, color to define this element's appearance and layout.
+.mc-banner5 .mc-telecomservices-button {
+  @include button-theme(#d64541, #c42e2a);
+}
+// Styles .mc-banner6: controls background-image to define this element's appearance and layout.
+.mc-banner6 {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/home-K0pn.jpg");
+}
+// Responsive block for @media (min-width: 992px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 992px) {
+// Styles .mc-banner6: controls background-image to define this element's appearance and layout.
+  .mc-banner6 {
+    background-image:
+      linear-gradient(270deg, transparent 25%, #000),
+      url("../img/home-K0pn.jpg");
+  }
+}
+// Styles .mc-banner6 .mc-webdesign-button: controls background-color, color to define this element's appearance and layout.
+.mc-banner6 .mc-webdesign-button {
+  @include button-theme(#926fb1, #7e57a0);
+}
+// Styles .mc-banner7: controls background-image to define this element's appearance and layout.
+.mc-banner7 {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/home-MSxH.png");
+}
+// Responsive block for @media (min-width: 992px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 992px) {
+// Styles .mc-banner7: controls background-image to define this element's appearance and layout.
+  .mc-banner7 {
+    background-image:
+      linear-gradient(270deg, transparent 25%, #000),
+      url("../img/home-MSxH.png");
+  }
+}
+// Styles .mc-banner7 .mc-cybersecurity-button: controls background-color, color to define this element's appearance and layout.
+.mc-banner7 .mc-cybersecurity-button {
+  @include button-theme(#f62459, #e80a42);
+}
+// Styles .mc-banner .mc-banner-controls: controls position, bottom, left to define this element's appearance and layout.
+.mc-banner .mc-banner-controls {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transform: translateX(-50%);
+}
+// Styles .mc-banner .mc-banner-controls .mc-banner-dot: controls width, height, border to define this element's appearance and layout.
+.mc-banner .mc-banner-controls .mc-banner-dot {
+  width: 28px;
+  height: 28px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+}
+// Styles .mc-banner .mc-banner-controls .mc-banner-dot::before: controls content, width, height to define this element's appearance and layout.
+.mc-banner .mc-banner-controls .mc-banner-dot::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0.6;
+  display: block;
+  margin: 0 auto;
+}
+// Styles .mc-banner .mc-banner-controls .mc-banner-dot.is-active: controls border-color to define this element's appearance and layout.
+.mc-banner .mc-banner-controls .mc-banner-dot.is-active {
+  border-color: #fff;
+}
+// Styles .mc-banner .mc-banner-controls .mc-banner-dot.is-active::before: controls opacity to define this element's appearance and layout.
+.mc-banner .mc-banner-controls .mc-banner-dot.is-active::before {
+  opacity: 1;
+}
+// Styles .mc-banner .mc-banner-controls .mc-banner-dot:focus-visible: controls outline to define this element's appearance and layout.
+.mc-banner .mc-banner-controls .mc-banner-dot:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+// Styles .mc-CD span: controls color to define this element's appearance and layout.
+.mc-CD span {
+  color: #67809f;
+}
+// Styles .mc-ITS span: controls color to define this element's appearance and layout.
+.mc-ITS span {
+  color: #4183d7;
+}
+// Styles .mc-DM span: controls color to define this element's appearance and layout.
+.mc-DM span {
+  color: #2ecc71;
+}
+// Styles .mc-TS span: controls color to define this element's appearance and layout.
+.mc-TS span {
+  color: #d64541;
+}
+// Styles .mc-WD span: controls color to define this element's appearance and layout.
+.mc-WD span {
+  color: #926fb1;
+}
+// Styles .mc-CS span: controls color to define this element's appearance and layout.
+.mc-CS span {
+  color: #f62459;
+}
+// Styles .mc-DC span: controls color to define this element's appearance and layout.
+.mc-DC span {
+  color: #ce4125;
+}
+// Styles .mc-consultancy:hover: controls background-color to define this element's appearance and layout.
+.mc-consultancy:hover {
+  background-color: #67809f;
+}
+// Styles .mc-consultancy:hover .mc-sub-nav-CD: controls background-color, display to define this element's appearance and layout.
+.mc-consultancy:hover .mc-sub-nav-CD {
+  background-color: #526781;
+  display: block;
+}
+// Icon glyph for .mc-consultancy:hover a::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-consultancy:hover a::before {
+  border-color: #67809f transparent transparent;
+}
+// Styles .mc-itsupport:hover: controls background-color to define this element's appearance and layout.
+.mc-itsupport:hover {
+  background-color: #4183d7;
+}
+// Styles .mc-itsupport:hover .mc-sub-nav-ITS: controls background-color, display to define this element's appearance and layout.
+.mc-itsupport:hover .mc-sub-nav-ITS {
+  background-color: #286abd;
+  display: block;
+}
+// Icon glyph for .mc-itsupport:hover a::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-itsupport:hover a::before {
+  border-color: #4183d7 transparent transparent;
+}
+// Styles .mc-digital:hover: controls background-color to define this element's appearance and layout.
+.mc-digital:hover {
+  background-color: #2ecc71;
+}
+// Styles .mc-digital:hover .mc-sub-nav-DM: controls background-color, display to define this element's appearance and layout.
+.mc-digital:hover .mc-sub-nav-DM {
+  background-color: #25a25a;
+  display: block;
+}
+// Icon glyph for .mc-digital:hover a::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-digital:hover a::before {
+  border-color: #2ecc71 transparent transparent;
+}
+// Styles .mc-telecoms:hover: controls background-color to define this element's appearance and layout.
+.mc-telecoms:hover {
+  background-color: #d64541;
+}
+// Styles .mc-telecoms:hover .mc-sub-nav-TS: controls background-color, display to define this element's appearance and layout.
+.mc-telecoms:hover .mc-sub-nav-TS {
+  background-color: #bc2c28;
+  display: block;
+}
+// Icon glyph for .mc-telecoms:hover a::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-telecoms:hover a::before {
+  border-color: #d64541 transparent transparent;
+}
+// Styles .mc-webdesign:hover: controls background-color to define this element's appearance and layout.
+.mc-webdesign:hover {
+  background-color: #926fb1;
+}
+// Styles .mc-webdesign:hover .mc-sub-nav-WD: controls background-color, display to define this element's appearance and layout.
+.mc-webdesign:hover .mc-sub-nav-WD {
+  background-color: #79539a;
+  display: block;
+}
+// Icon glyph for .mc-webdesign:hover a::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-webdesign:hover a::before {
+  border-color: #926fb1 transparent transparent;
+}
+// Styles .mc-cyber:hover: controls background-color to define this element's appearance and layout.
+.mc-cyber:hover {
+  background-color: #f62459;
+}
+// Styles .mc-cyber:hover .mc-sub-nav-CS: controls background-color, display to define this element's appearance and layout.
+.mc-cyber:hover .mc-sub-nav-CS {
+  background-color: #de093f;
+  display: block;
+}
+// Icon glyph for .mc-cyber:hover a::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-cyber:hover a::before {
+  border-color: #f62459 transparent transparent;
+}
+// Styles .mc-developer:hover: controls background-color to define this element's appearance and layout.
+.mc-developer:hover {
+  background-color: #ce4125;
+}
+// Styles .mc-developer:hover .mc-sub-nav-DC: controls background-color, display to define this element's appearance and layout.
+.mc-developer:hover .mc-sub-nav-DC {
+  background-color: #a3331d;
+  display: block;
+}
+// Icon glyph for .mc-developer:hover a::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-developer:hover a::before {
+  border-color: #ce4125 transparent transparent;
+}
+// Styles .mc-bottom: controls background-color, display, justify-content to define this element's appearance and layout.
+.mc-bottom {
+  background-color: #212330;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 10px;
+  font-size: 0.8125rem;
+  color: #fff;
+}
+// Styles .mc-bottom .mc-license: controls flex-direction to define this element's appearance and layout.
+.mc-bottom .mc-license {
+  display: flex;
+  width: 100%;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+// Responsive block for @media (min-width: 768px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 768px) {
+// Styles .mc-bottom .mc-license: controls flex-direction to define this element's appearance and layout.
+  .mc-bottom .mc-license {
+    flex-direction: row;
+    padding: 5px 0 10px;
+  }
+}
+// Responsive block for @media (max-width: 768px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (max-width: 768px) {
+// Styles .mc-bottom .mc-license: controls flex-direction to define this element's appearance and layout.
+  .mc-bottom .mc-license {
+    flex-direction: column;
+  }
+}
+// Styles .mc-bottom .mc-license .mc-license-br: controls display to define this element's appearance and layout.
+.mc-bottom .mc-license .mc-license-br {
+  display: block;
+}
+// Responsive block for @media (min-width: 768px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 768px) {
+// Styles .mc-bottom .mc-license .mc-license-br: controls display to define this element's appearance and layout.
+  .mc-bottom .mc-license .mc-license-br {
+    display: none;
+  }
+}
+// Styles .mc-bottom .mc-license ul: controls order to define this element's appearance and layout.
+.mc-bottom .mc-license ul {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+// Responsive block for @media (min-width: 768px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 768px) {
+// Styles .mc-bottom .mc-license ul: controls order to define this element's appearance and layout.
+  .mc-bottom .mc-license ul {
+    order: 2;
+  }
+}
+// Styles .mc-bottom .mc-license ul li: controls font-size, line-height to define this element's appearance and layout.
+.mc-bottom .mc-license ul li {
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+}
+// Icon glyph for .mc-bottom .mc-license ul li::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-bottom .mc-license ul li::before {
+  content: "-";
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+// Responsive block for @media (max-width: 768px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (max-width: 768px) {
+// Icon glyph for .mc-bottom .mc-license ul li::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+  .mc-bottom .mc-license ul li::before {
+    display: none;
+    margin: 0;
+  }
+}
+// Styles .mc-bottom .mc-license ul li a:hover: controls text-decoration to define this element's appearance and layout.
+.mc-bottom .mc-license ul li a:hover {
+  text-decoration: underline;
+}

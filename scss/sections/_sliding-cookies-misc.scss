@@ -1,0 +1,896 @@
+// Styles .mc-sliding-imgs .mc-sliding-list: controls display, flex-direction, width to define this element's appearance and layout.
+.mc-sliding-imgs .mc-sliding-list {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  overflow-x: clip;
+}
+// Styles .mc-sliding-imgs .mc-sliding-list .mc-sliding-img-box: controls position to define this element's appearance and layout.
+.mc-sliding-imgs .mc-sliding-list .mc-sliding-img-box {
+  width: auto;
+  margin-right: 50px;
+  padding: 0 20px;
+  height: 70px;
+  max-height: 70px;
+  display: flex;
+}
+// Styles .mc-sliding-imgs .mc-sliding-list .mc-sliding-img-box img: controls filter, transition to define this element's appearance and layout.
+.mc-sliding-imgs .mc-sliding-list .mc-sliding-img-box img {
+  max-width: 200px;
+  filter: grayscale(1);
+  align-self: center;
+}
+// Styles .mc-sliding-imgs .mc-sliding-list .mc-sliding-img-box img:hover: controls filter to define this element's appearance and layout.
+.mc-sliding-imgs .mc-sliding-list .mc-sliding-img-box img:hover {
+  filter: grayscale(0);
+}
+.mc-sliding-imgs
+  .mc-sliding-list
+  .mc-slick-list
+  .mc-slick-track
+  .mc-sliding-img-box:hover
+// Styles .mc-logo-tooltip: controls display, position, bottom to define this element's appearance and layout.
+  .mc-logo-tooltip {
+  display: block;
+}
+.mc-sliding-imgs
+  .mc-sliding-list
+  .mc-slick-list
+  .mc-slick-track
+  .mc-sliding-img-box
+// Styles .mc-logo-tooltip: controls display, position, bottom to define this element's appearance and layout.
+  .mc-logo-tooltip {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: -200px;
+  right: -200px;
+}
+.mc-sliding-imgs
+  .mc-sliding-list
+  .mc-slick-list
+  .mc-slick-track
+  .mc-sliding-img-box
+  .mc-logo-tooltip
+// Styles .mc-logo-description: controls background-color, color, padding to define this element's appearance and layout.
+  .mc-logo-description {
+  background-color: #333645;
+  color: #fff;
+  padding: 20px;
+  font-size: 0.875rem;
+  max-width: 280px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+.mc-sliding-imgs
+  .mc-sliding-list
+  .mc-slick-list
+  .mc-slick-track
+  .mc-sliding-img-box
+  .mc-logo-tooltip
+  .mc-logo-description
+// Styles h3: controls margin, padding-bottom to define this element's appearance and layout.
+  h3 {
+  padding-bottom: 17px;
+  margin: 0;
+}
+.mc-sliding-imgs
+  .mc-sliding-list
+  .mc-slick-list
+  .mc-slick-track
+  .mc-sliding-img-box
+  .mc-logo-tooltip
+  .mc-logo-description
+// Styles .mc-tooltip-button: controls display, align-items, margin-top to define this element's appearance and layout.
+  .mc-tooltip-button {
+  margin-top: 11px;
+  font-size: 0.9375rem;
+  line-height: 2.1875rem;
+  text-transform: uppercase;
+  border-radius: 3px;
+  height: auto;
+  padding: 10px 15px;
+}
+.mc-sliding-imgs
+  .mc-sliding-list
+  .mc-slick-list
+  .mc-slick-track
+  .mc-sliding-img-box
+  .mc-logo-tooltip
+  .mc-logo-description
+  .mc-tooltip-button
+// Styles em: controls margin-left to define this element's appearance and layout.
+  em {
+  margin-left: 12px;
+}
+.mc-sliding-imgs
+  .mc-sliding-list
+  .mc-slick-list
+  .mc-slick-track
+  .mc-sliding-img-box
+  .mc-logo-tooltip
+  .mc-logo-description
+// Styles .mc-logo-buttonP: controls background-color, color to define this element's appearance and layout.
+  .mc-logo-buttonP {
+  background-color: #926fb1;
+  color: #fff;
+}
+.mc-sliding-imgs
+  .mc-sliding-list
+  .mc-slick-list
+  .mc-slick-track
+  .mc-sliding-img-box
+  .mc-logo-tooltip
+  .mc-logo-description
+// Styles .mc-logo-buttonB: controls background-color, color to define this element's appearance and layout.
+  .mc-logo-buttonB {
+  background-color: #4183d7;
+  color: #fff;
+}
+.mc-sliding-imgs
+  .mc-sliding-list
+  .mc-slick-list
+  .mc-slick-track
+  .mc-sliding-img-box
+  .mc-logo-tooltip
+  .mc-logo-description
+// Styles .mc-logo-buttonO: controls background-color, color to define this element's appearance and layout.
+  .mc-logo-buttonO {
+  background-color: #f7b322;
+  color: #fff;
+}
+.mc-sliding-imgs
+  .mc-sliding-list
+  .mc-slick-list
+  .mc-slick-track
+  .mc-sliding-img-box
+  .mc-logo-tooltip
+  .mc-logo-description
+// Styles .mc-logo-buttonG: controls background-color, color to define this element's appearance and layout.
+  .mc-logo-buttonG {
+  background-color: #2ecc71;
+  color: #fff;
+}
+.mc-sliding-imgs
+  .mc-sliding-list
+  .mc-slick-list
+  .mc-slick-track
+  .mc-sliding-img-box
+  .mc-logo-tooltip
+  .mc-logo-description
+// Styles .mc-logo-buttonP:hover: controls background-color, color to define this element's appearance and layout.
+  .mc-logo-buttonP:hover {
+  background-color: #7e57a0;
+  color: #fff;
+}
+.mc-sliding-imgs
+  .mc-sliding-list
+  .mc-slick-list
+  .mc-slick-track
+  .mc-sliding-img-box
+  .mc-logo-tooltip
+  .mc-logo-description
+// Styles .mc-logo-buttonB:hover: controls background-color, color to define this element's appearance and layout.
+  .mc-logo-buttonB:hover {
+  background-color: #2a6ec6;
+  color: #fff;
+}
+.mc-sliding-imgs
+  .mc-sliding-list
+  .mc-slick-list
+  .mc-slick-track
+  .mc-sliding-img-box
+  .mc-logo-tooltip
+  .mc-logo-description
+// Styles .mc-logo-buttonO:hover: controls background-color, color to define this element's appearance and layout.
+  .mc-logo-buttonO:hover {
+  background-color: #e8a008;
+  color: #fff;
+}
+.mc-sliding-imgs
+  .mc-sliding-list
+  .mc-slick-list
+  .mc-slick-track
+  .mc-sliding-img-box
+  .mc-logo-tooltip
+  .mc-logo-description
+// Styles .mc-logo-buttonG:hover: controls background-color, color to define this element's appearance and layout.
+  .mc-logo-buttonG:hover {
+  background-color: #26ab5f;
+  color: #fff;
+}
+.mc-sliding-imgs
+  .mc-sliding-list
+  .mc-slick-list
+  .mc-slick-track
+  .mc-sliding-img-box
+  .mc-logo-tooltip
+  .mc-logo-description
+// Styles .mc-arrow: controls position, left, bottom to define this element's appearance and layout.
+  .mc-arrow {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -35px;
+}
+.mc-sliding-imgs
+  .mc-sliding-list
+  .mc-slick-list
+  .mc-slick-track
+  .mc-sliding-img-box
+  .mc-logo-tooltip
+  .mc-logo-description
+// Styles .mc-arrow::after: controls content, display, border-color to define this element's appearance and layout.
+  .mc-arrow::after {
+  content: "";
+  display: inline-block;
+  border-color: #333645 transparent transparent;
+  border-style: solid;
+  border-width: 35px 36px 0;
+}
+// Styles .mc-cookies .mc-cookies-container .mc-cookies-button-manage: controls position, left, bottom to define this element's appearance and layout.
+.mc-cookies .mc-cookies-container .mc-cookies-button-manage {
+  position: fixed;
+  z-index: 99;
+  bottom: 0;
+  left: 0;
+  height: auto;
+  display: flex;
+  background: #75788a;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #fff;
+  border: solid #75788a;
+  border-width: 1px 1px 0 0;
+  border-radius: 0;
+  border-top-right-radius: 10px;
+  padding: 0 10px;
+  margin: 0;
+  font-size: 0.75rem;
+  line-height: 1.375rem;
+}
+// Styles .mc-cookies .mc-cookies-container .mc-cookie-consent: controls position, top, bottom to define this element's appearance and layout.
+.mc-cookies .mc-cookies-container .mc-cookie-consent {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  opacity: 1;
+}
+// Styles .mc-cookies .mc-cookies-container .mc-cookie-consent .mc-cookies-box: controls margin, width, position to define this element's appearance and layout.
+.mc-cookies .mc-cookies-container .mc-cookie-consent .mc-cookies-box {
+  margin: auto;
+  width: 600px;
+  position: relative;
+  transform: translate(0);
+  transition: transform 0.3s ease-out;
+}
+// Styles .mc-cookies .mc-cookies-container .mc-cookie-consent .mc-cookies-box .mc-cookies-content: controls position, background-color, border to define this element's appearance and layout.
+.mc-cookies .mc-cookies-container .mc-cookie-consent .mc-cookies-box .mc-cookies-content {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.mc-cookies
+  .mc-cookies-container
+  .mc-cookie-consent
+  .mc-cookies-box
+  .mc-cookies-content
+// Styles .mc-cookies-header: controls padding, border-bottom to define this element's appearance and layout.
+  .mc-cookies-header {
+  padding: 15px 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.mc-cookies
+  .mc-cookies-container
+  .mc-cookie-consent
+  .mc-cookies-box
+  .mc-cookies-content
+  .mc-cookies-header
+// Styles h3: controls margin, padding-bottom to define this element's appearance and layout.
+  h3 {
+  margin: 0;
+  font-size: 1.625rem;
+  line-height: 2.4375rem;
+  font-weight: 400;
+  color: #333645;
+}
+.mc-cookies
+  .mc-cookies-container
+  .mc-cookie-consent
+  .mc-cookies-box
+  .mc-cookies-content
+// Styles .mc-cookies-details: controls padding to define this element's appearance and layout.
+  .mc-cookies-details {
+  padding: 20px;
+}
+.mc-cookies
+  .mc-cookies-container
+  .mc-cookie-consent
+  .mc-cookies-box
+  .mc-cookies-content
+  .mc-cookies-details
+// Styles p: controls margin-top, margin-bottom, font-size to define this element's appearance and layout.
+  p {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 1rem;
+  line-height: 1.875rem;
+  color: #666;
+}
+.mc-cookies
+  .mc-cookies-container
+  .mc-cookie-consent
+  .mc-cookies-box
+  .mc-cookies-content
+  .mc-cookies-details
+  p
+// Styles a: controls font-size, line-height, padding to define this element's appearance and layout.
+  a {
+  color: #333645;
+  text-decoration: none;
+}
+.mc-cookies
+  .mc-cookies-container
+  .mc-cookie-consent
+  .mc-cookies-box
+  .mc-cookies-content
+  .mc-cookies-details
+  p
+// Styles a:hover: controls a, text-decoration to define this element's appearance and layout.
+  a:hover {
+  text-decoration: underline;
+}
+.mc-cookies
+  .mc-cookies-container
+  .mc-cookie-consent
+  .mc-cookies-box
+  .mc-cookies-content
+// Styles .mc-cookies-footer: controls margin, padding, border-top to define this element's appearance and layout.
+  .mc-cookies-footer {
+  margin: 0;
+  padding: 20px;
+  border-top: 1px solid #e5e5e5;
+}
+.mc-cookies
+  .mc-cookies-container
+  .mc-cookie-consent
+  .mc-cookies-box
+  .mc-cookies-content
+  .mc-cookies-footer
+// Styles .mc-cookies-row: controls flex-direction to define this element's appearance and layout.
+  .mc-cookies-row {
+  display: flex;
+  flex-direction: column;
+  margin: 0 -15px;
+}
+// Responsive block for @media (min-width: 768px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 768px) {
+  .mc-cookies
+    .mc-cookies-container
+    .mc-cookie-consent
+    .mc-cookies-box
+    .mc-cookies-content
+    .mc-cookies-footer
+// Styles .mc-cookies-row: controls flex-direction to define this element's appearance and layout.
+    .mc-cookies-row {
+    flex-direction: row;
+  }
+}
+.mc-cookies
+  .mc-cookies-container
+  .mc-cookie-consent
+  .mc-cookies-box
+  .mc-cookies-content
+  .mc-cookies-footer
+  .mc-cookies-row
+// Styles .mc-cookies-button-box: controls width to define this element's appearance and layout.
+  .mc-cookies-button-box {
+  width: 100%;
+  padding: 0 15px;
+}
+// Responsive block for @media (min-width: 768px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 768px) {
+  .mc-cookies
+    .mc-cookies-container
+    .mc-cookie-consent
+    .mc-cookies-box
+    .mc-cookies-content
+    .mc-cookies-footer
+    .mc-cookies-row
+// Styles .mc-cookies-button-box: controls width to define this element's appearance and layout.
+    .mc-cookies-button-box {
+    width: 50%;
+  }
+}
+.mc-cookies
+  .mc-cookies-container
+  .mc-cookie-consent
+  .mc-cookies-box
+  .mc-cookies-content
+  .mc-cookies-footer
+  .mc-cookies-row
+  .mc-cookies-button-box
+// Styles a: controls font-size, line-height, padding to define this element's appearance and layout.
+  a {
+  font-size: 1rem;
+  line-height: 2.1875rem;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  margin: 0;
+  text-align: center;
+  display: block;
+}
+.mc-cookies
+  .mc-cookies-container
+  .mc-cookie-consent
+  .mc-cookies-box
+  .mc-cookies-content
+  .mc-cookies-footer
+  .mc-cookies-row
+  .mc-cookies-button-box
+// Styles .mc-cookies-button-settings: controls margin-bottom to define this element's appearance and layout.
+  .mc-cookies-button-settings {
+  background-color: #999aa2;
+  color: #fff;
+  margin-bottom: 30px;
+}
+// Responsive block for @media (min-width: 768px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 768px) {
+  .mc-cookies
+    .mc-cookies-container
+    .mc-cookie-consent
+    .mc-cookies-box
+    .mc-cookies-content
+    .mc-cookies-footer
+    .mc-cookies-row
+    .mc-cookies-button-box
+// Styles .mc-cookies-button-settings: controls margin-bottom to define this element's appearance and layout.
+    .mc-cookies-button-settings {
+    margin-bottom: 0;
+  }
+}
+.mc-cookies
+  .mc-cookies-container
+  .mc-cookie-consent
+  .mc-cookies-box
+  .mc-cookies-content
+  .mc-cookies-footer
+  .mc-cookies-row
+  .mc-cookies-button-box
+// Styles .mc-cookies-button-accept: controls background-color, color to define this element's appearance and layout.
+  .mc-cookies-button-accept {
+  background-color: #926fb1;
+  color: #fff;
+}
+.mc-cookies
+  .mc-cookies-container
+  .mc-cookie-consent
+  .mc-cookies-box
+  .mc-cookies-content
+  .mc-cookies-footer
+  .mc-cookies-row
+  .mc-cookies-button-box
+// Styles .mc-cookies-button-settings:hover: controls background-color, color to define this element's appearance and layout.
+  .mc-cookies-button-settings:hover {
+  background-color: #84858f;
+  color: #fff;
+}
+.mc-cookies
+  .mc-cookies-container
+  .mc-cookie-consent
+  .mc-cookies-box
+  .mc-cookies-content
+  .mc-cookies-footer
+  .mc-cookies-row
+  .mc-cookies-button-box
+// Styles .mc-cookies-button-accept:hover: controls background-color, color to define this element's appearance and layout.
+  .mc-cookies-button-accept:hover {
+  background-color: #7e57a0;
+  color: #fff;
+}
+// Styles header .mc-header-inner .mc-header-row .mc-header-buttons .mc-contact .mc-search: controls display to define this element's appearance and layout.
+header .mc-header-inner .mc-header-row .mc-header-buttons .mc-contact .mc-search {
+  display: none;
+}
+// Styles header .mc-header-inner .mc-mobile-contact: controls display to define this element's appearance and layout.
+header .mc-header-inner .mc-mobile-contact {
+  display: block;
+}
+// Responsive block for @media (min-width: 768px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 768px) {
+// Styles header .mc-header-inner .mc-header-row .mc-header-buttons .mc-contact .mc-search: controls display to define this element's appearance and layout.
+  header .mc-header-inner .mc-header-row .mc-header-buttons .mc-contact .mc-search {
+    display: flex;
+  }
+// Styles header .mc-header-inner .mc-mobile-contact: controls display to define this element's appearance and layout.
+  header .mc-header-inner .mc-mobile-contact {
+    display: none;
+  }
+}
+// Styles .mc-services-list .mc-services-row .mc-services-header h1: controls display to define this element's appearance and layout.
+.mc-services-list .mc-services-row .mc-services-header h1 {
+  display: none;
+}
+// Styles .mc-services-list .mc-services-row .mc-hidden-view-work: controls display to define this element's appearance and layout.
+.mc-services-list .mc-services-row .mc-hidden-view-work {
+  display: block;
+  text-align: center;
+}
+// Responsive block for @media (min-width: 768px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 768px) {
+// Styles .mc-services-list .mc-services-row .mc-services-header h1: controls display to define this element's appearance and layout.
+  .mc-services-list .mc-services-row .mc-services-header h1 {
+    display: block;
+  }
+// Styles .mc-services-list .mc-services-row .mc-hidden-view-work: controls display to define this element's appearance and layout.
+  .mc-services-list .mc-services-row .mc-hidden-view-work {
+    display: none;
+  }
+}
+// Styles .mc-news .mc-news-header h3: controls display to define this element's appearance and layout.
+.mc-news .mc-news-header h3 {
+  display: none;
+}
+// Styles .mc-news .mc-hidden-view-all: controls display to define this element's appearance and layout.
+.mc-news .mc-hidden-view-all {
+  display: block;
+}
+// Responsive block for @media (min-width: 768px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 768px) {
+// Styles .mc-news .mc-news-header h3: controls display to define this element's appearance and layout.
+  .mc-news .mc-news-header h3 {
+    display: block;
+  }
+// Styles .mc-news .mc-hidden-view-all: controls display to define this element's appearance and layout.
+  .mc-news .mc-hidden-view-all {
+    display: none;
+  }
+}
+// Styles .mc-main-nav .mc-main-nav-item: controls position, top, transition to define this element's appearance and layout.
+.mc-main-nav .mc-main-nav-item {
+  position: static;
+  top: 0;
+  transition: 0.5s ease;
+}
+// Styles .mc-main-nav .mc-main-nav-item:hover: controls top, transition to define this element's appearance and layout.
+.mc-main-nav .mc-main-nav-item:hover {
+  top: 0;
+  transition: 0.5s ease;
+}
+// Styles .mc-partners: controls overflow-x to define this element's appearance and layout.
+.mc-partners {
+  overflow-x: hidden;
+}
+// Styles .mc-clients: controls position, z-index to define this element's appearance and layout.
+.mc-clients {
+  overflow: visible;
+}
+// Styles .mc-clients: controls position, z-index to define this element's appearance and layout.
+.mc-clients {
+  position: relative;
+  z-index: 50;
+}
+.mc-news,
+// Styles .mc-latest-articles: controls position, z-index to define this element's appearance and layout.
+.mc-latest-articles {
+  position: relative;
+  z-index: 1;
+}
+.mc-sliding-imgs,
+.mc-sliding-imgs .mc-sliding-list,
+// Styles .mc-sliding-imgs .mc-sliding-list .mc-slick-list: controls overflow to define this element's appearance and layout.
+.mc-sliding-imgs .mc-sliding-list .mc-slick-list {
+  overflow: visible;
+}
+.mc-partners .mc-sliding-img-box img,
+.mc-clients .mc-sliding-img-box img,
+// Styles .mc-sliding-imgs .mc-sliding-list .mc-sliding-img-box img: controls filter, transition to define this element's appearance and layout.
+.mc-sliding-imgs .mc-sliding-list .mc-sliding-img-box img {
+  filter: grayscale(1);
+  transition: filter 0.3s ease;
+}
+.mc-partners .mc-sliding-img-box:hover img,
+.mc-clients .mc-sliding-img-box:hover img,
+// Styles .mc-sliding-imgs .mc-sliding-list .mc-sliding-img-box:hover img: controls filter to define this element's appearance and layout.
+.mc-sliding-imgs .mc-sliding-list .mc-sliding-img-box:hover img {
+  filter: grayscale(0);
+}
+// Styles .mc-sliding-imgs .mc-sliding-list .mc-sliding-img-box: controls position to define this element's appearance and layout.
+.mc-sliding-imgs .mc-sliding-list .mc-sliding-img-box {
+  position: relative;
+}
+// Styles .mc-sliding-imgs .mc-sliding-list .mc-sliding-img-box:hover: controls z-index to define this element's appearance and layout.
+.mc-sliding-imgs .mc-sliding-list .mc-sliding-img-box:hover {
+  z-index: 60;
+}
+// Styles .mc-sliding-imgs .mc-sliding-list .mc-sliding-img-box:hover .mc-logo-tooltip: controls opacity, visibility, transform to define this element's appearance and layout.
+.mc-sliding-imgs .mc-sliding-list .mc-sliding-img-box:hover .mc-logo-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-12px);
+  pointer-events: auto;
+}
+// Styles .mc-sliding-imgs .mc-sliding-list .mc-sliding-img-box .mc-logo-tooltip: controls opacity, visibility, pointer-events to define this element's appearance and layout.
+.mc-sliding-imgs .mc-sliding-list .mc-sliding-img-box .mc-logo-tooltip {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(0);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+  position: absolute;
+  bottom: calc(100% + 5px);
+  left: -200px;
+  right: -200px;
+  z-index: 70;
+}
+// Styles .mc-sliding-imgs .mc-sliding-list .mc-sliding-img-box .mc-logo-tooltip .mc-logo-description: controls position, background-color, color to define this element's appearance and layout.
+.mc-sliding-imgs .mc-sliding-list .mc-sliding-img-box .mc-logo-tooltip .mc-logo-description {
+  position: relative;
+  background-color: #333645;
+  color: #fff;
+  padding: 20px;
+  font-size: 0.875rem;
+  max-width: 280px;
+  margin: 0 auto 40px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+.mc-sliding-imgs
+  .mc-sliding-list
+  .mc-sliding-img-box
+  .mc-logo-tooltip
+  .mc-logo-description
+// Styles h3: controls margin, padding-bottom to define this element's appearance and layout.
+  h3 {
+  margin: 0;
+  padding-bottom: 17px;
+}
+// Styles .mc-sliding-imgs .mc-sliding-list .mc-sliding-img-box .mc-logo-tooltip .mc-logo-description p: controls margin, line-height, color to define this element's appearance and layout.
+.mc-sliding-imgs .mc-sliding-list .mc-sliding-img-box .mc-logo-tooltip .mc-logo-description p {
+  margin: 0;
+  line-height: 1.45;
+  color: #fff;
+}
+.mc-sliding-imgs
+  .mc-sliding-list
+  .mc-sliding-img-box
+  .mc-logo-tooltip
+  .mc-logo-description
+// Styles .mc-tooltip-button: controls display, align-items, margin-top to define this element's appearance and layout.
+  .mc-tooltip-button {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 11px;
+  font-size: 0.9375rem;
+  line-height: 2.1875rem;
+  text-transform: uppercase;
+  border-radius: 3px;
+  height: auto;
+  padding: 10px 15px;
+}
+.mc-sliding-imgs
+  .mc-sliding-list
+  .mc-sliding-img-box
+  .mc-logo-tooltip
+  .mc-logo-description
+  .mc-tooltip-button
+// Styles em: controls margin-left to define this element's appearance and layout.
+  em {
+  margin-left: 12px;
+}
+.mc-sliding-imgs
+  .mc-sliding-list
+  .mc-sliding-img-box
+  .mc-logo-tooltip
+  .mc-logo-description
+// Styles .mc-logo-buttonP: controls background-color, color to define this element's appearance and layout.
+  .mc-logo-buttonP {
+  background-color: #926fb1;
+  color: #fff;
+}
+.mc-sliding-imgs
+  .mc-sliding-list
+  .mc-sliding-img-box
+  .mc-logo-tooltip
+  .mc-logo-description
+// Styles .mc-logo-buttonB: controls background-color, color to define this element's appearance and layout.
+  .mc-logo-buttonB {
+  background-color: #4183d7;
+  color: #fff;
+}
+.mc-sliding-imgs
+  .mc-sliding-list
+  .mc-sliding-img-box
+  .mc-logo-tooltip
+  .mc-logo-description
+// Styles .mc-logo-buttonO: controls background-color, color to define this element's appearance and layout.
+  .mc-logo-buttonO {
+  background-color: #f7b322;
+  color: #fff;
+}
+.mc-sliding-imgs
+  .mc-sliding-list
+  .mc-sliding-img-box
+  .mc-logo-tooltip
+  .mc-logo-description
+// Styles .mc-logo-buttonG: controls background-color, color to define this element's appearance and layout.
+  .mc-logo-buttonG {
+  background-color: #2ecc71;
+  color: #fff;
+}
+.mc-sliding-imgs
+  .mc-sliding-list
+  .mc-sliding-img-box
+  .mc-logo-tooltip
+  .mc-logo-description
+// Styles .mc-logo-buttonP:hover: controls background-color, color to define this element's appearance and layout.
+  .mc-logo-buttonP:hover {
+  background-color: #7e57a0;
+  color: #fff;
+}
+.mc-sliding-imgs
+  .mc-sliding-list
+  .mc-sliding-img-box
+  .mc-logo-tooltip
+  .mc-logo-description
+// Styles .mc-logo-buttonB:hover: controls background-color, color to define this element's appearance and layout.
+  .mc-logo-buttonB:hover {
+  background-color: #2a6ec6;
+  color: #fff;
+}
+.mc-sliding-imgs
+  .mc-sliding-list
+  .mc-sliding-img-box
+  .mc-logo-tooltip
+  .mc-logo-description
+// Styles .mc-logo-buttonO:hover: controls background-color, color to define this element's appearance and layout.
+  .mc-logo-buttonO:hover {
+  background-color: #e8a008;
+  color: #fff;
+}
+.mc-sliding-imgs
+  .mc-sliding-list
+  .mc-sliding-img-box
+  .mc-logo-tooltip
+  .mc-logo-description
+// Styles .mc-logo-buttonG:hover: controls background-color, color to define this element's appearance and layout.
+  .mc-logo-buttonG:hover {
+  background-color: #26ab5f;
+  color: #fff;
+}
+.mc-sliding-imgs
+  .mc-sliding-list
+  .mc-sliding-img-box
+  .mc-logo-tooltip
+  .mc-logo-description
+// Styles .mc-arrow: controls position, left, bottom to define this element's appearance and layout.
+  .mc-arrow {
+  position: absolute;
+  left: 50%;
+  bottom: -34px;
+  margin-left: -36px;
+}
+.mc-sliding-imgs
+  .mc-sliding-list
+  .mc-sliding-img-box
+  .mc-logo-tooltip
+  .mc-logo-description
+// Styles .mc-arrow::after: controls content, display, border-color to define this element's appearance and layout.
+  .mc-arrow::after {
+  content: "";
+  display: block;
+  border-color: #333645 transparent transparent;
+  border-style: solid;
+  border-width: 35px 36px 0;
+}
+// Styles .mc-cookies .mc-cookies-container .mc-cookies-button-manage: controls position, left, bottom to define this element's appearance and layout.
+.mc-cookies .mc-cookies-container .mc-cookies-button-manage {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+// Styles .support-icon: controls position, right, bottom to define this element's appearance and layout.
+.support-icon {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 99;
+}
+// Styles .custom-checkbox input[type="checkbox"]: controls display to define this element's appearance and layout.
+.custom-checkbox input[type="checkbox"] {
+  display: none;
+}
+// Styles .custom-checkbox .checkbox-ui: controls display, align-items, justify-content to define this element's appearance and layout.
+.custom-checkbox .checkbox-ui {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #333645;
+  border-radius: 3px;
+  background: #fff;
+}
+// Styles .custom-checkbox input[type="checkbox"]:checked + .checkbox-ui::after: controls content, width, height to define this element's appearance and layout.
+.custom-checkbox input[type="checkbox"]:checked + .checkbox-ui::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #926fb1;
+  border-radius: 2px;
+}
+// Styles .mc-cookies: controls display to define this element's appearance and layout.
+.mc-cookies {
+  display: none !important;
+}
+// Styles .mc-banner .mc-banner-slide.is-hidden-for-now: controls display to define this element's appearance and layout.
+.mc-banner .mc-banner-slide.is-hidden-for-now {
+  display: none !important;
+}
+// Styles .mc-news .mc-news-header h2: controls margin-top to define this element's appearance and layout.
+.mc-news .mc-news-header h2 {
+  margin-top: 0;
+}
+// Styles .mc-footer-company-box .mc-footer-logo: controls width to define this element's appearance and layout.
+.mc-footer-company-box .mc-footer-logo {
+  width: 250px;
+}
+// Styles .mc-footer-company-box .mc-footer-logo img: controls width, height to define this element's appearance and layout.
+.mc-footer-company-box .mc-footer-logo img {
+  width: 100%;
+  height: auto;
+}
+// Responsive block for @media (min-width: 480px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 480px) {
+// Styles .mc-footer-company-box .mc-footer-logo: controls width to define this element's appearance and layout.
+  .mc-footer-company-box .mc-footer-logo {
+    width: 320px;
+  }
+}
+// Styles .mc-clients .mc-sliding-img-box:hover: controls z-index to define this element's appearance and layout.
+.mc-clients .mc-sliding-img-box:hover {
+  z-index: 9999 !important;
+}
+// Styles .mc-clients .mc-sliding-img-box .mc-logo-tooltip: controls z-index to define this element's appearance and layout.
+.mc-clients .mc-sliding-img-box .mc-logo-tooltip {
+  z-index: 10000 !important;
+}
+// Styles .mc-clients .mc-sliding-img-box .mc-logo-tooltip .mc-logo-description: controls z-index to define this element's appearance and layout.
+.mc-clients .mc-sliding-img-box .mc-logo-tooltip .mc-logo-description {
+  z-index: 10001 !important;
+}
+// Styles .mc-news-article: controls overflow to define this element's appearance and layout.
+.mc-news-article {
+  overflow: visible !important;
+}
+#middle,
+// Styles .mc-container-bottom: controls overflow to define this element's appearance and layout.
+.mc-container-bottom {
+  overflow: visible !important;
+}
+.mc-sliding-imgs
+  .mc-sliding-list
+  .mc-sliding-img-box
+  .mc-logo-tooltip
+  .mc-logo-description
+// Styles .xupes-title: controls padding-bottom to define this element's appearance and layout.
+  .xupes-title {
+  padding-bottom: 0px;
+}

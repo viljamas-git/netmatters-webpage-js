@@ -1,0 +1,240 @@
+// Styles body: controls margin, font-family, letter-spacing to define this element's appearance and layout.
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.4px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+// Styles *: controls box-sizing to define this element's appearance and layout.
+* {
+  box-sizing: border-box;
+}
+// Styles .mc-website: controls overflow, position, z-index to define this element's appearance and layout.
+.mc-website {
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  background-color: #fff;
+  transition: all 0.5s ease;
+  left: 0;
+}
+// Styles .mc-menu-is-active: controls left to define this element's appearance and layout.
+.mc-menu-is-active {
+  left: -275px !important;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+// Responsive block for @media (min-width: 992px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 992px) {
+// Styles .mc-menu-is-active: controls left to define this element's appearance and layout.
+  .mc-menu-is-active {
+    left: -350px !important;
+  }
+}
+// Styles .mc-stickyhead-menu-is-active: controls left to define this element's appearance and layout.
+.mc-stickyhead-menu-is-active {
+  left: -275px !important;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+// Responsive block for @media (min-width: 992px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 992px) {
+// Styles .mc-stickyhead-menu-is-active: controls left to define this element's appearance and layout.
+  .mc-stickyhead-menu-is-active {
+    left: -350px !important;
+  }
+}
+.mc-menu-is-active::after,
+// Styles .mc-stickyhead-menu-is-active::after: controls position, top, right to define this element's appearance and layout.
+.mc-stickyhead-menu-is-active::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 3000;
+  content: "";
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+// Styles .mc-sticky-header: controls position, width, display to define this element's appearance and layout.
+.mc-sticky-header {
+  position: fixed;
+  width: 100%;
+  display: block;
+  background-color: #fff;
+  z-index: 2500;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+  left: 0;
+  transition: all 0.5s ease;
+}
+// Styles .mc-hidden-header: controls transition, top, pointer-events to define this element's appearance and layout.
+.mc-hidden-header {
+  transition: all 0.5s ease;
+  top: -230px;
+  pointer-events: none !important;
+}
+// Styles .mc-visible-header: controls transition, top, pointer-events to define this element's appearance and layout.
+.mc-visible-header {
+  transition: all 0.5s ease;
+  top: 0;
+  pointer-events: auto;
+}
+// Styles .mc-hidden: controls display to define this element's appearance and layout.
+.mc-hidden {
+  display: none;
+}
+// Styles .mc-is-hidden: controls visibility, pointer-events to define this element's appearance and layout.
+.mc-is-hidden {
+  visibility: hidden;
+  pointer-events: none !important;
+}
+// Styles .mc-container: controls width to define this element's appearance and layout.
+.mc-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+// Responsive block for @media (min-width: 768px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 768px) {
+// Styles .mc-container: controls width to define this element's appearance and layout.
+  .mc-container {
+    width: 750px;
+  }
+}
+// Responsive block for @media (min-width: 992px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 992px) {
+// Styles .mc-container: controls width to define this element's appearance and layout.
+  .mc-container {
+    width: 970px;
+  }
+}
+// Responsive block for @media (min-width: 1260px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 1260px) {
+// Styles .mc-container: controls width to define this element's appearance and layout.
+  .mc-container {
+    width: 1200px;
+  }
+}
+// Styles .mc-container-bottom: controls overflow to define this element's appearance and layout.
+.mc-container-bottom {
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  margin-left: 0;
+  margin-right: 0;
+  flex-direction: column;
+}
+// Responsive block for @media (min-width: 768px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 768px) {
+// Styles .mc-container-bottom: controls overflow to define this element's appearance and layout.
+  .mc-container-bottom {
+    width: 750px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+// Responsive block for @media (min-width: 992px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 992px) {
+// Styles .mc-container-bottom: controls overflow to define this element's appearance and layout.
+  .mc-container-bottom {
+    width: 970px;
+  }
+}
+// Responsive block for @media (min-width: 1260px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 1260px) {
+// Styles .mc-container-bottom: controls overflow to define this element's appearance and layout.
+  .mc-container-bottom {
+    width: 1200px;
+  }
+}
+// Styles .mc-section: controls padding-top, padding-bottom to define this element's appearance and layout.
+.mc-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+// Styles a: controls font-size, line-height, padding to define this element's appearance and layout.
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+// Styles a:focus: controls a, outline to define this element's appearance and layout.
+a:focus {
+  outline: thin dotted;
+}
+a:link,
+a:any-link,
+a:active,
+a:focus,
+// Styles a:visited: controls a, color to define this element's appearance and layout.
+a:visited {
+  color: inherit;
+}
+// Styles button: controls cursor, font-family to define this element's appearance and layout.
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+// Styles p: controls margin-top, margin-bottom, font-size to define this element's appearance and layout.
+p {
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+  font-weight: 400;
+}
+// Styles p a:hover: controls text-decoration to define this element's appearance and layout.
+p a:hover {
+  text-decoration: underline;
+}
+h2,
+h3,
+// Styles h4: controls font-size, line-height to define this element's appearance and layout.
+h4 {
+  line-height: 1.1;
+  font-weight: 400;
+}
+// Styles h1: controls font-size, font-weight to define this element's appearance and layout.
+h1 {
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+// Styles h2: controls font-size to define this element's appearance and layout.
+h2 {
+  font-size: 2.25rem;
+}
+// Styles h3: controls margin, padding-bottom to define this element's appearance and layout.
+h3 {
+  font-size: 1.125rem;
+}
+// Styles h4: controls font-size, line-height to define this element's appearance and layout.
+h4 {
+  font-size: 1rem;
+  line-height: 1.125rem;
+}
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+// Styles h4 a:hover: controls text-decoration to define this element's appearance and layout.
+h4 a:hover {
+  text-decoration: underline;
+}
+// Styles ul: controls list-style, text-decoration to define this element's appearance and layout.
+ul {
+  list-style: none;
+  text-decoration: none;
+}
+// Styles strong: controls font-weight to define this element's appearance and layout.
+strong {
+  font-weight: 600;
+}
+input,
+textarea,
+// Styles select: controls font-family to define this element's appearance and layout.
+select {
+  font-family: inherit;
+}

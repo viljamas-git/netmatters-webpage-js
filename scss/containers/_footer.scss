@@ -1,0 +1,293 @@
+// Styles footer: controls background-color, color, padding to define this element's appearance and layout.
+footer {
+  background-color: #323544;
+  color: #fff;
+  padding: 47px 0 0;
+  position: relative;
+}
+// Styles footer .mc-footer-row: controls display, flex-wrap to define this element's appearance and layout.
+footer .mc-footer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+// Styles footer .mc-footer-row .mc-footer-company-info: controls width to define this element's appearance and layout.
+footer .mc-footer-row .mc-footer-company-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 0.8125rem;
+  width: 300px;
+  width: 100%;
+}
+// Responsive block for @media (min-width: 768px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 768px) {
+// Styles footer .mc-footer-row .mc-footer-company-info: controls width to define this element's appearance and layout.
+  footer .mc-footer-row .mc-footer-company-info {
+    flex-wrap: nowrap;
+  }
+}
+// Responsive block for @media (min-width: 768px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 768px) {
+// Styles footer .mc-footer-row .mc-footer-company-info: controls width to define this element's appearance and layout.
+  footer .mc-footer-row .mc-footer-company-info {
+    width: 50%;
+  }
+}
+// Responsive block for @media (min-width: 992px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 992px) {
+// Styles footer .mc-footer-row .mc-footer-company-info: controls width to define this element's appearance and layout.
+  footer .mc-footer-row .mc-footer-company-info {
+    width: 25%;
+  }
+}
+// Responsive block for @media (min-width: 1260px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 1260px) {
+// Styles footer .mc-footer-row .mc-footer-company-info: controls width to define this element's appearance and layout.
+  footer .mc-footer-row .mc-footer-company-info {
+    width: 400px;
+  }
+}
+// Styles footer .mc-footer-row .mc-footer-company-info .mc-footer-company-box: controls width to define this element's appearance and layout.
+footer .mc-footer-row .mc-footer-company-info .mc-footer-company-box {
+  width: auto;
+}
+// Styles footer .mc-footer-row .mc-footer-company-info .mc-footer-company-box .mc-footer-logo: controls width to define this element's appearance and layout.
+footer .mc-footer-row .mc-footer-company-info .mc-footer-company-box .mc-footer-logo {
+  width: 250px;
+}
+// Responsive block for @media (min-width: 768px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 768px) {
+// Styles footer .mc-footer-row .mc-footer-company-info .mc-footer-company-box .mc-footer-logo: controls width to define this element's appearance and layout.
+  footer .mc-footer-row .mc-footer-company-info .mc-footer-company-box .mc-footer-logo {
+    width: 320px;
+  }
+}
+// Styles footer .mc-footer-row .mc-footer-company-info .mc-footer-company-box .mc-footer-logo img: controls width to define this element's appearance and layout.
+footer .mc-footer-row .mc-footer-company-info .mc-footer-company-box .mc-footer-logo img {
+  width: 100%;
+}
+// Styles footer .mc-footer-row .mc-footer-company-info .mc-footer-company-box .mc-social-media h4: controls text-transform, margin-bottom, margin-top to define this element's appearance and layout.
+footer .mc-footer-row .mc-footer-company-info .mc-footer-company-box .mc-social-media h4 {
+  text-transform: uppercase;
+  margin-bottom: 26px;
+  margin-top: 24px;
+}
+footer
+  .mc-footer-row
+  .mc-footer-company-info
+  .mc-footer-company-box
+  .mc-social-media
+// Styles .mc-social-media-buttons: controls width, margin-bottom to define this element's appearance and layout.
+  .mc-social-media-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+// Responsive block for @media (min-width: 768px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 768px) {
+  footer
+    .mc-footer-row
+    .mc-footer-company-info
+    .mc-footer-company-box
+    .mc-social-media
+// Styles .mc-social-media-buttons: controls width, margin-bottom to define this element's appearance and layout.
+    .mc-social-media-buttons {
+    width: 90%;
+    flex-wrap: nowrap;
+  }
+}
+// Responsive block for @media (min-width: 992px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 992px) {
+  footer
+    .mc-footer-row
+    .mc-footer-company-info
+    .mc-footer-company-box
+    .mc-social-media
+// Styles .mc-social-media-buttons: controls width, margin-bottom to define this element's appearance and layout.
+    .mc-social-media-buttons {
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+}
+// Responsive block for @media (min-width: 1260px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 1260px) {
+  footer
+    .mc-footer-row
+    .mc-footer-company-info
+    .mc-footer-company-box
+    .mc-social-media
+// Styles .mc-social-media-buttons: controls width, margin-bottom to define this element's appearance and layout.
+    .mc-social-media-buttons {
+    width: auto;
+    margin-bottom: 0;
+  }
+}
+footer
+  .mc-footer-row
+  .mc-footer-company-info
+  .mc-footer-company-box
+  .mc-social-media
+  .mc-social-media-buttons
+// Styles a: controls font-size, line-height, padding to define this element's appearance and layout.
+  a {
+  border-color: #333645;
+  background-color: #212330;
+  font-size: 1.625rem;
+  line-height: 1.625rem;
+  text-align: center;
+  padding: 12px 22px 16px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 35%;
+}
+// Responsive block for @media (min-width: 480px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 480px) {
+  footer
+    .mc-footer-row
+    .mc-footer-company-info
+    .mc-footer-company-box
+    .mc-social-media
+    .mc-social-media-buttons
+// Styles a: controls font-size, line-height, padding to define this element's appearance and layout.
+    a {
+    width: auto;
+  }
+}
+// Responsive block for @media (min-width: 1260px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 1260px) {
+  footer
+    .mc-footer-row
+    .mc-footer-company-info
+    .mc-footer-company-box
+    .mc-social-media
+    .mc-social-media-buttons
+// Styles a: controls font-size, line-height, padding to define this element's appearance and layout.
+    a {
+    margin-right: 7px;
+    margin-bottom: 0;
+  }
+}
+footer
+  .mc-footer-row
+  .mc-footer-company-info
+  .mc-footer-company-box
+  .mc-social-media
+  .mc-social-media-buttons
+// Styles .mc-social-facebook:hover: controls background-color, color to define this element's appearance and layout.
+  .mc-social-facebook:hover {
+  background-color: #3b5998;
+  color: #fff;
+}
+footer
+  .mc-footer-row
+  .mc-footer-company-info
+  .mc-footer-company-box
+  .mc-social-media
+  .mc-social-media-buttons
+// Styles .mc-social-linkedin:hover: controls background-color, color to define this element's appearance and layout.
+  .mc-social-linkedin:hover {
+  background-color: #0077b5;
+  color: #fff;
+}
+footer
+  .mc-footer-row
+  .mc-footer-company-info
+  .mc-footer-company-box
+  .mc-social-media
+  .mc-social-media-buttons
+// Styles .mc-social-twitter:hover: controls background-color, color to define this element's appearance and layout.
+  .mc-social-twitter:hover {
+  background-color: #00aced;
+  color: #fff;
+}
+footer
+  .mc-footer-row
+  .mc-footer-company-info
+  .mc-footer-company-box
+  .mc-social-media
+  .mc-social-media-buttons
+// Styles .mc-social-Instagram:hover: controls background-color, color to define this element's appearance and layout.
+  .mc-social-Instagram:hover {
+  background-color: #d93175;
+  color: #fff;
+}
+footer
+  .mc-footer-row
+  .mc-footer-company-info
+  .mc-footer-company-box
+  .mc-social-media
+  .mc-social-media-buttons
+  a
+// Styles span: controls font-size, font-weight, display to define this element's appearance and layout.
+  span {
+  position: relative;
+  top: 4px;
+}
+// Styles footer .mc-footer-menu-row: controls flex-grow to define this element's appearance and layout.
+footer .mc-footer-menu-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+// Responsive block for @media (min-width: 768px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 768px) {
+// Styles footer .mc-footer-menu-row: controls flex-grow to define this element's appearance and layout.
+  footer .mc-footer-menu-row {
+    flex-grow: 1;
+  }
+}
+// Styles footer .mc-footer-menu-row .mc-footer-menu: controls flex, margin-bottom to define this element's appearance and layout.
+footer .mc-footer-menu-row .mc-footer-menu {
+  flex: 100%;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+// Responsive block for @media (min-width: 768px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 768px) {
+// Styles footer .mc-footer-menu-row .mc-footer-menu: controls flex, margin-bottom to define this element's appearance and layout.
+  footer .mc-footer-menu-row .mc-footer-menu {
+    flex: 50%;
+  }
+}
+// Responsive block for @media (min-width: 992px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 992px) {
+// Styles footer .mc-footer-menu-row .mc-footer-menu: controls flex, margin-bottom to define this element's appearance and layout.
+  footer .mc-footer-menu-row .mc-footer-menu {
+    flex: 25%;
+  }
+}
+// Responsive block for @media (min-width: 1260px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 1260px) {
+// Styles footer .mc-footer-menu-row .mc-footer-menu: controls flex, margin-bottom to define this element's appearance and layout.
+  footer .mc-footer-menu-row .mc-footer-menu {
+    flex: 25%;
+    margin-bottom: 40px;
+  }
+}
+// Styles footer .mc-footer-menu-row .mc-footer-menu h4: controls text-transform, font-size, margin-bottom to define this element's appearance and layout.
+footer .mc-footer-menu-row .mc-footer-menu h4 {
+  text-transform: uppercase;
+  font-size: 0.9375rem;
+  margin-bottom: 26px;
+  margin-top: 0;
+}
+// Styles footer .mc-footer-menu-row .mc-footer-menu ul: controls display, padding, margin to define this element's appearance and layout.
+footer .mc-footer-menu-row .mc-footer-menu ul {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+// Styles footer .mc-footer-menu-row .mc-footer-menu ul li: controls font-size, line-height to define this element's appearance and layout.
+footer .mc-footer-menu-row .mc-footer-menu ul li {
+  font-size: 0.8125rem;
+  line-height: 1.375rem;
+}
+// Styles footer .mc-footer-menu-row .mc-footer-menu ul li a:hover: controls text-decoration to define this element's appearance and layout.
+footer .mc-footer-menu-row .mc-footer-menu ul li a:hover {
+  text-decoration: underline;
+}
+// Styles footer .mc-footer-menu-row .mc-footer-menu ul li a:focus: controls color to define this element's appearance and layout.
+footer .mc-footer-menu-row .mc-footer-menu ul li a:focus {
+  color: #121419;
+}

@@ -1,0 +1,1889 @@
+<!DOCTYPE html>
+<!--
+FIX NOTES (HTML) — Short comments describing what was fixed for failed checks.
+Fix 01: Corrected the DOCTYPE so HTML validation starts from standards mode.
+Fix 02: Normalised folder-based asset paths (css/img/fonts) to keep structure logical.
+Fix 03: Closed previously unclosed tags and removed invalid nesting reported by W3C validator.
+Fix 04: Replaced hard-coded absolute references with local relative paths where needed.
+Fix 05: Updated font file references in markup-linked assets to remove 404-related console errors.
+Fix 06: Consolidated to one shared page-width container pattern to keep alignment consistent.
+Fix 07: Ensured all actionable elements are semantic links/buttons so pointer cursor styling can apply.
+Fix 08: Reworked header markup grouping so logo, CTAs, search and burger align per breakpoint.
+Fix 09: Updated burger button markup to use span bars for animation-ready structure.
+Fix 10: Added/adjusted classes for desktop search input + button border-radius split.
+Fix 11: Added breakpoint-specific utility classes for iPad landscape to show search icon only.
+Fix 12: Added breakpoint-specific utility classes for iPad portrait to hide support/contact buttons.
+Fix 13: Added mobile-only phone icon/header item wrappers to match required visible controls.
+Fix 14: Simplified nav item markup so icons and labels exist for every primary service item.
+Fix 15: Added dropdown container markup under each nav item to support hover persistence.
+Fix 16: Ensured dropdown content is nested inside trigger item for stable hover/cursor interactions.
+Fix 17: Removed duplicate inner container on banner content to align with global content width.
+Fix 18: Added semantic wrapper classes for banner overlay and text alignment by breakpoint.
+Fix 19: Added arrow icon element inside hero button markup to match required button content.
+Fix 20: Reworked services section heading/link wrapper so title and link sit on opposing sides.
+Fix 21: Added consistent card internals (icon/title/text/button wrappers) for centered spacing.
+Fix 22: Added accreditation logo wrappers with BW/colour pair elements for hover/click swapping.
+Fix 23: Added missing icon span in About CTA buttons so arrow icon can be styled by CSS.
+Fix 24: Added latest-news category badge markup and card meta wrappers for consistent layout.
+Fix 25: Added client tooltip structure (panel, pointer, CTA) directly within each client logo item.
+-->
+<html lang="en-GB">
+<head>
+	<meta charset="utf-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="ROBOTS" content="NOINDEX,NOFOLLOW"> 
+	<title>Full Service Digital Agency | Cambridgeshire & Norfolk | Netmatters</title>
+	<link rel="icon" type="image/x-icon" href="img/branding/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<!-- Cookie consent module: presents privacy controls before users continue into the page. -->
+<div id="mc-cookiesConsent" class="mc-cookies">
+     <div class="mc-cookies-container">
+        <button type="button" class="mc-cookies-button-manage">Manage Consent</button>
+        <div id="mc-cookie-consent" class="mc-cookie-consent">
+            <div class="mc-cookies-box">
+                <div class="mc-cookies-content">
+                    <div class="mc-cookies-header">
+                        <h3>Cookies Policy</h3>
+                    </div>
+                    <div class="mc-cookies-details">
+                        <p>
+                            Our website uses cookies. This helps us provide you with a good experience on our website. 
+							To see what cookies we use and what they do, and to opt-in on non-essential cookies click "change settings". 
+							For a detailed explanation, click on 
+							"<a href="#">Privacy Policy</a>" otherwise click "Accept Cookies" to enter.
+                        </p>
+                    </div>
+                    <div class="mc-cookies-footer">
+                        <div class="mc-cookies-row">
+                            <div class="mc-cookies-button-box">
+                                <a class="mc-cookies-button-settings" href="#">
+                                    Change Settings
+                                </a>
+                            </div>
+                            <div class="mc-cookies-button-box">
+                                <a class="mc-cookies-button-accept" href="#">
+                                    Accept Cookies
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+</div>
+<!-- Off-canvas sidebar: primary mobile/utility navigation opened by the hamburger control. -->
+<div class="mc-sidebar">
+    <ul class="mc-sidebar-list">
+		<li id="mc-side-contact-button" class="mc-mobile-menu mc-side-menu-item">
+			<a href="#" id="mc-side-contact-button-title" class="mc-side-menu-title mc-contact-side-menu-title">Contact Us</a>
+		</li>
+		<!-- Mobile service category trigger: expands to reveal a list of related service links. -->
+		<li class="mc-mobile-menu mc-mobile-list-title">
+			<a href="#" class="mc-mobile-list-header mc-Mobile-CD"><span class="mc-icon-laptop mc-sidenav-icon"></span><small>Consultancy</small> & Development</a>
+		<!-- Collapsible mobile submenu content associated with the service heading directly above. -->
+		<div class="mc-mobile-sub-menu">
+			<ul class="mc-mobile-menu-list">
+                <li><a href="#"><span>Bespoke CRM</span></a></li>
+                <li> <a href="#"><span>Business Automation</span></a></li>
+				<li><a href="#"><span>Software Integrations</span></a></li>
+                <li><a href="#"><span>Mobile App Development</span></a></li>
+                <li><a href="#"><span>Bespoke Databases</span></a></li>
+                <li><a href="#"><span>Sharepoint Development</span></a></li>
+                <li><a href="#"><span>Operational Systems</span></a></li>
+                <li><a href="#"><span>Business Central Implementation</span></a></li>
+				<li><a href="#"><span>Internet of Things (IoT) Software</span></a></li>
+				<li><a href="#"><span>Intranet Development</span></a></li>
+				<li><a href="#"><span>Customer Portal Development</span></a></li>
+                <li><a href="#"><span>Reporting Hub</span></a></li>
+                <li><a href="#"><span>SAP S/4HANA Management</span></a></li>
+			</ul>
+		</div>
+		</li>	
+		<!-- Mobile service category trigger: expands to reveal a list of related service links. -->
+		<li class="mc-mobile-menu mc-mobile-list-title">
+			<a href="#" class="mc-Mobile-IT mc-mobile-list-header"><span class="mc-icon-display mc-sidenav-icon"></span><small>IT</small> Support</a>
+		<!-- Collapsible mobile submenu content associated with the service heading directly above. -->
+		<div class="mc-mobile-sub-menu">
+			<ul class="mc-mobile-menu-list">
+				<li><a href="#"><span>Managed IT Support</span></a></li>
+				<li><a href="#"><span>Bussiness IT Support</span></a></li>
+				<li><a href="#"><span>Office 365 For Bussiness</span></a></li>
+				<li><a href="#"><span>IT Consultancy</span></a></li>
+				<li><a href="#"><span>Cloud Service Provider</span></a></li>
+				<li><a href="#"><span>Data Backup & Disater Recovery</span></a></li>
+			</ul>
+		</div>
+		</li>
+		<!-- Mobile service category trigger: expands to reveal a list of related service links. -->
+		<li class="mc-mobile-menu mc-mobile-list-title">
+			<a href="#" class="mc-Mobile-DM mc-mobile-list-header"><span class="mc-icon-bar-graph mc-sidenav-icon"></span><small>Digital</small> Marketing</a>
+		<!-- Collapsible mobile submenu content associated with the service heading directly above. -->
+		<div class="mc-mobile-sub-menu">
+			<ul class="mc-mobile-menu-list">
+				<li><a href="#"><span>Search Engine Optimisation (SEO)</span></a></li>
+				<li><a href="#"><span>Pay Per Click Advertising (PPC)</span></a></li>
+				<li><a href="#"><span>Conversion Rate Optimisation (CRO)</span></a></li>
+				<li><a href="#"><span>Email Marketing</span></a></li>
+				<li><a href="#"><span>Social Media Marketing</span></a></li>
+				<li><a href="#"><span>Content Marketing</span></a></li>
+			</ul>
+		</div>
+		</li>
+		<!-- Mobile service category trigger: expands to reveal a list of related service links. -->
+		<li class="mc-mobile-menu mc-mobile-list-title">
+			<a href="#" class="mc-Mobile-TS mc-mobile-list-header"><span class="mc-icon-phone_in_talk mc-sidenav-icon"></span><small>Telecoms</small> Services</a>
+		<!-- Collapsible mobile submenu content associated with the service heading directly above. -->
+		<div class="mc-mobile-sub-menu">
+			<ul class="mc-mobile-menu-list">
+				<li><a href="#"><span>Bussiness Mobile</span></a></li>
+				<li><a href="#"><span>Phone System Health Check</span></a></li>
+				<li><a href="#"><span>Bussiness Phone Systems</span></a></li>
+				<li><a href="#"><span>Bussiness connectivity</span></a></li>
+				<li><a href="#"><span>Telecom Bill Review</span></a></li>
+				<li><a href="#"><span>3CX Systems</span></a></li>
+			</ul>
+		</div>
+		</li>
+		<!-- Mobile service category trigger: expands to reveal a list of related service links. -->
+		<li class="mc-mobile-menu mc-mobile-list-title">
+			<a href="#" class="mc-Mobile-WD mc-mobile-list-header"><span class="mc-icon-code mc-sidenav-icon"></span><small>Web</small> Design</a>
+		<!-- Collapsible mobile submenu content associated with the service heading directly above. -->
+		<div class="mc-mobile-sub-menu">
+			<ul class="mc-mobile-menu-list">
+				<li><a href="#"><span>Bespoke Website Design</span></a></li>
+				<li><a href="#"><span>eCommerce Website Design</span></a></li>
+				<li><a href="#"><span>Pay Monthly Websites</span></a></li>
+				<li><a href="#"><span>|Branding & Design</span></a></li>
+				<li><a href="#"><span>Mobile App Development</span></a></li>
+				<li><a href="#"><span>Web Hosting</span></a></li>
+			</ul>
+		</div>
+		</li>
+		<!-- Mobile service category trigger: expands to reveal a list of related service links. -->
+		<li class="mc-mobile-menu mc-mobile-list-title">
+			<a href="#" class="mc-Mobile-CS mc-mobile-list-header"><span class="mc-icon-security mc-sidenav-icon"></span><small>Cyber</small> Security</a>
+		<!-- Collapsible mobile submenu content associated with the service heading directly above. -->
+		<div class="mc-mobile-sub-menu">
+			<ul class="mc-mobile-menu-list">
+				<li><a href="#"><span>Cyber Security Assessment</span></a></li>
+				<li><a href="#"><span>Cyber Security Management</span></a></li>
+				<li><a href="#"><span>Cyber Penetration  Testing</span></a></li>
+				<li><a href="#"><span>Cyber Essentials Certification</span></a></li>
+				<li><a href="#"><span>PCI Compliance</span></a></li>
+				<li><a href="#"><span>Hacking Prevention</span></a></li>
+			</ul>
+		</div>
+		</li>
+		<!-- Mobile service category trigger: expands to reveal a list of related service links. -->
+		<li class="mc-mobile-menu mc-mobile-list-title">
+			<a href="#" class="mc-Mobile-DC mc-mobile-list-header"><span class="mc-icon-school mc-sidenav-icon"></span><small>Developer</small> Course</a>
+		<!-- Collapsible mobile submenu content associated with the service heading directly above. -->
+		<div class="mc-mobile-sub-menu">
+			<ul class="mc-mobile-menu-list">
+				<li><a href="#"><span>Train for a Career in Tech</span></a></li>
+				<li><a href="#"><span>Skills Bootcamp</span></a></li>
+				<li><a href="#"><span>Scion Scheme Frequently Asked Questions</span></a></li>
+				<li><a href="#"><span>Scion Collaborators</span></a></li>
+			</ul>
+		</div>
+		</li>
+		<li class="mc-non-mobile-menu mc-side-menu-item">
+			<a href="#" class="mc-side-menu-title">Services</a>
+			<!-- Secondary flyout used by sidebar utility sections (e.g., Services, Our Work, Training). -->
+			<div class="mc-sub-menu">
+				<ul class="mc-sub-menu-list">
+					<li><a href="#">Bespoke Software</a></li>
+					<li><a href="#">It Support</a></li>
+					<li><a href="#">Digital Marketing</a></li>
+					<li><a href="#">Telecoms Services</a></li>
+					<li><a href="#">Web Design</a></li>
+					<li><a href="#">Cyber Security</a></li>
+				</ul>
+			</div>
+		</li>
+		<li id="mc-side-ourwork-button" class="mc-side-menu-item">
+			<a href="#" id="mc-side-ourwork-button-title" class="mc-side-menu-title">Our Work</a>
+			<!-- Secondary flyout used by sidebar utility sections (e.g., Services, Our Work, Training). -->
+			<div class="mc-sub-menu">
+				<ul class="mc-sub-menu-list">
+					<li><a href="#">Case Studies</a></li>
+					<li><a href="#">Our Digital Marketing Clients</a></li>
+					<li><a href="#">Our Website Clients</a></li>
+					<li><a href="#">Our IT Clients</a></li>
+					<li><a href="#">Our Bespoke Software Clients</a></li>
+					<li><a href="#">Our Telecom Clients</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="mc-side-menu-item">
+			<a href="#" class="mc-side-menu-title">Our Knowledge</a>
+			<!-- Secondary flyout used by sidebar utility sections (e.g., Services, Our Work, Training). -->
+			<div class="mc-sub-menu">
+				<ul class="mc-sub-menu-list">
+					<li><a href="#">Technologies</a></li>
+					<li><a href="#">Industries</a></li>
+					<li><a href="#">News</a></li>
+					<li><a href="#"> Insights</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="mc-side-menu-item">
+			<a href="#" class="mc-side-menu-title">Training</a>
+			<!-- Secondary flyout used by sidebar utility sections (e.g., Services, Our Work, Training). -->
+			<div class="mc-sub-menu">
+				<ul class="mc-sub-menu-list">
+					<li><a href="#">Train for a Career in Tech</a></li>
+					<li><a href="#">Skills Bootcamp</a></li>
+					<li><a href="#">SCS Frequently Asked Questions</a></li>
+					<li><a href="#">Scion Collaborators</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="mc-side-menu-item">
+			<a href="#" class="mc-side-menu-title">Our Company</a>
+			<!-- Secondary flyout used by sidebar utility sections (e.g., Services, Our Work, Training). -->
+			<div class="mc-sub-menu">
+				<ul class="mc-sub-menu-list">
+					<li><a href="#">Why Choose Us?</a></li>
+					<li><a href="#">Our Culture</a></li>
+					<li><a href="#">Our Team</a></li>
+					<li><a href="#">Our Careers</a></li>
+					<li><a href="#">Our Benefits</a></li>
+					<li><a href="#">Our Accreditations</a></li>
+					<li><a href="#">Laptops 4 Learning</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="mc-side-menu-item">
+			<a href="#" class="mc-side-menu-title">Contact Us</a>
+			<!-- Secondary flyout used by sidebar utility sections (e.g., Services, Our Work, Training). -->
+			<div class="mc-sub-menu">
+				<ul class="mc-sub-menu-list">
+					<li><a href="#">Cambridge Office</a></li>
+					<li><a href="#">Wymondham Office</a></li>
+					<li><a href="#">Great Yarmouth Office</a></li>
+				</ul>
+			</div>
+		</li>
+		<li id="mc-side-support-button" class="mc-mobile-menu mc-side-menu-item"><a href="#" class="mc-side-menu-title">Support</a></li>
+    </ul>
+</div>
+<!-- Main site shell: wraps all visible page content separate from overlays like cookie prompt and sidebar. -->
+<div class="mc-website">
+<div class="mc-head">
+<!-- Primary header: desktop brand area with phone shortcut, CTAs, search, and menu trigger. -->
+<header id="mc-mainHeader">
+	<div class="mc-header-inner">
+		<!-- Shared width-constrained container that keeps content aligned to the global grid. -->
+	<div class="mc-container">
+			<div class="mc-header-row">
+				<div class="mc-header-logo">
+					<a href="#"><img src="img/f-logo.png" alt="Netmatters Logo"></a>
+				</div>
+				<div class="mc-hidden-mobile">
+					<a class="mc-mobile" href="#"> <span class="mc-icon-phone_in_talk"></span></a>
+				</div>
+				<div class="mc-header-buttons">
+				<div class="mc-contact">
+					<a class="mc-header-btn mc-button-support" href="#"><span class="mc-icon-mouse"></span>Support</a>
+					<a class="mc-header-btn mc-button-contact" href="#"><span class="mc-icon-paperplane"></span>Contact</a>
+					<form class="mc-search" method="GET" action="#" accept-charset="UTF-8">
+						<label class="mc-s1" for="search-input" >Search:</label>
+						<input id="mc-search-input" class="mc-form-search" placeholder="Search..." name="keyword" type="text">
+						<button id="mc-search-submit" class="mc-search-submit" type="submit">
+							<span class="mc-icon-search" aria-hidden="true"></span>
+						</button>
+					</form>
+					<button id="mc-hamburger" class="mc-button-hamburger" type="button">
+						<span class="mc-hamburger-box">
+                            <span id="mc-hamburger-inner" class="mc-hamburger-inner"></span>
+                        </span>
+					</button>
+				</div>
+				</div>
+			</div>
+			<div class="mc-mobile-contact">
+				<form class="mc-mobile-search" method="GET" action="#" accept-charset="UTF-8">
+						<label class="mc-hidden-label" for="mobile-input" >Search:</label>
+						<input id="mc-mobile-input" class="mc-mobile-form-search" placeholder="Search..." name="keyword" type="text">
+						<button id="mc-mobile-submit" class="mc-mobile-submit" type="submit">
+							<span class="mc-icon-search" aria-hidden="true"></span>
+						</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- Primary services navigation: top-level categories with large flyout sub-navigation panels. -->
+<nav>
+	<!-- Shared width-constrained container that keeps content aligned to the global grid. -->
+	<div class="mc-container">
+		<ul class="mc-main-nav">
+			<li class="mc-consultancy mc-main-nav-item"><a href="#" class="mc-CD mc-nav-item"><span class="mc-icon-laptop mc-nav-icon"></span><small>Consultancy</small> & Development</a>
+				<div class="mc-sub-nav-CD mc-sub-nav">
+					<!-- Shared width-constrained container that keeps content aligned to the global grid. -->
+	<div class="mc-container">
+						<ul class="mc-sub-nav-list">
+							<li class="mc-sub-nav-title"> Our Consultancy & Development Services</li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-cogs"></span>
+								</span>
+								<span  class="mc-link-text">Bespoke CRM</span>
+							</a></li>
+								<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+									<span class="mc-link-icon">
+										<span class="mc-icon-briefcase"></span>
+									</span>
+								<span  class="mc-link-text">Business Automation</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-random"></span>
+								</span>
+								<span  class="mc-link-text">Software Integration</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-mobile"></span>
+								</span>
+								<span  class="mc-link-text">Mobile App Development</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-folder-open"></span>
+								</span>
+								<span  class="mc-link-text">Bespoke Databases</span></a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-tab"></span>
+								</span>
+								<span  class="mc-link-text">Sharepoint Development</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-download"></span>
+								</span>
+								<span  class="mc-link-text">Operational Systems</span></a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-users"></span>
+								</span>
+								<span  class="mc-link-text">Business Central Implementation</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-laptop1"></span>
+								</span>
+								<span  class="mc-link-text">Internet of Things (IoT) Software</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-cloud"></span>
+								</span>
+								<span  class="mc-link-text">Intranet Development</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-cloud-download"></span>
+								</span>
+								<span  class="mc-link-text">Customer Portal Development</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-globe"></span>
+								</span>
+								<span  class="mc-link-text">Reporting Hub</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-handshake-o"></span>
+								</span>
+								<span  class="mc-link-text">SAP S/4HANA Management</span>
+							</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="mc-itsupport mc-main-nav-item"><a href="#" class="mc-ITS mc-nav-item"><span class="mc-icon-display mc-nav-icon"></span><small>IT</small> Support</a>
+				<div class="mc-sub-nav-ITS mc-sub-nav">
+					<!-- Shared width-constrained container that keeps content aligned to the global grid. -->
+	<div class="mc-container">
+						<ul class="mc-sub-nav-list">
+							<li class="mc-sub-nav-title">Our IT Support Services</li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-headphones"></span>
+								</span>
+								<span  class="mc-link-text">Managed IT Support</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-briefcase"></span>
+								</span>
+								<span  class="mc-link-text">Business IT Support</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-laptop1"></span>
+								</span>
+								<span  class="mc-link-text">Office 365 for Business</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-school"></span>
+								</span>
+								<span  class="mc-link-text">IT Consultancy</span></a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-cloud"></span>
+								</span>
+								<span  class="mc-link-text">Cloud Service Provider</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-drive"></span>
+								</span>
+								<span  class="mc-link-text">Data Backup & Disater Recovery</span>
+							</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="mc-digital mc-main-nav-item"><a href="#" class="mc-DM mc-nav-item"><span class="mc-icon-bar-graph mc-nav-icon"></span><small>Digital</small> Marketing</a>
+				<div class="mc-sub-nav-DM mc-sub-nav">
+					<!-- Shared width-constrained container that keeps content aligned to the global grid. -->
+	<div class="mc-container">
+						<ul class="mc-sub-nav-list">
+							<li class="mc-sub-nav-title">Our Digital Marketing Services</li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-search"></span>
+								</span>
+								<span  class="mc-link-text">Search Engine Optimisation (SEO)</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-money"></span>
+								</span>
+								<span  class="mc-link-text">Pay Per Click Advertising (PPC)</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-trending_up"></span>
+								</span>
+								<span  class="mc-link-text">Conversion Rate Optimisation (CRO)</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-envelope-o"></span>
+								</span>
+								<span class="mc-link-text">Email Marketing</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-users"></span>
+								</span>
+								<span  class="mc-link-text">Social Media Marketing</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-edit-pencil"></span>
+								</span>
+								<span  class="mc-link-text">Content Marketing</span>
+							</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="mc-telecoms mc-main-nav-item"><a href="#" class="mc-TS mc-nav-item"><span class="mc-icon-phone_in_talk mc-nav-icon"></span><small>Telecoms</small> Services</a>
+				<div class="mc-sub-nav-TS mc-sub-nav">
+					<!-- Shared width-constrained container that keeps content aligned to the global grid. -->
+	<div class="mc-container">
+						<ul class="mc-sub-nav-list">
+							<li class="mc-sub-nav-title">Our Telecom Services</li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-ticket"></span>
+								</span>
+								<span  class="mc-link-text">Business Mobile</span></a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-phone"></span>
+								</span>
+								<span  class="mc-link-text">Phone System Health Check</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-phone-square"></span>
+								</span>
+								<span  class="mc-link-text">Business Phone Systems</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-dashboard"></span>
+								</span>
+								<span  class="mc-link-text">Business connectivity</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-handshake-o"></span>
+								</span>
+								<span  class="mc-link-text">Telecoms Bill Review</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-phone_in_talk"></span>
+								</span>
+								<span  class="mc-link-text">3CX Systems</span>
+							</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="mc-webdesign mc-main-nav-item"><a href="#" class="mc-WD mc-nav-item"><span class="mc-icon-code mc-nav-icon"></span><small>Web</small> Design</a>
+				<div class="mc-sub-nav-WD mc-sub-nav">
+					<!-- Shared width-constrained container that keeps content aligned to the global grid. -->
+	<div class="mc-container">
+						<ul class="mc-sub-nav-list">
+							<li class="mc-sub-nav-title">Our Web Design Services</li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-edit-pencil"></span>
+								</span>
+								<span class="mc-link-text" >Bespoke Website Design</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-shopping-cart"></span>
+								</span>
+								<span  class="mc-link-text">eCommerce Website Design</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-desktop"></span>
+								</span>
+								<span class="mc-link-text" >Pay Monthly Websites</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-bullhorn"></span>
+								</span>
+								<span class="mc-link-text" >Branding & Design</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-mobile"></span>
+								</span>
+								<span class="mc-link-text" >Mobile App Development</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-cloud"></span>
+								</span>
+								<span class="mc-link-text" >Web Hosting</span>
+							</a></li>
+						</ul>
+					</div> 
+				</div>
+			</li>
+			<li class="mc-cyber mc-main-nav-item"><a href="#" class="mc-CS mc-nav-item"><span class="mc-icon-security mc-nav-icon"></span><small>Cyber</small> Security</a>
+				<div class="mc-sub-nav-CS mc-sub-nav">
+					<!-- Shared width-constrained container that keeps content aligned to the global grid. -->
+	<div class="mc-container">
+						<ul class="mc-sub-nav-list">
+							<li class="mc-sub-nav-title">Our Cyber Security Services</li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-clipboard"></span>
+								</span>
+								<span class="mc-link-text" >Cyber Security Assessment</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-clock"></span>
+								</span>
+								<span class="mc-link-text" >Cyber Security Management</span>
+							</a></li>
+								<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-flask"></span>
+								</span>
+								<span class="mc-link-text" >Cyber Penetration Testing</span>
+							</a></li>
+								<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+									<span class="mc-link-icon">
+										<span class="mc-icon-school"></span>
+									</span>
+								<span class="mc-link-text" >Cyber Essentials Certification</span>
+							</a></li>
+								<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+									<span class="mc-link-icon">
+										<span class="mc-icon-security"></span>
+									</span>
+								<span class="mc-link-text" >PCI Compliance</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-lock"></span>
+								</span>
+								<span class="mc-link-text" >Hacking Prevention</span>
+							</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="mc-developer mc-main-nav-item"><a href="#" class="mc-DC mc-nav-item"><span class="mc-icon-school mc-nav-icon"></span><small>Developer</small> Course</a>
+				<div class="mc-sub-nav-DC mc-sub-nav">
+					<!-- Shared width-constrained container that keeps content aligned to the global grid. -->
+	<div class="mc-container">
+						<ul class="mc-sub-nav-list">
+							<li class="mc-sub-nav-title">Our Developer Course Services</li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-laptop1"></span>
+								</span>
+								<span class="mc-link-text" >Train For A Career In Tech</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-code"></span>
+								</span>
+								<span class="mc-link-text" >Skills Bootcamp</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-question-circle"></span>
+								</span>
+								<span class="mc-link-text" >Scion Scheme Frequently Asked Questions</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-handshake-o"></span>
+								</span>
+								<span class="mc-link-text" >Scion Collaborators</span>
+							</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</nav>
+</div>
+<div class="mc-banner">
+	<div class="mc-banner-slide mc-banner1">
+		<div class="mc-content"> 
+			<!-- Shared width-constrained container that keeps content aligned to the global grid. -->
+	<div class="mc-container">
+				<h1>
+			 	The East Of England's Leading Technology Company
+				</h1>
+				<p>
+				Performance-driven digital and technology services <br>
+				with complete transparency.
+				</p>
+				<a class="mc-button-banner mc-company-button" href="#"> Why Choose Us? <span class="mc-icon-arrow-right"></span></a>
+			</div>
+		</div>
+	</div>
+	<div class="mc-banner-slide mc-banner2 is-hidden-for-now">
+		<div class="mc-content"> 
+			<!-- Shared width-constrained container that keeps content aligned to the global grid. -->
+	<div class="mc-container">
+				<h1>
+			 	Bespoke Software
+				</h1>
+				<p>
+				Delivering expert bespoke software<br>
+				solutions across a range of industries.
+				</p>
+				<a class="mc-button-banner mc-bespoke-button" href="#"> Find Out More <span class="mc-icon-arrow-right"></span></a>
+			</div>
+		</div>
+	</div>
+	<div class="mc-banner-slide mc-banner3 is-hidden-for-now">
+		<div class="mc-content"> 
+			<!-- Shared width-constrained container that keeps content aligned to the global grid. -->
+	<div class="mc-container">
+				<h1>
+			 	IT Support
+				</h1>
+				<p>
+				Fast and cost-effective IT support<br>
+				services for your business
+				</p>
+				<a class="mc-button-banner mc-itsupport-button" href="#"> Find Out More <span class="mc-icon-arrow-right"></span></a>
+			</div>
+		</div>
+	</div>
+	<div class="mc-banner-slide mc-banner4 is-hidden-for-now">
+		<div class="mc-content"> 
+			<!-- Shared width-constrained container that keeps content aligned to the global grid. -->
+	<div class="mc-container">
+				<h1>
+			 	Digital Marketing
+				</h1>
+				<p>
+				Generating your new business through <br>
+				results-driven marketing activities.
+				</p>
+				<a class="mc-button-banner mc-digitalmarketing-button" href="#"> Find Out More <span class="mc-icon-arrow-right"></span></a>
+			</div>
+		</div>
+	</div>
+	<div class="mc-banner-slide mc-banner5 is-hidden-for-now">
+		<div class="mc-content"> 
+			<!-- Shared width-constrained container that keeps content aligned to the global grid. -->
+	<div class="mc-container">
+				<h1>
+			 	Telecoms Services
+				</h1>
+				<p>
+				>A new approach to connectivity, see<br>
+				how we can help your business.
+				</p>
+				<a class="mc-button-banner mc-telecomservices-button" href="#"> Find Out More <span class="mc-icon-arrow-right"></span></a>
+			</div>
+		</div>
+	</div>
+	<div class="mc-banner-slide mc-banner6 is-hidden-for-now">
+		<div class="mc-content"> 
+			<!-- Shared width-constrained container that keeps content aligned to the global grid. -->
+	<div class="mc-container">
+				<h1>
+			 	Web Design
+				</h1>
+				<p>
+				For businesses looking to make a strong <br>
+				and effective first impression.
+				</p>
+				<a class="mc-button-banner mc-webdesign-button" href="#"> Find Out More <span class="mc-icon-arrow-right"></span></a>
+			</div>
+		</div>
+	</div>
+	<div class="mc-banner-slide mc-banner7 is-hidden-for-now">
+		<div class="mc-content"> 
+			<!-- Shared width-constrained container that keeps content aligned to the global grid. -->
+	<div class="mc-container">
+				<h1>
+			 	Cyber Security
+				</h1>
+				<p>
+				Keeping businesses and their customers <br>
+				sensitive information protected.
+				</p>
+				<a class="mc-button-banner mc-cybersecurity-button" href="#"> Find Out More <span class="mc-icon-arrow-right"></span></a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="mc-middle">
+	<div class="mc-section">
+	<!-- Shared width-constrained container that keeps content aligned to the global grid. -->
+	<div class="mc-container">
+		<div class="mc-services-list">
+			<div class="mc-services-row">
+				<div class="mc-services-header">
+					<h2>Our Services</h2>
+					<h1><a href="#">View Our Work <em class="mc-icon-arrow-right"></em></a></h1>
+				</div>
+				<div class="mc-services-gridbox">
+					<div id="mc-panel1" class="mc-services-panel">
+						<a href="#" class="mc-panel-CD">
+							<span class="mc-icon1">
+								<span class="mc-icon-laptop"></span>
+							</span>
+							<h2>Consultancy & Development</h2>
+							<p>Bespoke software solutions & consultancy for all your business needs including integrations and reporting.</p>
+							<span class="mc-button-container">
+								<span class="mc-button-CD">
+									Read More
+								</span>
+							</span>
+						</a>
+					</div>
+					<div id="mc-panel2" class="mc-services-panel">
+						<a href="#" class="mc-panel-IT">
+							<span class="mc-icon1">
+								<span class="mc-icon-display"></span>
+							</span>
+							<h2>IT Support</h2>
+							<p>Fully managed IT support and consultancy packages tailored to meet your exact business needs.</p>
+							<span class="mc-button-container">
+								<span class="mc-button-IT">
+									Read More
+								</span>
+							</span>
+						</a>
+					</div>
+					<div id="mc-panel3" class="mc-services-panel">
+						<a href="#" class="mc-panel-DM">
+							<span class="mc-icon1">
+								<span class="mc-icon-bar-graph"></span>
+							</span>
+							<h2>Digital Marketing</h2>
+							<p>Driven brand awareness & ROI through creative digital marketing campagins.</p>
+							<span class="mc-button-container">
+								<span class="mc-button-DM">
+									Read More
+								</span>
+							</span>
+						</a>
+					</div>
+					<div id="mc-panel4" class="mc-services-panel">
+						<a href="#" class="mc-panel-TS">
+							<span class="mc-icon1">
+									<span class="mc-icon-phone_in_talk"></span>
+							</span>
+							<h2>Telecoms Services</h2>
+							<p>Bussiness Telephony solutions including mobile & connectivity solutions.</p>
+							<span class="mc-button-container">
+								<span class="mc-button-TS">
+									Read More
+								</span>
+							</span>
+						</a>
+					</div>
+					<div id="mc-panel5" class="mc-services-panel">
+						<a href="#" class="mc-panel-WD">
+							<span class="mc-icon1">
+								<span class="mc-icon-code"></span>
+							</span>
+							<h2>Web Design</h2>
+							<p>User-centric design for bussinesses looking to make a lasting impression.</p>
+							<span class="mc-button-container">
+								<span class="mc-button-WD">
+									Read More
+								</span>
+							</span>
+						</a>
+					</div>
+					<div id="mc-panel6" class="mc-services-panel">
+						<a href="#" class="mc-panel-CS">
+							<span class="mc-icon1">
+							<span class="mc-icon-security"></span>
+							</span>
+							<h2>Cyber Security</h2>
+							<p>Prevention, testing, consultancy & breach management services.</p>
+							<span class="mc-button-container">
+								<span class="mc-button-CS">
+									Read More
+								</span>
+							</span>
+						</a>
+					</div>
+					<div id="mc-panel7" class="mc-services-panel">
+						<a href="#" class="mc-panel-DT">
+							<span class="mc-icon1">
+								<span class="mc-icon-school"></span>
+							</span>
+							<h2>Developer Training</h2>
+							<p>Web design & software training courses desgined to secure a job in tech.</p>
+							<span class="mc-button-container">
+								<span class="mc-button-DT">
+									Read More
+								</span>
+							</span>
+							</a>
+					</div>
+				</div>
+					<div class="mc-hidden-view-work">
+						<h3><a href="#">View Our Work <em class="mc-icon-arrow-right"></em></a></h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<div class="mc-partners">
+	<div class="mc-section">
+		<div class="mc-sliding-imgs">
+			<div class="mc-sliding-list">
+				<div class="mc-sliding-img-box">
+					<img src="img/partners/cyber-essentials-colour.jpg" alt="">
+				</div>
+				<div class="mc-sliding-img-box">
+					<img src="img/partners/google-partner.jpg" alt="">
+				</div>
+				<div class="mc-sliding-img-box">
+					<img src="img/partners/GBC-colour.png" alt="">
+				</div>
+				<div class="mc-sliding-img-box">
+					<img src="img/partners/norfolk_prohelp.png" alt="">
+				</div>
+				<div class="mc-sliding-img-box">
+					<img src="img/partners/investing-in-future-growth.jpg" alt="">
+				</div>
+				<div class="mc-sliding-img-box">
+					<img src="img/partners/norfolk-carbon-charter.jpg" alt="">
+				</div>
+				<div class="mc-sliding-img-box">
+					<img src="img/partners/PPC_logo.jpg" alt="">
+				</div>
+				<div class="mc-sliding-img-box">
+					<img src="img/partners/princess-royal-training.png" alt="">
+				</div>
+				<div class="mc-sliding-img-box">
+					<img src="img/partners/future-50.jpg" alt="">
+				</div>
+				<div class="mc-sliding-img-box">
+					<img src="img/partners/qms.png" alt="">
+				</div>
+				<div class="mc-sliding-img-box">
+					<img src="img/partners/iso-27001.png" alt="">
+				</div>
+				<div class="mc-sliding-img-box">
+					<img src="img/partners/skills-of-tomorrow.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="mc-about-us">
+	<div class="mc-section">
+	<!-- Shared width-constrained container that keeps content aligned to the global grid. -->
+	<div class="mc-container">
+		<div class="mc-about-row">
+			<div class="mc-about-info">
+				<h2><strong>Welcome To Netmatters</strong></h2>
+				<p><strong>Netmatters is a leading <a href="#">Bespoke Software</a>, <a href="#">IT Support</a>, 
+					and <a href="#">Digital Marketing</a> company based in the East of England 
+					with offices in <a href="#">Cambridge</a>, <a href="#">Wymondham</a>, and <a href="#">Great Yarmouth</a>.</strong>
+				</p>
+				<p>
+					We aren't tied into contracts with third-party providers, 
+					so you know that our recommendations for your business are based purely with one benefit in mind: 
+					to help improve your business with the most appropriate solutions.
+				</p>
+				<p>
+					We pride ourselves on being an ethical business and have a unique business offering and cost model
+					 that ensures you get the most from our relationship in an upfront manner.
+				</p>
+				<div class="mc-about-buttons"> 
+					<a class="mc-aboutus-btn mc-button-about" href="#">
+						Why Choose Us? <em class="mc-icon-arrow-right"></em>
+					</a>
+					<a class="mc-aboutus-btn mc-button-about"> 
+						Our Culture <em class="mc-icon-arrow-right"></em>
+					</a>
+				</div>
+			</div>
+			<div class="mc-about-info">
+				<h2><strong>What Our Clients Think</strong></h2>
+				<div class="mc-star-rating">
+					<div class="mc-icon-star-full"></div>
+					<div class="mc-icon-star-full"></div>
+					<div class="mc-icon-star-full"></div>
+					<div class="mc-icon-star-full"></div>
+					<div class="mc-icon-star-full"></div>
+				</div>
+				<p class="mc-quote">
+					Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled 
+					-they know their stuff! They delivered a website to our (high!) 
+					expectations and went over and above to ensure we were satisfied clients 
+					- and we are!
+				</p>
+				<p class="mc-quote-author">
+					Eleanor Bishop, Head of Marketing - <a href="#">Ashcroft Partnership LLP</a>
+				</p>
+				<div class="mc-review-buttons"> 
+					<a class="mc-aboutus-btn mc-button-about-google"> 
+						Google Reviews <em class="mc-icon-arrow-right"></em>
+					</a>
+					<a class="mc-aboutus-btn mc-button-about-trustpilot"> 
+						TrustPilot Reviews <em class="mc-icon-arrow-right"></em>
+					</a>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+</div>
+<div class="mc-news">
+	<!-- Shared width-constrained container that keeps content aligned to the global grid. -->
+	<div class="mc-container">
+		<div class="mc-news-header">
+			<h2><strong>Latest News</strong></h2>
+			<h3><a href="#">View All <strong><em class="mc-icon-arrow-right"></em></strong></a></h3>
+		</div>
+			<div class="mc-news-row">
+				<div class="mc-news-article">
+						<a href="#" class="mc-article-bespoke">
+							<div class="mc-article-img">
+								<span class="mc-insights">Insights</span>
+								<span class="mc-article-img-box">
+									<img src="img/how-much-could-vKZG.png" alt="Increase Exit Value With Bespoke Software">
+								</span>
+							</div>
+							<div class="mc-article-description">
+								<h3>
+									How Much Could Bespoke Software Add To Your E...
+								</h3>
+								<p>
+									If you're a Managing Director or Senior Manager preparing your business for exit, you know that incr...
+								</p>
+								<span class="mc-news-btn mc-news-btn-orange">
+									Read More
+								</span>
+								<div class="mc-article-author">
+									<div class="mc-article-author-img">
+										<img src="img/netmatters-ltd-VXAv.png" alt="Netmatters">
+									</div>
+									<div class="mc-article-author-name">
+										<strong>Posted by Netmatters</strong>
+										<br>
+										27th June 2025	
+									</div>
+								</div>
+							</div>
+							</a>
+					</div>
+				<div class="mc-news-article">					
+						<a class="mc-article-ai" href="#">
+							<div class="mc-article-img">
+								<span class="mc-insights">Insights</span>
+								<span class="mc-article-img-box">
+									<img src="img/how-can-ai-L9M0.png" alt="Article: AI Integration For Businesses">
+								</span>
+							</div>
+							<div class="mc-article-description">
+								<h3>How can AI Benefit My Business?</h3>
+								<p>
+									The idea of integrating AI into your business operations may seem daunting, but there are undeniable...
+								</p>
+								<span class="mc-news-btn mc-news-btn-orange">
+									Read More
+								</span>
+								<div class="mc-article-author">
+									<div class="mc-article-author-img">
+										<img src="img/netmatters-ltd-VXAv.png" alt="Netmatters">
+									</div>
+									<div class="mc-article-author-name">
+										<strong>Posted by Netmatters</strong>
+										<br>
+										26th June 2025										
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>				
+				<div class="mc-news-article">
+						<a class="mc-article-technician" href="#">
+							<div class="mc-article-img">
+								<span class="mc-insights-it-tech">careers</span>
+								<span class="mc-article-img-box">
+									<img src="img/1st-line-technician-1QNr.png" alt="We Are Hiring: 1st Line Technician">
+								</span>
+							</div>
+							<div class="mc-article-description">
+								<h3 class="mc-firstline">1st Line Technician
+								</h3>
+								<p>
+									Salary Range £25,000 -£29,000 + Pension Hours 40 hours per week, Monday - Friday Location Wymondham,...
+								</p>
+								<span class="mc-news-btn mc-news-btn-blue">
+									Read More
+								</span>
+								<div class="mc-article-author">
+									<div class="mc-article-author-img">
+										<img src="img/bethany-shakespeare-F6Iu.jpg" alt="Bethany Shakespeare">
+									</div>
+									<div class="mc-article-author-name">
+										<strong>Posted by Bethany Shakespeare</strong>
+										<br>
+										20th June 2025										
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+			</div>		
+		<div class="mc-hidden-view-all">
+			<h3><a href="#">View All <strong><em class="mc-icon-arrow-right"></em></strong></a></h3>
+		</div>
+	</div>
+</div>
+<div class="mc-clients">
+	<div class="mc-section">
+		<div class="mc-sliding-imgs">
+			<div class="mc-sliding-list">
+				<div class="mc-sliding-img-box">
+					<div class="mc-logo-tooltip">
+					<div class="mc-logo-description">
+						<h3>Sweetzy
+						</h3>
+						<p>
+							Sweetzy are an online sweets retailer, based in Wymondham.
+						</p>
+						<a href="#" class="mc-tooltip-button mc-logo-buttonG">
+							View Our Case Study<em class="mc-icon-arrow-right"></em>
+						</a>
+						<div class="mc-arrow"></div>
+					</div>
+					</div>
+					<img src="img/clients/sweetzy_logo.png" alt="">
+				</div>
+				<div class="mc-sliding-img-box">
+					<div class="mc-logo-tooltip">
+					<div class="mc-logo-description">
+						<h3>Howes Percival
+						</h3>
+						<div class="mc-arrow"></div>
+					</div></div>
+					<img src="img/clients/howespercivallogo.png" alt="">
+				</div>
+				<div class="mc-sliding-img-box">
+					<div class="mc-logo-tooltip">
+					<div class="mc-logo-description">
+						<h3>GDST
+						</h3>
+						<p>
+							The <a href="#">Girls' Day School Trust (GDST)</a> is the UK's leading family of 25 independant girls' schools.
+						</p>
+						<a href="#" class="mc-tooltip-button mc-logo-buttonG">
+							View Our Case Study<em class="mc-icon-arrow-right"></em>
+						</a>
+						<div class="mc-arrow"></div>
+					</div></div>
+					<img src="img/clients/girls_day_school_trust_logob.png" alt="">
+				</div>
+				<div class="mc-sliding-img-box">
+					<div class="mc-logo-tooltip">
+					<div class="mc-logo-description">
+						<h3>Ashcroft Partnership LLP
+						</h3>
+						<p>
+                        Originally founded in 2006 as Ashcroft Anthony, they became Ashcroft Partnership LLP in 2020 and
+                        are one of the top chartered accountancy firms in Cambridge, advising entrepreneurs and
+                        families.
+						</p>
+						<a href="#" class="mc-tooltip-button mc-logo-buttonP">
+							View Our Case Study<em class="mc-icon-arrow-right"></em>
+						</a>
+						<div class="mc-arrow"></div>
+					</div></div>
+					<img src="img/clients/ashcroftlogo_landscape_goldblack_DP60P-small.png" alt="">
+				</div>
+				<div class="mc-sliding-img-box">
+					<div class="mc-logo-tooltip">
+					<div class="mc-logo-description">
+						<h3>One Traveller
+						</h3>
+						<p>
+							<a href="#" target="_blank">One Traveller</a>, 
+							founded in 2007, is a leading provider of solo holidays for over 50s.                    
+						</p>
+						<a href="#" class="mc-tooltip-button mc-logo-buttonP">
+							View Our Case Study<em class="mc-icon-arrow-right"></em>
+						</a>
+						<div class="mc-arrow"></div>
+					</div>
+					</div>
+					<img src="img/clients/onetravellerlogo_white_figuire.png" alt="">
+				</div>
+				<div class="mc-sliding-img-box">
+					<div class="mc-logo-tooltip">
+					<div class="mc-logo-description">
+						<h3>Searles Leisure Resort
+						</h3>
+						<p>
+                        Searles Leisure Resort, on the beautiful North Norfolk coast, is an award-winning UK holiday
+                        resort for families.
+						</p>
+						<a href="#" class="mc-tooltip-button mc-logo-buttonG">
+							View Our Case Study<em class="mc-icon-arrow-right"></em>
+						</a>
+						<div class="mc-arrow"></div>
+					</div>
+					</div>
+					<img src="img/clients/searles_logo.jpg" alt="">
+				</div>
+				<div class="mc-sliding-img-box">
+					<div class="mc-logo-tooltip">
+					<div class="mc-logo-description">
+						<h3>Busseys
+						</h3>
+						<p>
+							One of the UK's leading Ford dealerships.
+						</p>
+						<div class="mc-arrow"></div>
+					</div>
+					</div>
+					<img src="img/clients/busseys_logo.png" alt="">
+				</div>
+				<div class="mc-sliding-img-box">
+					<div class="mc-logo-tooltip">
+					<div class="mc-logo-description">
+						<h3>Crane Garden Buildings
+						</h3>
+						<p>
+                        Leading manufacturer and supplier of high-end garden rooms, summerhouses, workshops and sheds in
+                        the UK.
+						</p>
+						<div class="mc-arrow"></div>
+					</div></div>
+					<img src="img/clients/crane_logo.png" alt="">
+				</div>
+				<div class="mc-sliding-img-box">
+					<div class="mc-logo-tooltip">
+					<div class="mc-logo-description">
+						<h3>Black Swan Care Group
+						</h3>
+						<p>
+                        Black Swan Care Group own and manage 21 high-quality care and residential homes with a focus on
+                        putting the needs of their residents first.
+						</p>
+						<a href="#" class="mc-tooltip-button mc-logo-buttonO">
+							View Our Case Study<em class="mc-icon-arrow-right"></em>
+						</a>
+						<div class="mc-arrow"></div>
+					</div>
+					</div>
+					<img src="img/clients/black_swan_logo.png" alt="">
+				</div>
+				<div class="mc-sliding-img-box">
+					<div class="mc-logo-tooltip">
+					<div class="mc-logo-description">
+						<h3 class="xupes-title">Xupes
+							</h3>						
+						<div class="mc-arrow"></div>
+					</div>
+					</div>
+					<img src="img/clients/xupes_logo.png" alt="">
+				</div>
+				<div class="mc-sliding-img-box">
+					<div class="mc-logo-tooltip">
+					<div class="mc-logo-description">
+						<h3>Beat
+						</h3>
+						<p>
+							The UK's eating disorder charity founded in 1989.
+						</p>
+						<div class="mc-arrow"></div>
+					</div></div>
+					<img src="img/clients/beat_logo.png" alt="">
+				</div>
+				<div class="mc-sliding-img-box">
+					<div class="mc-logo-tooltip">
+					<div class="mc-logo-description">
+						<h3>Survey Solutions
+						</h3>
+						<div class="mc-arrow"></div>
+					</div>
+					</div>
+					<img src="img/clients/survey_solutions_logo.png" alt="">
+				</div>
+				<div class="mc-sliding-img-box">
+					<div class="mc-logo-tooltip">
+					<div class="mc-logo-description">
+						<h3>Girl Guiding Angelia
+						</h3>
+						<p>
+                        Girl Guiding Anglia is part of Girlguiding, the UK's leading charity for girls and young women in
+                        the UK.
+						</p>
+						<a href="#" class="mc-tooltip-button mc-logo-buttonB">
+							View Our Case Study<em class="mc-icon-arrow-right"></em>
+						</a>
+						<div class="mc-arrow"></div>
+					</div>
+					</div>
+					<img src="img/clients/girl_guides_anglia.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div> 
+<!-- Footer: partner logos, quick links, contact details, social links, and legal/compliance information. -->
+<footer>
+	<!-- Shared width-constrained container that keeps content aligned to the global grid. -->
+	<div class="mc-container">
+		<div class="mc-footer-row">
+			<div class="mc-footer-company-info">
+				<div class="mc-footer-company-box">
+				<div class="mc-footer-logo">
+					<img src="img/branding/nm-logo-white-med.png" alt="Netmatters Logo">
+				</div>
+				<div class="mc-social-media">
+					<h4>
+						Follow Us On:
+					</h4>
+					<div class="mc-social-media-buttons">
+						<a class="mc-social-facebook" href="#" target="_blank"><span class="mc-icon-facebook"></span></a>
+						<a class="mc-social-linkedin" href="#" target="_blank"><span class="mc-icon-linkedin"></span></a>
+						<a class="mc-social-twitter" href="#" target="_blank"><span class="mc-icon-x"></span></a>
+						<a class="mc-social-Instagram" href="#" target="_blank"><span class="mc-icon-instagram"></span></a>
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="mc-footer-menu-row" >
+			<div class="mc-footer-menu">
+				<h4>About Netmatters</h4>
+				<ul>
+				<li><a href="#">News</a></li>
+				<li><a href="#">Our Careers</a></li>
+				<li><a href="#">Our Team</a></li>
+				<li><a href="#">Contact us</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="#">Cookie Policy</a></li>
+				<li><a href="#">Data Retention</a></li>
+				<li><a href="#">CCTV Policy</a></li>
+				<li><a href="#">Enviromental Policy</a></li>
+				<li><a href="#">Sexual Harassment Policy</a></li>
+				<li><a href="#">Morden Slavery Statement</a></li>
+				<li><a href="#">Terms & Conditions</a></li>
+				</ul>
+			</div>
+			<div class="mc-footer-menu">
+				<h4>Our Services</h4>
+				<ul>
+					<li><a href="#">Bespoke Software</a></li>
+					<li><a href="#">IT Support</a></li>
+					<li><a href="#">Digital Marketing</a></li>
+					<li><a href="#">Telecoms Services</a></li>
+					<li><a href="#">Web Design</a></li>
+					<li><a href="#">Cyber Security</a></li>
+					<li><a href="#">Developer Training</a></li>
+				</ul>
+			</div>
+			<div class="mc-footer-menu">
+				<h4>Our Industries</h4>
+				<ul>
+					<li><a href="#">Finacial Services</a></li>
+					<li><a href="#">Construction</a></li>
+					<li><a href="#">Retail & E-Commence</a></li>
+					<li><a href="#">Non-Profits</a></li>
+					<li><a href="#">SME's</a></li>
+					<li><a href="#">Healthcare</a></li>
+					<li><a href="#">Education & Training</a></li>
+					<li><a href="#">Travel & Leisure</a></li>
+					<li><a href="#">Manufacturing & Offshore</a></li>
+				</ul>
+			</div>
+			<div class="mc-footer-menu">
+				<h4>Locations</h4>
+				<ul>
+				<li><a href="#">Cambridge Office</a></li>
+				<li><a href="#">Wymondham Office</a></li>
+				<li><a href="#">Great Yarmouth Office</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</div>
+</footer>
+<div class="mc-bottom">
+	<div class="mc-container-bottom">
+		<div class="mc-license">
+			 © Copyright Netmatters 2025. <br class="mc-license-br"> All rights reserved. 
+		<ul>
+			<li><a href="#">Sitemap</a></li>
+		</ul>
+		</div>
+	</div>
+</div>
+</div>
+<div class="mc-sticky-header">
+<!-- Sticky header: compact header that appears on scroll for persistent navigation access. -->
+<header id="mc-stickyHeader">
+	<div class="mc-header-inner">
+		<!-- Shared width-constrained container that keeps content aligned to the global grid. -->
+	<div class="mc-container">
+			<div class="mc-header-row">
+				<div class="mc-header-logo">
+					<a href="#"><img src="img/f-logo.png" alt="Netmatters Logo"></a>
+				</div>
+				<div class="mc-hidden-mobile">
+					<a class="mc-mobile" href="#"> <span class="mc-icon-phone_in_talk"></span></a>
+				</div>
+				<div class="mc-header-buttons">
+				<div class="mc-contact">
+					<a class="mc-header-btn mc-button-support" href="#"><span class="mc-icon-mouse"></span>Support</a>
+					<a class="mc-header-btn mc-button-contact" href="#"><span class="mc-icon-paperplane"></span>Contact</a>
+					<form class="mc-search" method="GET" action="#" accept-charset="UTF-8">
+						<label class="mc-s1" for="search-input" >Search:</label>
+						<input id="mc-search-input2" class="mc-form-search" placeholder="Search..." name="keyword" type="text">
+						<button id="mc-search-submit2" class="mc-search-submit" type="submit">
+							<span class="mc-icon-search" aria-hidden="true"></span>
+						</button>
+					</form>
+					<button id="mc-hamburger2" class="mc-button-hamburger" type="button">
+						<span class="mc-hamburger-box">
+                            <span id="mc-hamburger-inner2" class="mc-hamburger-inner"></span>
+                        </span>
+					</button>
+				</div>
+				</div>
+			</div>
+			<div class="mc-mobile-contact">
+				<form class="mc-mobile-search" method="GET" action="#" accept-charset="UTF-8">
+						<label class="mc-hidden-label" for="mobile-input" >Search:</label>
+						<input id="mc-mobile-input2" class="mc-mobile-form-search" placeholder="Search..." name="keyword" type="text">
+						<button id="mc-mobile-submit2" class="mc-mobile-submit" type="submit">
+							<span class="mc-icon-search" aria-hidden="true"></span>
+						</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</header>
+<nav>
+	<!-- Shared width-constrained container that keeps content aligned to the global grid. -->
+	<div class="mc-container">
+		<ul class="mc-main-nav">
+			<li class="mc-consultancy mc-main-nav-item"><a href="#" class="mc-CD mc-nav-item"><span class="mc-icon-laptop mc-nav-icon"></span><small>Consultancy</small> & Development</a>
+				<div class="mc-sub-nav-CD mc-sub-nav mc-stickysubnav">
+					<!-- Shared width-constrained container that keeps content aligned to the global grid. -->
+	<div class="mc-container">
+						<ul class="mc-sub-nav-list">
+							<li class="mc-sub-nav-title"> Our Consultancy & Development Services</li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-cogs"></span>
+								</span>
+								<span  class="mc-link-text">Bespoke CRM</span>
+							</a></li>
+								<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+									<span class="mc-link-icon">
+										<span class="mc-icon-briefcase"></span>
+									</span>
+								<span  class="mc-link-text">Business Automation</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-random"></span>
+								</span>
+								<span  class="mc-link-text">Software Integration</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-mobile"></span>
+								</span>
+								<span  class="mc-link-text">Mobile App Development</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-folder-open"></span>
+								</span>
+								<span  class="mc-link-text">Bespoke Databases</span></a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-tab"></span>
+								</span>
+								<span  class="mc-link-text">Sharepoint Development</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-download"></span>
+								</span>
+								<span  class="mc-link-text">Operational Systems</span></a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-users"></span>
+								</span>
+								<span  class="mc-link-text">Business Central Implementation</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-laptop1"></span>
+								</span>
+								<span  class="mc-link-text">Internet of Things (IoT) Software</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-cloud"></span>
+								</span>
+								<span  class="mc-link-text">Intranet Development</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-cloud-download"></span>
+								</span>
+								<span  class="mc-link-text">Customer Portal Development</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-globe"></span>
+								</span>
+								<span  class="mc-link-text">Reporting Hub</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-handshake-o"></span>
+								</span>
+								<span  class="mc-link-text">SAP S/4HANA Management</span>
+							</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="mc-itsupport mc-main-nav-item"><a href="#" class="mc-ITS mc-nav-item"><span class="mc-icon-display mc-nav-icon"></span><small>IT</small> Support</a>
+				<div class="mc-sub-nav-ITS mc-sub-nav mc-stickysubnav">
+					<!-- Shared width-constrained container that keeps content aligned to the global grid. -->
+	<div class="mc-container">
+						<ul class="mc-sub-nav-list">
+							<li class="mc-sub-nav-title">Our IT Support Services</li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-headphones"></span>
+								</span>
+								<span  class="mc-link-text">Managed IT Support</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-briefcase"></span>
+								</span>
+								<span  class="mc-link-text">Business IT Support</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-laptop1"></span>
+								</span>
+								<span  class="mc-link-text">Office 365 for Business</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-school"></span>
+								</span>
+								<span  class="mc-link-text">IT Consultancy</span></a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-cloud"></span>
+								</span>
+								<span  class="mc-link-text">Cloud Service Provider</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-drive"></span>
+								</span>
+								<span  class="mc-link-text">Data Backup & Disater Recovery</span>
+							</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="mc-digital mc-main-nav-item"><a href="#" class="mc-DM mc-nav-item"><span class="mc-icon-bar-graph mc-nav-icon"></span><small>Digital</small> Marketing</a>
+				<div class="mc-sub-nav-DM mc-sub-nav mc-stickysubnav">
+					<!-- Shared width-constrained container that keeps content aligned to the global grid. -->
+	<div class="mc-container">
+						<ul class="mc-sub-nav-list">
+							<li class="mc-sub-nav-title">Our Digital Marketing Services</li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-search"></span>
+								</span>
+								<span  class="mc-link-text">Search Engine Optimisation (SEO)</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-money"></span>
+								</span>
+								<span  class="mc-link-text">Pay Per Click Advertising (PPC)</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-trending_up"></span>
+								</span>
+								<span  class="mc-link-text">Conversion Rate Optimisation (CRO)</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-envelope-o"></span>
+								</span>
+								<span class="mc-link-text">Email Marketing</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-users"></span>
+								</span>
+								<span  class="mc-link-text">Social Media Marketing</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-edit-pencil"></span>
+								</span>
+								<span  class="mc-link-text">Content Marketing</span>
+							</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="mc-telecoms mc-main-nav-item"><a href="#" class="mc-TS mc-nav-item"><span class="mc-icon-phone_in_talk mc-nav-icon"></span><small>Telecoms</small> Services</a>
+				<div class="mc-sub-nav-TS mc-sub-nav mc-stickysubnav">
+					<!-- Shared width-constrained container that keeps content aligned to the global grid. -->
+	<div class="mc-container">
+						<ul class="mc-sub-nav-list">
+							<li class="mc-sub-nav-title">Our Telecom Services</li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-ticket"></span>
+								</span>
+								<span  class="mc-link-text">Business Mobile</span></a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-phone"></span>
+								</span>
+								<span  class="mc-link-text">Phone System Health Check</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-phone-square"></span>
+								</span>
+								<span  class="mc-link-text">Business Phone Systems</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-dashboard"></span>
+								</span>
+								<span  class="mc-link-text">Business connectivity</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-handshake-o"></span>
+								</span>
+								<span  class="mc-link-text">Telecoms Bill Review</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-phone_in_talk"></span>
+								</span>
+								<span  class="mc-link-text">3CX Systems</span>
+							</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="mc-webdesign mc-main-nav-item"><a href="#" class="mc-WD mc-nav-item"><span class="mc-icon-code mc-nav-icon"></span><small>Web</small> Design</a>
+				<div class="mc-sub-nav-WD mc-sub-nav mc-stickysubnav">
+					<!-- Shared width-constrained container that keeps content aligned to the global grid. -->
+	<div class="mc-container">
+						<ul class="mc-sub-nav-list">
+							<li class="mc-sub-nav-title">Our Web Design Services</li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-edit-pencil"></span>
+								</span>
+								<span class="mc-link-text" >Bespoke Website Design</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-shopping-cart"></span>
+								</span>
+								<span  class="mc-link-text">eCommerce Website Design</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-desktop"></span>
+								</span>
+								<span class="mc-link-text" >Pay Monthly Websites</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-bullhorn"></span>
+								</span>
+								<span class="mc-link-text" >Branding & Design</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-mobile"></span>
+								</span>
+								<span class="mc-link-text" >Mobile App Development</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-cloud"></span>
+								</span>
+								<span class="mc-link-text" >Web Hosting</span>
+							</a></li>
+						</ul>
+					</div> 
+				</div>
+			</li>
+			<li class="mc-cyber mc-main-nav-item"><a href="#" class="mc-CS mc-nav-item"><span class="mc-icon-security mc-nav-icon"></span><small>Cyber</small> Security</a>
+				<div class="mc-sub-nav-CS mc-sub-nav mc-stickysubnav">
+					<!-- Shared width-constrained container that keeps content aligned to the global grid. -->
+	<div class="mc-container">
+						<ul class="mc-sub-nav-list">
+							<li class="mc-sub-nav-title">Our Cyber Security Services</li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-clipboard"></span>
+								</span>
+								<span class="mc-link-text" >Cyber Security Assessment</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-clock"></span>
+								</span>
+								<span class="mc-link-text" >Cyber Security Management</span>
+							</a></li>
+								<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-flask"></span>
+								</span>
+								<span class="mc-link-text" >Cyber Penetration Testing</span>
+							</a></li>
+								<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+									<span class="mc-link-icon">
+										<span class="mc-icon-school"></span>
+									</span>
+								<span class="mc-link-text" >Cyber Essentials Certification</span>
+							</a></li>
+								<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+									<span class="mc-link-icon">
+										<span class="mc-icon-security"></span>
+									</span>
+								<span class="mc-link-text" >PCI Compliance</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-lock"></span>
+								</span>
+								<span class="mc-link-text" >Hacking Prevention</span>
+							</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li class="mc-developer mc-main-nav-item"><a href="#" class="mc-DC mc-nav-item"><span class="mc-icon-school mc-nav-icon"></span><small>Developer</small> Course</a>
+				<div class="mc-sub-nav-DC mc-sub-nav mc-stickysubnav">
+					<!-- Shared width-constrained container that keeps content aligned to the global grid. -->
+	<div class="mc-container">
+						<ul class="mc-sub-nav-list">
+							<li class="mc-sub-nav-title">Our Developer Course Services</li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-laptop1"></span>
+								</span>
+								<span class="mc-link-text" >Train For A Career In Tech</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-code"></span>
+								</span>
+								<span class="mc-link-text" >Skills Bootcamp</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-question-circle"></span>
+								</span>
+								<span class="mc-link-text" >Scion Scheme Frequently Asked Questions</span>
+							</a></li>
+							<!-- Individual service destination inside a mega-menu list. -->
+							<li class="mc-sub-nav-link"><a href="#">
+								<span class="mc-link-icon">
+									<span class="mc-icon-handshake-o"></span>
+								</span>
+								<span class="mc-link-text" >Scion Collaborators</span>
+							</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</nav>
+</div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="js/banner-slider.js"></script>
+</body>
+</html>

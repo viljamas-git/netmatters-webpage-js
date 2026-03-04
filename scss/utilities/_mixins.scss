@@ -1,0 +1,45 @@
+// Reusable styling recipe that keeps repeated visual patterns consistent across components.
+@mixin button-base($font-size: 1.125rem, $line-height: 2.875rem, $height: 56px, $padding: 5px 15px, $radius: 3px, $text-transform: uppercase) {
+  font-size: $font-size;
+  font-weight: 400;
+  line-height: $line-height;
+  height: $height;
+  padding: $padding;
+  border-radius: $radius;
+  text-transform: $text-transform;
+  text-align: center;
+}
+// Reusable styling recipe that keeps repeated visual patterns consistent across components.
+@mixin button-theme($bg-color, $hover-bg-color, $text-color: #fff) {
+  background-color: $bg-color;
+  color: $text-color;
+// Styles this block so interactive states give visible feedback on hover/focus.
+  &:hover {
+    background-color: $hover-bg-color;
+    color: $text-color;
+  }
+}
+// Reusable styling recipe that keeps repeated visual patterns consistent across components.
+@mixin nav-item-base {
+  color: #fff;
+  display: block;
+  font-size: 1.125rem;
+  line-height: 1;
+  font-weight: 300;
+  padding: 19px 0 18px;
+  position: relative;
+  text-transform: uppercase;
+}
+// Reusable styling recipe that keeps repeated visual patterns consistent across components.
+@mixin nav-hover-caret($width) {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -35px;
+  transform: translateX(-50%);
+  z-index: 90;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 35px $width 0;
+}

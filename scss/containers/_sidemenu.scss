@@ -1,0 +1,223 @@
+// Styles .mc-sidebar: controls width to define this element's appearance and layout.
+.mc-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9;
+  height: 100%;
+  background-color: #333645;
+  width: 275px;
+  display: block;
+  overflow: scroll;
+}
+// Responsive block for @media (min-width: 992px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 992px) {
+// Styles .mc-sidebar: controls width to define this element's appearance and layout.
+  .mc-sidebar {
+    width: 350px;
+  }
+}
+// Styles .mc-sidebar .mc-sidebar-list: controls padding, border-top, border-bottom to define this element's appearance and layout.
+.mc-sidebar .mc-sidebar-list {
+  padding: 20px 0 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+// Responsive block for @media (min-width: 992px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 992px) {
+// Styles .mc-sidebar .mc-sidebar-list: controls padding, border-top, border-bottom to define this element's appearance and layout.
+  .mc-sidebar .mc-sidebar-list {
+    padding: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+// Styles .mc-sidebar .mc-sidebar-list .mc-side-menu-item: controls padding, outline, border to define this element's appearance and layout.
+.mc-sidebar .mc-sidebar-list .mc-side-menu-item {
+  padding: 20px 0 0;
+  outline: 1px solid rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  justify-self: left;
+}
+// Styles .mc-sidebar .mc-sidebar-list li .mc-side-menu-title: controls font-size, padding-left, line-height to define this element's appearance and layout.
+.mc-sidebar .mc-sidebar-list li .mc-side-menu-title {
+  font-size: 1rem;
+  padding-left: 20px;
+  line-height: 1;
+  text-align: left;
+  text-transform: uppercase;
+}
+// Styles .mc-sidebar .mc-sidebar-list .mc-contact-side-menu-title:hover: controls background-color to define this element's appearance and layout.
+.mc-sidebar .mc-sidebar-list .mc-contact-side-menu-title:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+// Styles .mc-sidebar .mc-sidebar-list li .mc-sub-menu: controls padding, margin, width to define this element's appearance and layout.
+.mc-sidebar .mc-sidebar-list li .mc-sub-menu {
+  padding: 0;
+  margin: 20px 0 0;
+  width: auto;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-top: 1px solid rgba(0, 0, 0, 0.45);
+}
+// Styles .mc-sidebar .mc-sidebar-list li .mc-sub-menu .mc-sub-menu-list: controls padding to define this element's appearance and layout.
+.mc-sidebar .mc-sidebar-list li .mc-sub-menu .mc-sub-menu-list {
+  padding: 0;
+}
+// Styles .mc-sidebar .mc-sidebar-list li .mc-sub-menu .mc-sub-menu-list li: controls border-top, padding to define this element's appearance and layout.
+.mc-sidebar .mc-sidebar-list li .mc-sub-menu .mc-sub-menu-list li {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 15px 20px;
+}
+// Styles .mc-sidebar .mc-sidebar-list li .mc-sub-menu .mc-sub-menu-list li a: controls text-transform, font-size to define this element's appearance and layout.
+.mc-sidebar .mc-sidebar-list li .mc-sub-menu .mc-sub-menu-list li a {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+// Icon glyph for .mc-sidebar .mc-sidebar-list li .mc-sub-menu .mc-sub-menu-list li a::before: injects this specific symbol from the icomoon font using the mapped Unicode value.
+.mc-sidebar .mc-sidebar-list li .mc-sub-menu .mc-sub-menu-list li a::before {
+  content: "\BB";
+  padding-right: 15px;
+}
+// Styles .mc-sidebar .mc-sidebar-list .mc-mobile-list-title: controls margin, font-size, padding to define this element's appearance and layout.
+.mc-sidebar .mc-sidebar-list .mc-mobile-list-title {
+  margin: 0;
+  font-size: 1.125rem;
+  font-size: 1.125rem;
+  padding: 19px 20px 0;
+  border-radius: 3px;
+  text-align: center;
+  text-transform: uppercase;
+}
+// Styles .mc-sidebar .mc-sidebar-list .mc-mobile-list-title .mc-mobile-list-header: controls outline, border, padding to define this element's appearance and layout.
+.mc-sidebar .mc-sidebar-list .mc-mobile-list-title .mc-mobile-list-header {
+  outline: 1px solid rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 19px 0 18px;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+// Styles .mc-sidebar .mc-sidebar-list .mc-mobile-list-title .mc-mobile-list-header span: controls padding-bottom, font-size to define this element's appearance and layout.
+.mc-sidebar .mc-sidebar-list .mc-mobile-list-title .mc-mobile-list-header span {
+  padding-bottom: 10px;
+  font-size: 1.4375rem;
+}
+// Styles .mc-sidebar .mc-sidebar-list .mc-mobile-list-title .mc-mobile-list-header small: controls font-size, padding-bottom to define this element's appearance and layout.
+.mc-sidebar .mc-sidebar-list .mc-mobile-list-title .mc-mobile-list-header small {
+  font-size: 0.625rem;
+  padding-bottom: 1px;
+}
+// Styles .mc-sidebar .mc-sidebar-list .mc-mobile-list-title .mc-mobile-list-header:hover: controls background-color to define this element's appearance and layout.
+.mc-sidebar .mc-sidebar-list .mc-mobile-list-title .mc-mobile-list-header:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+// Styles .mc-sidebar .mc-sidebar-list .mc-mobile-sub-menu: controls margin-top, border-radius to define this element's appearance and layout.
+.mc-sidebar .mc-sidebar-list .mc-mobile-sub-menu {
+  margin-top: 20px;
+  border-radius: 3px;
+}
+// Styles .mc-sidebar .mc-sidebar-list .mc-mobile-sub-menu .mc-mobile-menu-list: controls width, margin, padding to define this element's appearance and layout.
+.mc-sidebar .mc-sidebar-list .mc-mobile-sub-menu .mc-mobile-menu-list {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-top: 1px solid rgba(0, 0, 0, 0.45);
+  color: #fff;
+}
+// Styles .mc-sidebar .mc-sidebar-list .mc-mobile-sub-menu .mc-mobile-menu-list li: controls padding, border-top to define this element's appearance and layout.
+.mc-sidebar .mc-sidebar-list .mc-mobile-sub-menu .mc-mobile-menu-list li {
+  padding: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+// Styles .mc-sidebar .mc-sidebar-list .mc-mobile-sub-menu .mc-mobile-menu-list li a span: controls font-size, text-align, text-transform to define this element's appearance and layout.
+.mc-sidebar .mc-sidebar-list .mc-mobile-sub-menu .mc-mobile-menu-list li a span {
+  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+// Responsive block for @media (min-width: 992px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 992px) {
+// Styles .mc-mobile-menu: controls display to define this element's appearance and layout.
+  .mc-mobile-menu {
+    display: none;
+  }
+}
+// Styles .mc-non-mobile-menu: controls display to define this element's appearance and layout.
+.mc-non-mobile-menu {
+  display: none;
+}
+// Responsive block for @media (min-width: 992px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 992px) {
+// Styles .mc-non-mobile-menu: controls display to define this element's appearance and layout.
+  .mc-non-mobile-menu {
+    display: block;
+  }
+}
+// Styles .mc-Mobile-CD .mc-sidenav-icon: controls color to define this element's appearance and layout.
+.mc-Mobile-CD .mc-sidenav-icon {
+  color: #67809f;
+}
+// Styles .mc-Mobile-IT .mc-sidenav-icon: controls color to define this element's appearance and layout.
+.mc-Mobile-IT .mc-sidenav-icon {
+  color: #4183d7;
+}
+// Styles .mc-Mobile-DM .mc-sidenav-icon: controls color to define this element's appearance and layout.
+.mc-Mobile-DM .mc-sidenav-icon {
+  color: #2ecc71;
+}
+// Styles .mc-Mobile-TS .mc-sidenav-icon: controls color to define this element's appearance and layout.
+.mc-Mobile-TS .mc-sidenav-icon {
+  color: #d64541;
+}
+// Styles .mc-Mobile-WD .mc-sidenav-icon: controls color to define this element's appearance and layout.
+.mc-Mobile-WD .mc-sidenav-icon {
+  color: #926fb1;
+}
+// Styles .mc-Mobile-CS .mc-sidenav-icon: controls color to define this element's appearance and layout.
+.mc-Mobile-CS .mc-sidenav-icon {
+  color: #f62459;
+}
+// Styles .mc-Mobile-DC .mc-sidenav-icon: controls color to define this element's appearance and layout.
+.mc-Mobile-DC .mc-sidenav-icon {
+  color: #ce4125;
+}
+// Responsive block for @media (max-width: 992px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (max-width: 992px) {
+// Styles .mc-mobile-menu-item: controls border-top, border-bottom to define this element's appearance and layout.
+  .mc-mobile-menu-item {
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+// Styles #mc-side-contact-button: controls text-align, padding, margin to define this element's appearance and layout.
+#mc-side-contact-button {
+  text-align: center;
+  padding: 19px 0 18px;
+  margin: 0 20px;
+  border-radius: 3px;
+}
+// Styles #mc-side-contact-button .mc-side-menu-title: controls font-size, padding to define this element's appearance and layout.
+#mc-side-contact-button .mc-side-menu-title {
+  font-size: 1.125rem;
+  padding: 19px 49px 18px;
+}
+// Styles #mc-side-ourwork-button: controls margin-top to define this element's appearance and layout.
+#mc-side-ourwork-button {
+  margin-top: 20px;
+}
+// Responsive block for @media (min-width: 768px): adjusts layout and component behaviour at this breakpoint/rule.
+@media (min-width: 768px) {
+// Styles #mc-side-ourwork-button: controls margin-top to define this element's appearance and layout.
+  #mc-side-ourwork-button {
+    margin-top: 0;
+  }
+}
+// Styles #mc-side-support-button: controls padding-bottom to define this element's appearance and layout.
+#mc-side-support-button {
+  padding-bottom: 20px;
+}
